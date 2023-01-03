@@ -30,7 +30,13 @@
 
 
   include 'frontend/navBar.php';
+
+
+  // include 'frontend/test.php';
+
+
   include 'frontend/board.php';
+
 
 
 

@@ -26,51 +26,59 @@
 
 <body>
 
-    <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-center">
-        <div class="container ">
-            <a href="/" class="navbar-brand d-flex w-50 me-auto"> <img src="assets/navBar/Subaru_logo.svg.png" height="100" /></a>
+    <nav class="navbar navbar-expand-lg mb-0 navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="assets/navBar/Subaru_logo.svg.png" width="" height="100" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="collapse navbar-collapse justify-content-between " id="#navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <button type="button" class="btn btn-outline-secondary">
+                            <h5>Sales Pipeline</h5>
+                        </button>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <button type="button" class="btn btn-outline-secondary">
+                            <h5>Services Pipeline</h5>
+                        </button>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <button type="button" class="btn btn-outline-secondary">
+                            <h5>Report</h5>
+                        </button>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <button type="button" class="btn btn-outline-secondary">
+                            <h5>Ownership Management</h5>
+                        </button>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
 
 
-            <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-                <ul class="navbar-nav w-100 justify-content-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Sales Pipeline</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="//codeply.com">Service Pipeline</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reports</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ownership Change</a>
-                    </li>
-
-                </ul>
-
-                <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="assets/navBar/navbar_dp_icon.png" width="100" height="100" /> </a>
-                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Item</a></li>
-                            <li><a class="dropdown-item" href="#">Item</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Item</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            </ul>
+            <ul class="navbar nav ml-auto">
 
 
+                <a class="nav-link" href="#"><img src="assets/navBar/navbar_dp_icon.png" width="80" height="80" /></a>
 
-            </div>
+
+            </ul>
+
         </div>
     </nav>
 

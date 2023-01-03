@@ -18,8 +18,9 @@
 <body>
 
     <div class="border border-warning my-3 px-4 py-2">
-        <h6>Name: Mr ABC</h6>
-        <p>Car Mode: Sb-1400</p>
+        <i class="bi bi-three-dots-vertical"></i>
+        <h6>Name: Mr Nafis Sadik</h6>
+        <p>Bike Mode: Yamaha Fazer</p>
         <p>Phone: 01851035422</p>
     </div>
     <div class="border border-warning my-3 px-4 py-2">

@@ -32,8 +32,8 @@
     <div class="container my-4 p-3">
 
 
-        <button class="btn btn-warning mx-5 m-5">
-            Create Lead
+        <button class="btn btn-warning mb-3">
+            Create New Lead
         </button>
         <div class="row">
             <div class="col-sm">
