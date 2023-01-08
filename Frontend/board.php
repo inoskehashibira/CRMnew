@@ -32,16 +32,42 @@
     <div class="container my-4 p-3">
 
 
-        <button class="btn btn-warning mb-3">
-            Create New Lead
-        </button>
+
+
+        <a class="btn btn-warning mb-3" href="Frontend/createLeadPage.php">Create New Lead</a>
+
         <div class="row">
             <div class="col-sm">
                 <h5 class="border-3 border-dark border-bottom p-2">New</h5>
+                <?php
+                include "Backend/db_con.php";
+                $sql = "SELECT * FROM `leads`";
+                $result = mysqli_query($con, $sql);
+                while ($row = mysqli_fetch_assoc($result)) {
+                ?>
+                    <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="col-9">
+                                    <h5 class="card-title"><?php echo $row['Customer_Name'] ?> </h5>
+                                </div>
+                                <div class="col-3">
+                                    <i class="bi bi-three-dots-vertical col m-0 p-0"></i>
+                                </div>
+                            </div>
+
+                            <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['Organization_Name'] ?></h6>
+                            <p class="card-text">
+                                <?php echo $row['Customer_Email'] ?>
+                            </p>
+                            <a href="#" class="card-link">Lead Details</a>
+                        </div>
+                    </div>
 
                 <?php
-                include 'components/card.php'
-
+                }
+                // include 'components/card.php'
                 ?>
 
             </div>

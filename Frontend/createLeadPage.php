@@ -35,21 +35,21 @@
           <label htmlFor="firstName" class="form-label">
             Customer Name
           </label>
-          <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required  ></input>
+          <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
         </div>
 
         <div class="col-md-6">
           <label htmlFor="firstName" class="form-label">
             Organization
           </label>
-          <input type="text" class="form-control" name="Organization" id="Organization" required ></input>
+          <input type="text" class="form-control" name="Organization" id="Organization" required></input>
         </div>
 
         <div class="col-md-6 ">
           <label htmlFor="emailinfo" class="form-label">
             E-mail
           </label>
-          <input type="email" class="form-control" id="emailinfo" name="Customer_Email" required ></input>
+          <input type="email" class="form-control" id="emailinfo" name="Customer_Email" required></input>
         </div>
 
 
@@ -155,15 +155,16 @@
 
         <div class="row  justify-content-center align-items-center g-2">
           <div class="col-auto my-5">
-            <button class="btn btn-primary" type="submit" name="submit" >
+            <button class="btn btn-primary" type="submit" name="submit">
               Create Lead
+              <a href="../index.php"></a>
             </button>
           </div>
         </div>
 
 
 
-<!-- <button type="submit">tt</button> -->
+        <!-- <button type="submit">tt</button> -->
       </form>
 
 

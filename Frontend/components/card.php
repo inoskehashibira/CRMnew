@@ -34,7 +34,7 @@
 
             <div class="row">
                 <div class="col-9">
-                    <h5 class="card-title">Mr ABC</h5>
+                    <h5 class="card-title">Mr </h5>
                 </div>
                 <div class="col-3">
                     <i class="bi bi-three-dots-vertical col m-0 p-0"></i>
@@ -43,7 +43,7 @@
 
             <h6 class="card-subtitle mb-2 text-muted">Sb-1400</h6>
             <p class="card-text">
-                Phone: 01851035422
+                Phone: 554512121
             </p>
             <a href="#" class="card-link">Lead Details</a>
         </div>

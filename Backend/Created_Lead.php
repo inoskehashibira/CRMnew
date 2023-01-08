@@ -15,7 +15,8 @@ if (isset($_POST['submit'])) {
   $Schedule_date = $_POST['Schedule_date'];
   $notes = $_POST['notes'];
 
-  $Lead_Creation_Time = date("l jS \of F Y h:i:s A");
+  // $Lead_Creation_Time = date("l jS \of F Y h:i:s A");
+  $Lead_Creation_Time = date("Y-m-d H:i:s");
   $Lead_CreatedBy = "sales person";
   $lead_catagory = "new";
   $extra2 = "Null";
@@ -34,7 +35,7 @@ echo $Customer_Name;
 
   if ($result) {
    
-    header("Location: index.php?msg=new record created successfully");
+    header("Location: ../index.php?msg=new record created successfully");
   } else {
     echo "Failed: " . mysqli_error($con);
   }
