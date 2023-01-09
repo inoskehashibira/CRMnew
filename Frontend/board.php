@@ -44,32 +44,45 @@
                 $sql = "SELECT * FROM `leads`";
                 $result = mysqli_query($con, $sql);
                 while ($row = mysqli_fetch_assoc($result)) {
+                    if ($row['lead_catagory'] == 'new') {
                 ?>
-                    <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
-                        <div class="card-body">
+                        <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
+                            <div class="card-body">
 
-                            <div class="row">
-                                <div class="col-9">
-                                    <h5 class="card-title"><?php echo $row['Customer_Name'] ?> </h5>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h5 class="card-title"><?php echo $row['Customer_Name'] ?> </h5>
+                                    </div>
+                                    <div class="col-3">
+
+                                        <div class="dropdown">
+                                            <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                <i class="bi bi-three-dots-vertical col m-0 p-0"></i>
+                                                <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                                <li><a class="dropdown-item" href="#">Qualified</a></li>
+                                                <li><a class="dropdown-item" href="#">intermediate</a></li>
+                                                <li><a class="dropdown-item" href="#">won</a></li>
+                                            </ul>
+                                        </div>
+
+
+
+                                    </div>
                                 </div>
-                                <div class="col-3">
-                                    <i class="bi bi-three-dots-vertical col m-0 p-0"></i>
-                                </div>
+
+                                <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['Organization_Name'] ?></h6>
+                                <p class="card-text">
+                                    <?php echo $row['Customer_Email'] ?>
+                                </p>
+                                <a href="#" class="card-link">Lead Details</a>
                             </div>
-
-                            <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['Organization_Name'] ?></h6>
-                            <p class="card-text">
-                                <?php echo $row['Customer_Email'] ?>
-                            </p>
-                            <a href="#" class="card-link">Lead Details</a>
                         </div>
-                    </div>
-
                 <?php
+                    }
                 }
-                // include 'components/card.php'
                 ?>
-
             </div>
             <div class="col-sm">
                 <h5 class="border-3 border-dark border-bottom p-2">
@@ -88,13 +101,7 @@
                 include 'components/card.php'
                 ?>
             </div>
-            <div class="col-sm">
-                <h5 class="border-3 border-dark border-bottom p-2">Won</h5>
-                <?php
-                include 'components/card.php'
 
-                ?>
-            </div>
             <div class="col-sm">
                 <h5 class="border-3 border-dark border-bottom p-2">
                     Delivered
