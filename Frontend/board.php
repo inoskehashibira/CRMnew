@@ -63,7 +63,7 @@
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="dLabel">
 
-                                                <li><a class="dropdown-item" href="Backend/StageUpdates/qualified.php?leadID=<?php echo $row['Lead_ID'] & $row['Customer_Name'] ?>">Qualified</a></li>
+                                                <li><a class="dropdown-item" href="Backend/StageUpdates/qualified.php?leadID=<?php echo $row['Lead_ID'] ?>">Qualified</a></li>
                                                 <li><a class="dropdown-item" href="Backend/StageUpdates/new.php?leadID=<?php echo $row['Lead_ID'] ?>">New</a></li>
                                                 <li><a class="dropdown-item" href="#">intermediate</a></li>
                                                 <li><a class="dropdown-item" href="#">won</a></li>
@@ -116,7 +116,7 @@
                                                 <span class="caret"></span>
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                                <li><a class="dropdown-item" href="Backend/StageUpdates/new.php?leadID=<?php echo $row['Lead_ID'] ?>">New</a></li>
+                                                <li><a class="dropdown-item" href="Backend/StageUpdates/new.php?leadID=<?php echo $row1['Lead_ID']?>">New</a></li>
                                                 <li><a class="dropdown-item" href="#">Qualified</a></li>
                                                 <li><a class="dropdown-item" href="#">intermediate</a></li>
                                                 <li><a class="dropdown-item" href="#">won</a></li>
