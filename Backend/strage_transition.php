@@ -1,17 +1,25 @@
 <?php
-include "../db_con.php";
+include "db_con.php";
 
 $id = $_GET['leadID'];
+$transition_stage = $_GET['Transition_Stage'];
+// var_dump($id);
+// var_dump($transition_stage);
+// die();
 
+// $sql = "UPDATE `leads` SET lead_catagory =". $transition_stage." WHERE Lead_ID =$id";
+$sql = "UPDATE leads
+SET lead_catagory='$transition_stage'
+WHERE Lead_ID='$id'";
 
-$sql = "UPDATE `leads` SET `lead_catagory`='qualified' WHERE Lead_ID =$id";
-
-$result = mysqli_query($con,   $sql);
+$result = mysqli_query($con,  $sql);
 
 if ($result) {
-    header("Location: ../../index.php?msg=new record created successfully");
+  header("Location: ../index.php?msg=new record created successfully");
+  print "<h2>" . $transition_stage . "</h2>";
 } else {
-    echo "Failed: " . mysqli_error($con);
+
+  echo "Failed: " . mysqli_error($con);
 }
 
 
@@ -46,4 +54,3 @@ if ($result) {
   </body>
 </html>
  -->
-

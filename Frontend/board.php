@@ -63,10 +63,10 @@
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="dLabel">
 
-                                                <li><a class="dropdown-item" href="Backend/StageUpdates/qualified.php?leadID=<?php echo $row['Lead_ID'] ?>">Qualified</a></li>
-                                                <li><a class="dropdown-item" href="Backend/StageUpdates/new.php?leadID=<?php echo $row['Lead_ID'] ?>">New</a></li>
-                                                <li><a class="dropdown-item" href="#">intermediate</a></li>
-                                                <li><a class="dropdown-item" href="#">won</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=qualified">Qualified</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=intermediate">Intermediate</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=delivered">Delivered</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=lost">lost</a></li>
                                             </ul>
                                         </div>
 
@@ -95,10 +95,11 @@
                 </h5>
                 <?php
                 include "Backend/db_con.php";
-                $sql1 = "SELECT * FROM `leads`";
-                $result1 = mysqli_query($con, $sql1);
-                while ($row1 = mysqli_fetch_assoc($result1)) {
-                    if ($row1['lead_catagory'] == 'qualified') {
+                $sql = "SELECT * FROM `leads`";
+                $result = mysqli_query($con, $sql);
+
+                while ($row = mysqli_fetch_assoc($result)) {
+                    if ($row['lead_catagory'] == 'qualified') {
 
                 ?>
                         <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
@@ -106,7 +107,7 @@
 
                                 <div class="row">
                                     <div class="col-9">
-                                        <h5 class="card-title"><?php echo $row1['Customer_Name'] ?> </h5>
+                                        <h5 class="card-title"><?php echo $row['Customer_Name'] ?> </h5>
                                     </div>
                                     <div class="col-3">
 
@@ -116,10 +117,10 @@
                                                 <span class="caret"></span>
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                                <li><a class="dropdown-item" href="Backend/StageUpdates/new.php?leadID=<?php echo $row1['Lead_ID']?>">New</a></li>
-                                                <li><a class="dropdown-item" href="#">Qualified</a></li>
-                                                <li><a class="dropdown-item" href="#">intermediate</a></li>
-                                                <li><a class="dropdown-item" href="#">won</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=new">new</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=intermediate">Intermediate</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=delivered">Delivered</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=lost">lost</a></li>
                                             </ul>
                                         </div>
 
@@ -128,9 +129,9 @@
                                     </div>
                                 </div>
 
-                                <h6 class="card-subtitle mb-2 text-muted"><?php echo $row1['Organization_Name'] ?></h6>
+                                <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['Organization_Name'] ?></h6>
                                 <p class="card-text">
-                                    <?php echo $row1['Customer_Email'] ?>
+                                    <?php echo $row['Customer_Email'] ?>
                                 </p>
                                 <a href="#" class="card-link">Lead Details</a>
                             </div>
@@ -155,10 +156,10 @@
                 </h5>
                 <?php
                 include "Backend/db_con.php";
-                $sql1 = "SELECT * FROM `leads`";
-                $result1 = mysqli_query($con, $sql1);
-                while ($row1 = mysqli_fetch_assoc($result1)) {
-                    if ($row1['lead_catagory'] == 'intermediate') {
+                $sql = "SELECT * FROM `leads`";
+                $result = mysqli_query($con, $sql);
+                while ($row = mysqli_fetch_assoc($result)) {
+                    if ($row['lead_catagory'] == 'intermediate') {
 
                 ?>
                         <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
@@ -166,7 +167,7 @@
 
                                 <div class="row">
                                     <div class="col-9">
-                                        <h5 class="card-title"><?php echo $row1['Customer_Name'] ?> </h5>
+                                        <h5 class="card-title"><?php echo $row['Customer_Name'] ?> </h5>
                                     </div>
                                     <div class="col-3">
 
@@ -176,9 +177,10 @@
                                                 <span class="caret"></span>
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                                <li><a class="dropdown-item" href="#">Qualified</a></li>
-                                                <li><a class="dropdown-item" href="#">intermediate</a></li>
-                                                <li><a class="dropdown-item" href="#">won</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=qualified">Qualified</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=new">new</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=delivered">Delivered</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=lost">lost</a></li>
                                             </ul>
                                         </div>
 
@@ -187,9 +189,9 @@
                                     </div>
                                 </div>
 
-                                <h6 class="card-subtitle mb-2 text-muted"><?php echo $row1['Organization_Name'] ?></h6>
+                                <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['Organization_Name'] ?></h6>
                                 <p class="card-text">
-                                    <?php echo $row1['Customer_Email'] ?>
+                                    <?php echo $row['Customer_Email'] ?>
                                 </p>
                                 <a href="#" class="card-link">Lead Details</a>
                             </div>
@@ -212,10 +214,10 @@
 
                 <?php
                 include "Backend/db_con.php";
-                $sql1 = "SELECT * FROM `leads`";
-                $result1 = mysqli_query($con, $sql1);
-                while ($row1 = mysqli_fetch_assoc($result1)) {
-                    if ($row1['lead_catagory'] == 'delivered') {
+                $sql = "SELECT * FROM `leads`";
+                $result = mysqli_query($con, $sql);
+                while ($row = mysqli_fetch_assoc($result)) {
+                    if ($row['lead_catagory'] == 'delivered') {
 
                 ?>
                         <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
@@ -223,7 +225,7 @@
 
                                 <div class="row">
                                     <div class="col-9">
-                                        <h5 class="card-title"><?php echo $row1['Customer_Name'] ?> </h5>
+                                        <h5 class="card-title"><?php echo $row['Customer_Name'] ?> </h5>
                                     </div>
                                     <div class="col-3">
 
@@ -233,9 +235,10 @@
                                                 <span class="caret"></span>
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                                <li><a class="dropdown-item" href="#">Qualified</a></li>
-                                                <li><a class="dropdown-item" href="#">intermediate</a></li>
-                                                <li><a class="dropdown-item" href="#">won</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=qualified">Qualified</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=intermediate">Intermediate</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=new">new</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=lost">lost</a></li>
                                             </ul>
                                         </div>
 
@@ -244,9 +247,9 @@
                                     </div>
                                 </div>
 
-                                <h6 class="card-subtitle mb-2 text-muted"><?php echo $row1['Organization_Name'] ?></h6>
+                                <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['Organization_Name'] ?></h6>
                                 <p class="card-text">
-                                    <?php echo $row1['Customer_Email'] ?>
+                                    <?php echo $row['Customer_Email'] ?>
                                 </p>
                                 <a href="#" class="card-link">Lead Details</a>
                             </div>
@@ -270,10 +273,10 @@
 
                 <?php
                 include "Backend/db_con.php";
-                $sql1 = "SELECT * FROM `leads`";
-                $result1 = mysqli_query($con, $sql1);
-                while ($row1 = mysqli_fetch_assoc($result1)) {
-                    if ($row1['lead_catagory'] == 'lost') {
+                $sql = "SELECT * FROM `leads`";
+                $result = mysqli_query($con, $sql);
+                while ($row = mysqli_fetch_assoc($result)) {
+                    if ($row['lead_catagory'] == 'lost') {
 
                 ?>
                         <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
@@ -281,7 +284,7 @@
 
                                 <div class="row">
                                     <div class="col-9">
-                                        <h5 class="card-title"><?php echo $row1['Customer_Name'] ?> </h5>
+                                        <h5 class="card-title"><?php echo $row['Customer_Name'] ?> </h5>
                                     </div>
                                     <div class="col-3">
 
@@ -291,9 +294,10 @@
                                                 <span class="caret"></span>
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                                <li><a class="dropdown-item" href="#">Qualified</a></li>
-                                                <li><a class="dropdown-item" href="#">intermediate</a></li>
-                                                <li><a class="dropdown-item" href="#">won</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=qualified">Qualified</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=intermediate">Intermediate</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=delivered">Delivered</a></li>
+                                                <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=<?php echo $row['Lead_ID'] ?>&Transition_Stage=new">new</a></li>
                                             </ul>
                                         </div>
 
@@ -302,9 +306,9 @@
                                     </div>
                                 </div>
 
-                                <h6 class="card-subtitle mb-2 text-muted"><?php echo $row1['Organization_Name'] ?></h6>
+                                <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['Organization_Name'] ?></h6>
                                 <p class="card-text">
-                                    <?php echo $row1['Customer_Email'] ?>
+                                    <?php echo $row['Customer_Email'] ?>
                                 </p>
                                 <a href="#" class="card-link">Lead Details</a>
                             </div>

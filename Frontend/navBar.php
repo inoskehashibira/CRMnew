@@ -38,7 +38,7 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link" href="#">
-            <button type="button" class="btn btn-outline-secondary">
+            <button type="button" class="btn btn-outline-secondary" >
               <h5>Sales Pipeline</h5>
             </button>
             <span class="sr-only">(current)</span>
