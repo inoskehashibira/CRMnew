@@ -79,7 +79,7 @@
                                 <p class="card-text">
                                     <?php echo $row['Customer_Email'] ?>
                                 </p>
-                                <a href="frontend/lead_life_cycle.php" class="card-link">Lead Details</a>
+                                <a href="frontend/lead_life_cycle.php?leadID=<?php echo $row['Lead_ID'] ?>" class="card-link">Lead Details</a>
                             </div>
                         </div>
 
@@ -133,7 +133,7 @@
                                 <p class="card-text">
                                     <?php echo $row['Customer_Email'] ?>
                                 </p>
-                                <a href="frontend/lead_life_cycle.php" class="card-link">Lead Details</a>
+                                <a href="frontend/lead_life_cycle.php?leadID=<?php echo $row['Lead_ID'] ?>" class="card-link">Lead Details</a>
                             </div>
                         </div>
 
@@ -193,7 +193,7 @@
                                 <p class="card-text">
                                     <?php echo $row['Customer_Email'] ?>
                                 </p>
-                                <a href="frontend/lead_life_cycle.php" class="card-link">Lead Details</a>
+                                <a href="frontend/lead_life_cycle.php?leadID=<?php echo $row['Lead_ID'] ?>" class="card-link">Lead Details</a>
                             </div>
                         </div>
 
@@ -251,7 +251,7 @@
                                 <p class="card-text">
                                     <?php echo $row['Customer_Email'] ?>
                                 </p>
-                                <a href="frontend/lead_life_cycle.php" class="card-link">Lead Details</a>
+                                <a href="frontend/lead_life_cycle.php?leadID=<?php echo $row['Lead_ID'] ?>" class="card-link">Lead Details</a>
                             </div>
                         </div>
 
@@ -310,7 +310,7 @@
                                 <p class="card-text">
                                     <?php echo $row['Customer_Email'] ?>
                                 </p>
-                                <a href="frontend/lead_life_cycle.php" class="card-link">Lead Details</a>
+                                <a href="frontend/lead_life_cycle.php?leadID=<?php echo $row['Lead_ID'] ?>" class="card-link">Lead Details</a>
                             </div>
                         </div>
 
