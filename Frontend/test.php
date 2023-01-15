@@ -25,61 +25,230 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg mb-0 navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="assets/navBar/Subaru_logo.svg.png" width="" height="100" /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""></span>
-            <span class=""></span>
-            <span class=""></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-between " id="#navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        <button type="button" class="btn btn-outline-secondary">
-                            <h5>Sales Pipeline</h5>
-                        </button>
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        <button type="button" class="btn btn-outline-secondary">
-                            <h5>Services Pipeline</h5>
-                        </button>
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        <button type="button" class="btn btn-outline-secondary">
-                            <h5>Report</h5>
-                        </button>
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        <button type="button" class="btn btn-outline-secondary">
-                            <h5>Ownership Management</h5>
-                        </button>
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
+    <div class="container-fluid mt-1">
+        <div class="row  g-2  ">
 
 
-            </ul>
-            <ul class="navbar nav ml-auto">
+            <div class="col ml-4 " align="center">
+
+                <h5> Lead Information</h5>
+                <table class="table table-striped">
+                    <thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Lead ID</th>
+                            <td>01001</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Customer Name</th>
+                            <td>Abdul Latif</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mobile Number</th>
+                            <td>017xx-xxxxxx</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Interested Model</th>
+                            <td>subaru XV</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lead Started</th>
+                            <td>11-12-2022</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Created By</th>
+                            <td>Golam Maula</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Referred By</th>
+                            <td>Abdul Khalek</td>
+                        </tr>
 
 
-                <a class="nav-link" href="#"><img src="assets/navBar/navbar_dp_icon.png" width="80" height="80" /></a>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <!-- <div class="col-4" align="center">
+                <h3>Lead Information</h3>
+                <div class="row ">
+                    <div class="col " align="left">
+
+                        <h5 class="bg-light">Lead ID :</h5>
+                        <h5>Customer Name:</h5>
+                        <h5 class="bg-light">Mobile Number:</h5>
+                        <h5>Interested Model:</h5>
+                        <h5 class="bg-light">Lead Started:</h5>
+                        <h5>Created by:</h5>
+                        <h5 class="bg-light">Referenced By:</h5>
+                    </div>
+                    <div class="col" align="left">
+                        <h5 class="bg-light">1101</h5>
+                        <h5>Jamil</h5>
+                        <h5 class="bg-light">01521534658</h5>
+                        <h5>subaru v15</h5>
+                        <h5 class="bg-light">5th jan</h5>
+                        <h5>Created by:</h5>
+                        <h5 class="bg-light">sales person</h5>
+                    </div>
+                </div>
 
 
-            </ul>
+            </div> -->
+
+
+
+            <div class="col border mr-4">
+                <div>
+
+
+                    <div class="row  mt-5 ">
+                        <div class="col-2  " align="right">
+
+                            <div class="dropdown mt-5">
+                                <button class="btn btn-secondary dropdown-toggle mt-5 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Activity Type
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Contact</a>
+                                    <a class="dropdown-item" href="#">Meeting</a>
+                                    <a class="dropdown-item" href="#">Question</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-7  mt-4">
+                            <div class="input-group mt-4">
+
+                                <textarea class="form-control mt-3" id="exampleFormControlTextarea1" cols="5" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-3  mt-3">
+                            <button type="button" class="btn btn-primary btn-lg mt-5">Add Activity</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
-    </nav>
+
+        <div class="container-fluid mt-3 mx-2">
+            <div class="card text-start shadow">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Lead Activity</h4>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
 
 
 
