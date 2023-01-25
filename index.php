@@ -29,8 +29,8 @@
 
 
 
-  include 'frontend/navBar.php';
-
+  // include 'frontend/navBar.php';
+  include 'frontend/temp.php';
 
   // include 'frontend/test.php';
 

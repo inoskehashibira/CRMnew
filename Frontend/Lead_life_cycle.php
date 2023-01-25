@@ -62,11 +62,23 @@
 
 
             </ul>
-            <ul class="navbar nav ml-auto">
+            <ul class="navbar nav nav-item dropdown ml-auto">
 
 
-                <a class="nav-link" href="#"><img src="../assets/navBar/navbar_dp_icon.png" width="80" height="80" /></a>
 
+
+                <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/navBar/navbar_dp_icon.png" width="80" height="80" /></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class=" dropdown-item" href="#">
+                        <div class="card" style="height: 100%; width: 100%;">
+                            <img class="card-img-top" src="../assets/navBar/navbar_dp_icon.png" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Tisdtle</h4>
+                                <p class="card-text">Text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </ul>
 
