@@ -63,45 +63,20 @@
 
       <div class="row">
         <div class="col">
-          <a class="btn btn-warning" href="">Create New Lead</a>
+          <a class="btn btn-warning" href="createLeadPage.php">Create New Lead</a>
         </div>
         <div class="col">
-
-
-          <!-- <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Lead Category
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">new</a></li>
-              <li><a class="dropdown-item" href="#">Intermediate</a></li>
-              <li><a class="dropdown-item" href="#">Qualified</a></li>
-              <li><a class="dropdown-item" href="#">Delivered</a></li>
-              <li><a class="dropdown-item" href="#">Lost</a></li>
-            </ul>
-          </div> -->
-
-          <!-- <select class="form-select" aria-label="Default select example">
-            <option selected value="new" href="test2.php?Transition_Stage=new">New</option>
-            <option value="intermediate" href="test2.php?Transition_Stage=Intermediate">Intermediate</option>
-            <option value=" qualified" href="test2.php?Transition_Stage=Qualified">Qualified</option>
-            <option value=" delivered" href="test2.php?Transition_Stage=Delivered">Delivered</option>
-            <option value=" lost" href="test2.php?Transition_Stage=Lost">Lost</option>
-          </select> -->
-
-
-
-
-          <form method="post" action="test2.php">
-
-            <select name="category">
+          <form method="post" action="test2.php" id="category-form">
+            <select class="form-select" name="category" onchange="document.getElementById('category-form').submit();">
               <option value="new" <?php if (isset($_POST["category"]) && $_POST["category"] == "new") echo "selected"; ?>>new</option>
               <option value="intermediate" <?php if (isset($_POST["category"]) && $_POST["category"] == "intermediate") echo "selected"; ?>>intermediate</option>
               <option value="qualified" <?php if (isset($_POST["category"]) && $_POST["category"] == "qualified") echo "selected"; ?>>qualified</option>
-            </select>
-            <input type="submit" value="Submit">
-          </form>
+              <option value="delivered" <?php if (isset($_POST["category"]) && $_POST["category"] == "delivered") echo "selected"; ?>>delivered</option>
+              <option value="lost" <?php if (isset($_POST["category"]) && $_POST["category"] == "lost") echo "selected"; ?>>lost</option>
 
+
+            </select>
+          </form>
 
         </div>
       </div>
@@ -122,7 +97,8 @@
 
         ?>
 
-        <h5 class="border-3 border-dark border-bottom p-2"><?php echo $selected_category ?></h5>
+        <h5 class="border-3 border-dark border-bottom p-2"><?php echo empty($selected_category) ? "new" : $selected_category;
+                                                            ?></h5>
 
 
         <?php
@@ -136,7 +112,8 @@
 
 
         while ($row = mysqli_fetch_assoc($result)) {
-          if ($row['lead_catagory'] == $selected_category) {
+          $temp = empty($selected_category) ? "new" : $selected_category;
+          if ($row['lead_catagory'] == $temp) {
 
         ?>
 
