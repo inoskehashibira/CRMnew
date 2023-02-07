@@ -40,6 +40,20 @@
             color: red;
             cursor: pointer;
         }
+
+        .custom-navbar {
+            height: 50px;
+
+
+        }
+
+        @media only screen and (max-width: 600px) {
+            .custom-navbar {
+                height: auto;
+
+
+            }
+        }
     </style>
 
 </head>
@@ -48,9 +62,9 @@
 <body>
 
 
-    <nav class=" navbar navbar-expand-lg navbar-light bg-info" >
+    <nav class=" navbar navbar-expand-lg navbar-light bg-info  custom-navbar">
         <div class="container-fluid">
-            <a class="navbar-brand d-block " href="#"><img src="../Assets/png/subaru_Logo.png" alt=""></a>
+            <a class="navbar-brand d-block " href="#"><img src="../Assets/png/subaru_Logo.png" alt="" height="70" ></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -78,7 +92,7 @@
                         </a>
                     </li>
 
-                    <button class="btn btn-primary shadow  mx-5 mt-1 "  type=" button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-primary shadow  mx-5 mt-1 " style="height:40px;" type=" button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         <p>Create Lead</p>
                     </button>
 
