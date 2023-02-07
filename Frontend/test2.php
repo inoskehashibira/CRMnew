@@ -15,7 +15,7 @@
     <!-- bundle min -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="Css/style.css">
+    <!-- <link rel="stylesheet" href="Css/style.css"> -->
 
     <title>Subaru CRM</title>
 
@@ -27,52 +27,324 @@
 
 <body>
 
+    <?php
+
+    include "NavBar.php";
 
 
-    <div class="container">
-        <div class="FormContainer">
+    ?>
 
-            <div class="FormContainerItems">
-                <h1 class="display-4 font-weight-bold">SUBARU BANGLADESH</h1>
+    <div class="container-fluid my-4 p-3 m-3">
+
+
+
+
+        <div class="row ">
+
+            <div class="col-sm">
+                <h5 class="border-3 border-dark border-bottom p-2">Lead</h5>
+
+                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 7 rem;">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">Customer_Name</h5>
+                            </div>
+                            <div class="col-3">
+
+                                <div class="dropdown">
+                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
+                        <p class="card-text">
+                            Customer_Email
+                        </p>
+                        <a href="frontend/lead_life_cycle.php?leadID=" class="card-link">Lead Details</a>
+                    </div>
+                </div>
+
+
             </div>
-            <div class="FormContainerItems">
-                <form>
-                    <input type="text" placeholder="Username">
-                    <input type="password" placeholder="Password">
-                    <input type="submit" value="Submit">
-                </form>
+            <div class="col-sm">
+                <h5 class="border-3 border-dark border-bottom p-2">Deal</h5>
+
+
+
+                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">Customer_Name</h5>
+                            </div>
+                            <div class="col-3">
+
+                                <div class="dropdown">
+                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
+                        <p class="card-text">
+                            Customer_Email
+                        </p>
+                        <a href="frontend/lead_life_cycle.php?leadID=" class="card-link">Lead Details</a>
+                    </div>
+                </div>
+
+
             </div>
+            <div class="col-sm">
+                <h5 class="border-3 border-dark border-bottom p-2">Quotation</h5>
+
+
+
+                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">Customer_Name</h5>
+                            </div>
+                            <div class="col-3">
+
+                                <div class="dropdown">
+                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
+                        <p class="card-text">
+                            Customer_Email
+                        </p>
+                        <a href="frontend/lead_life_cycle.php?leadID=" class="card-link">Lead Details</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-sm">
+                <h5 class="border-3 border-dark border-bottom p-2">Booking</h5>
+
+
+
+                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">Customer_Name</h5>
+                            </div>
+                            <div class="col-3">
+
+                                <div class="dropdown">
+                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
+                        <p class="card-text">
+                            Customer_Email
+                        </p>
+                        <a href="frontend/lead_life_cycle.php?leadID=" class="card-link">Lead Details</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-sm">
+                <h5 class="border-3 border-dark border-bottom p-2">Item Ready</h5>
+
+
+
+                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">Customer_Name</h5>
+                            </div>
+                            <div class="col-3">
+
+                                <div class="dropdown">
+                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
+                        <p class="card-text">
+                            Customer_Email
+                        </p>
+                        <a href="frontend/lead_life_cycle.php?leadID=" class="card-link">Lead Details</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-sm">
+                <h5 class="border-3 border-dark border-bottom p-2">Won</h5>
+
+
+
+                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">Customer_Name</h5>
+                            </div>
+                            <div class="col-3">
+
+                                <div class="dropdown">
+                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
+                        <p class="card-text">
+                            Customer_Email
+                        </p>
+                        <a href="frontend/lead_life_cycle.php?leadID=" class="card-link">Lead Details</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-sm">
+                <h5 class="btn btn-secondary">Lost</h5>
+
+
+
+                <div class=" shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">Customer_Name</h5>
+                            </div>
+                            <div class="col-3">
+
+                                <div class="dropdown">
+                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
+                        <p class="card-text">
+                            Customer_Email
+                        </p>
+                        <a href="frontend/lead_life_cycle.php?leadID=" class="card-link">Lead Details</a>
+                    </div>
+            </div>
+
 
         </div>
 
 
 
-
     </div>
-
-
-
-    <!-- <style>
-        .FormContainer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-
-        .FormContainer items {
-            width: 100%;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
-
-    <div class="container">
-        <div class="item">Item 1</div>
-        <div class="item">Item 2</div>
-        <div class="item">Item 3</div>
-    </div> -->
-
+    </div>
 
 
 

@@ -36,7 +36,7 @@
             transition: all 0.2s;
         }
 
-        a:hover {
+        p:hover {
             color: red;
             cursor: pointer;
         }
@@ -92,8 +92,8 @@
                         </a>
                     </li>
 
-                    <button class="btn btn-primary shadow  mx-5 mt-1 " style="height:40px;" type=" button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <p>Create Lead</p>
+                    <button class="btn btn-light shadow  mx-5 mt-1 " style="height:40px;font-size:small" type=" button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Create Lead
                     </button>
 
                     <!-- <li class="nav-item dropdown ">
