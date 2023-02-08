@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <!-- JQuery -->
@@ -23,18 +24,26 @@
 
 </head>
 
+<style>
+
+</style>
+
+
 
 
 <body>
 
+    <img src="../Assets/jpg/subaru_login_bg.jpg" alt="" class="imgContainer">
 
 
-    <div class="container">
-        <div class="FormContainer">
 
-            <div class="FormContainerItems">
-                <h1 class="display-4 font-weight-bold">SUBARU BANGLADESH</h1>
-            </div>
+    <div class="FormContainer">
+        <div class="FormContainerItems">
+            <h1 class="display-4 font-weight-bold text-white">SUBARU BANGLADESH</h1>
+        </div>
+
+
+        <div class="container">
             <div class="FormContainerItems">
                 <form>
                     <input type="text" placeholder="Username">

@@ -42,7 +42,7 @@
         <div class="row ">
 
             <div class="col-sm">
-                <h5 class="border-3 border-dark border-bottom p-2">Lead</h5>
+                <h5 class=" rounded  p-2 bg-secondary text-white text-center " >Lead</h5>
 
                 <div class="shadow p-1 mb-5 bg-white rounded" style="width: 7 rem;">
                     <div class="card-body">
@@ -83,7 +83,7 @@
 
             </div>
             <div class="col-sm">
-                <h5 class="border-3 border-dark border-bottom p-2">Deal</h5>
+                <h5 class="border-3 rounded  p-2 bg-secondary text-white text-center ">Deal</h5>
 
 
 
@@ -126,7 +126,7 @@
 
             </div>
             <div class="col-sm">
-                <h5 class="border-3 border-dark border-bottom p-2">Quotation</h5>
+                <h5 class="border-3 rounded  p-2 bg-secondary text-white text-center ">Quotation</h5>
 
 
 
@@ -169,7 +169,7 @@
 
             </div>
             <div class="col-sm">
-                <h5 class="border-3 border-dark border-bottom p-2">Booking</h5>
+                <h5 class="border-3 rounded  p-2 bg-secondary text-white text-center ">Booking</h5>
 
 
 
@@ -212,7 +212,7 @@
 
             </div>
             <div class="col-sm">
-                <h5 class="border-3 border-dark border-bottom p-2">Item Ready</h5>
+                <h5 class="border-3 rounded  p-2 bg-secondary text-white text-center ">Item Ready</h5>
 
 
 
@@ -255,7 +255,7 @@
 
             </div>
             <div class="col-sm">
-                <h5 class="border-3 border-dark border-bottom p-2">Won</h5>
+                <h5 class="border-3 rounded  p-2 bg-secondary text-white text-center ">Won</h5>
 
 
 
@@ -298,7 +298,7 @@
 
             </div>
             <div class="col-sm">
-                <h5 class="btn btn-secondary">Lost</h5>
+                <h5 class="border-3 rounded  p-2 bg-secondary text-white text-center ">Lost</h5>
 
 
 
@@ -336,14 +336,14 @@
                         </p>
                         <a href="frontend/lead_life_cycle.php?leadID=" class="card-link">Lead Details</a>
                     </div>
+                </div>
+
+
             </div>
 
 
+
         </div>
-
-
-
-    </div>
     </div>
 
 

@@ -19,27 +19,29 @@
 
 
     <style>
-        p {
+        /* p {
             color: #ffffff;
             margin: 0;
             padding: 0;
             font-size: large;
-        }
+        } */
 
         nav {
             margin: 0;
             padding: 0;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
         }
 
         a {
             text-decoration: none;
             transition: all 0.2s;
         }
-
+/* 
         p:hover {
             color: red;
             cursor: pointer;
-        }
+        } */
 
         .custom-navbar {
             height: 50px;
@@ -48,11 +50,11 @@
         }
 
         @media only screen and (max-width: 600px) {
-            .custom-navbar {
+         .custom-navbar {
                 height: auto;
 
 
-            }
+            }   
         }
     </style>
 
@@ -64,7 +66,7 @@
 
     <nav class=" navbar navbar-expand-lg navbar-light bg-info  custom-navbar">
         <div class="container-fluid">
-            <a class="navbar-brand d-block " href="#"><img src="../Assets/png/subaru_Logo.png" alt="" height="70" ></a>
+            <a class="navbar-brand d-block " href="#"><img src="../Assets/png/subaru_Logo.png" alt="" height="70"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -73,22 +75,22 @@
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active  m-1 " aria-current="page" href="#">
-                            <p>Sales Pipeline</p>
+                            <p class="text-white m-0 p-0" >Sales Pipeline</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active  m-1 " aria-current="page" href="#">
-                            <p>Services Pipeline</p>
+                            <p class="text-white m-0 p-0">Services Pipeline</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active  m-1  " aria-current="page" href="#">
-                            <p>Report</p>
+                            <p class="text-white m-0 p-0">Report</p>
                         </a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link active  m-1  " aria-current="page" href="#">
-                            <p>Ownership Management</p>
+                            <p class="text-white m-0 p-0">Ownership Management</p>
                         </a>
                     </li>
 
@@ -130,8 +132,8 @@
 
     <div class="d-flex justify-content-end">
         <div class="d-flex flex-column">
-            <p class="m-0" style="color:black">Irfanul kalam Chowdhury</p>
-            <p class="m-0" style="color:black">Executive, Sales</p>
+            <p class="m-0 text-dark" >Irfanul kalam Chowdhury</p>
+            <p class="m-0 text-dark" >Executive, Sales</p>
         </div>
     </div>
 
