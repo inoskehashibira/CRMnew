@@ -42,7 +42,7 @@
         <div class="row ">
 
             <div class="col-sm">
-                <h5 class=" rounded-3 p-2 bg-secondary text-white text-center mb-3 ">Lead</h5>
+                <h5 class=" rounded  p-2 bg-secondary text-white text-center mb-3 ">Lead</h5>
 
                 <div class="shadow p-1 mb-5 bg-white rounded" style="width: 7 rem;">
                     <div class="card-body">
@@ -83,7 +83,50 @@
 
             </div>
             <div class="col-sm">
-                <h5 class=" rounded-pill  p-2 bg-secondary text-white text-center ">Deal</h5>
+                <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3 ">Deal</h5>
+
+
+
+                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">Customer_Name</h5>
+                            </div>
+                            <div class="col-3">
+
+                                <div class="dropdown">
+                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
+                        <p class="card-text">
+                            Customer_Email
+                        </p>
+                        <a href="frontend/lead_life_cycle.php?leadID=" class="card-link">Lead Details</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-sm">
+                <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3 ">Quotation</h5>
 
 
 
@@ -126,7 +169,7 @@
 
             </div>
             <div class="col-sm">
-                <h5 class=" rounded rounded-pill p-2 bg-secondary text-white text-center ">Quotation</h5>
+                <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3  ">Booking</h5>
 
 
 
@@ -169,7 +212,7 @@
 
             </div>
             <div class="col-sm">
-                <h5 class=" rounded  rounded-pill p-2 bg-secondary text-white text-center ">Booking</h5>
+                <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3 ">Item Ready</h5>
 
 
 
@@ -212,7 +255,7 @@
 
             </div>
             <div class="col-sm">
-                <h5 class=" rounded rounded-pill p-2 bg-secondary text-white text-center ">Item Ready</h5>
+                <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3  ">Won</h5>
 
 
 
@@ -255,50 +298,7 @@
 
             </div>
             <div class="col-sm">
-                <h5 class=" rounded rounded-pill p-2 bg-secondary text-white text-center ">Won</h5>
-
-
-
-                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
-                    <div class="card-body">
-
-                        <div class="row">
-                            <div class="col-9">
-                                <h5 class="card-title">Customer_Name</h5>
-                            </div>
-                            <div class="col-3">
-
-                                <div class="dropdown">
-                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
-
-                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
-                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
-                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
-                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
-                                    </ul>
-                                </div>
-
-
-
-                            </div>
-                        </div>
-
-                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
-                        <p class="card-text">
-                            Customer_Email
-                        </p>
-                        <a href="frontend/lead_life_cycle.php?leadID=" class="card-link">Lead Details</a>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="col-sm">
-                <h5 class=" rounded rounded-pill p-2 bg-secondary text-white text-center ">Lost</h5>
+                <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3  ">Lost</h5>
 
 
 
