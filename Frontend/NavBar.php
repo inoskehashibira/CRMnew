@@ -15,48 +15,11 @@
     <!-- bundle min -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+
+
+    <link rel="stylesheet" href="Css/style.css">
     <title>Subaru CRM</title>
 
-
-    <style>
-        /* p {
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-            font-size: large;
-        } */
-
-        nav {
-            margin: 0;
-            padding: 0;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-        }
-
-        a {
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-/* 
-        p:hover {
-            color: red;
-            cursor: pointer;
-        } */
-
-        .custom-navbar {
-            height: 50px;
-
-
-        }
-
-        @media only screen and (max-width: 600px) {
-         .custom-navbar {
-                height: auto;
-
-
-            }   
-        }
-    </style>
 
 </head>
 
@@ -75,7 +38,7 @@
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active  m-1 " aria-current="page" href="#">
-                            <p class="text-white m-0 p-0" >Sales Pipeline</p>
+                            <p class="text-white m-0 p-0">Sales Pipeline</p>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -97,21 +60,6 @@
                     <button class="btn btn-light shadow  mx-5 mt-1 " style="height:40px;font-size:small" type=" button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Create Lead
                     </button>
-
-                    <!-- <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Profile
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li> -->
-
                 </ul>
                 <ul class="navbar nav ">
 
@@ -132,8 +80,8 @@
 
     <div class="d-flex justify-content-end">
         <div class="d-flex flex-column">
-            <p class="m-0 text-dark" >Irfanul kalam Chowdhury</p>
-            <p class="m-0 text-dark" >Executive, Sales</p>
+            <p class="m-0 text-dark">Irfanul kalam Chowdhury</p>
+            <p class="m-0 text-dark">Executive, Sales</p>
         </div>
     </div>
 

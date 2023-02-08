@@ -1,3 +1,22 @@
+
+
+nav {
+  margin: 0;
+  padding: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.custom-navbar {
+  height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .custom-navbar {
+    height: auto;
+  }
+}
+
 .LogInPage_body {
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,7 +43,6 @@
     position: relative;
     opacity: 0.7;
   }
-
 }
 
 .LogInPage_container {
@@ -36,8 +54,6 @@
   border-radius: 15px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .LogInPage_form {
   display: flex;
