@@ -33,28 +33,35 @@
 
 <body>
 
-    <img src="../Assets/jpg/subaru_login_bg.jpg" alt="" class="imgContainer">
+    <div class="LogInPage_body">
+        <img src="../Assets/jpg/subaru_login_bg.jpg" alt="" class="LogInPage_imgContainer">
 
 
 
-    <div class="FormContainer">
-        <div class="FormContainerItems">
-            <h1 class="display-4 font-weight-bold text-white">SUBARU BANGLADESH</h1>
-        </div>
-
-
-        <div class="container">
+        <div class="LogInPage_FormContainer">
             <div class="FormContainerItems">
-                <form>
-                    <input type="text" placeholder="Username">
-                    <input type="password" placeholder="Password">
-                    <input type="submit" value="Submit">
-                </form>
+                <h1 class="display-4 font-weight-bold text-white">SUBARU BANGLADESH</h1>
+            </div>
+
+
+            <div class="LogInPage_container">
+                <div class="LogInPage_FormContainerItems">
+                    <form>
+                        <h6 class="display-6 font-weight-bold text-black mb-3">Log In</h6>
+                        <input type="text" class="LogInPage_input" placeholder="Username">
+                        <input type="password" class="LogInPage_input" placeholder="Password">
+                        <input type="submit" class="LogInPage_input"  value="Submit">
+                    </form>
+                </div>
+
             </div>
 
         </div>
 
     </div>
+
+
+
 
 
 
