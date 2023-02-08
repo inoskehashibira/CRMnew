@@ -33,14 +33,14 @@
 
 
     ?>
-
+    <!-- Pipeline container starts here -->
     <div class="container-fluid mt-3">
 
 
 
 
         <div class="row ">
-
+            <!----------------------------Lead Column---------------- -->
             <div class="col-sm">
                 <h5 class=" rounded  p-2 bg-secondary text-white text-center mb-3 ">Lead</h5>
 
@@ -82,6 +82,7 @@
 
 
             </div>
+            <!----------------------------Deal Column---------------- -->
             <div class="col-sm">
                 <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3 ">Deal</h5>
 
@@ -125,6 +126,7 @@
 
 
             </div>
+            <!----------------------------Quotation Column---------------- -->
             <div class="col-sm">
                 <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3 ">Quotation</h5>
 
@@ -168,6 +170,7 @@
 
 
             </div>
+            <!----------------------------Booking Column---------------- -->
             <div class="col-sm">
                 <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3  ">Booking</h5>
 
@@ -211,6 +214,7 @@
 
 
             </div>
+            <!----------------------------Item ready Column---------------- -->
             <div class="col-sm">
                 <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3 ">Item Ready</h5>
 
@@ -254,6 +258,7 @@
 
 
             </div>
+            <!----------------------------Won Column---------------- -->
             <div class="col-sm">
                 <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3  ">Won</h5>
 
@@ -297,6 +302,7 @@
 
 
             </div>
+            <!----------------------------Lost Column---------------- -->
             <div class="col-sm">
                 <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3  ">Lost</h5>
 
