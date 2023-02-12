@@ -16,7 +16,7 @@
     <!-- bundle min -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/style2.css">
 
     <title>Subaru CRM</title>
 
@@ -29,18 +29,43 @@
 </style>
 
 
-
-
 <body>
+    <div>
+        <img src="../Assets/jpg/subaru_login_bg.jpg" alt="" class="logInPage-img">
+        <div class="logInPage-imgoverlay"></div>
+    </div>
 
-    <div class="LogInPage_body">
+    <div class="loginpage-form-container">
+        <div>
+            <h4 class="text-white">REL MOTORS LIMITED</h4>
+        </div>
+
+        <!-- Form contents -->
+        <div class="bg-white rounded-3 p-4">
+            <div>
+                <h5 class="text-black mb-3">Log In</h5>
+                <form>
+                    <input type="text" class="form-control mb-2" placeholder="Email">
+                    <input type="password" class="form-control mb-3" placeholder="Password">
+                    <button type="submit" class="btn btn-darkblue btn-sm">Log In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="LogInPage_body" style="display:none">
         <img src="../Assets/jpg/subaru_login_bg.jpg" alt="" class="LogInPage_imgContainer">
+
 
 
         <!-- Login heading -->
         <div class="LogInPage_FormContainer">
             <div class="FormContainerItems">
-                <h1 class="display-4 font-weight-bold text-white">SUBARU BANGLADESH</h1>
+                <h4 class="text-white">REL MOTORS LIMITED</h4>
             </div>
 
             <!-- Form contents -->
@@ -60,12 +85,6 @@
         </div>
 
     </div>
-
-
-
-
-
-
 </body>
 
 </html>

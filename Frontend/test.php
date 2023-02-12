@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <!-- JQuery -->
@@ -14,8 +15,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- bundle min -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   
-    <!-- <link rel="stylesheet" href="Css/style.css"> -->
+
+    <link rel="stylesheet" href="Css/style2.css">
 
     <title>Subaru CRM</title>
 
@@ -23,101 +24,32 @@
 
 </head>
 
+<style>
+
+</style>
 
 
 <body>
+    <div>
+        <img src="../Assets/jpg/subaru_login_bg.jpg" alt="" class="logInPage-img">
+        <div class="logInPage-imgoverlay"></div>
+    </div>
 
-    <?php
+    <div class="loginpage-form-container">
+        <div>
+            <h4 class="text-white">REL MOTORS LIMITED</h4>
+        </div>
 
-    include "NavBar.php";
-
-
-    ?>
-
-
-    <div class="col-md-6   rounded shadow p-2 mx-auto">
-        <div class="container mt-5">
-            <h1 class="text-center">Lead Generation</h1>
-
-            <form action="../Backend/Created_Lead.php" method="post" class="row g-3">
-
-
-
-                <div class="col-md-6">
-                    <label htmlFor="firstName" class="form-label">
-                        Customer Name
-                    </label>
-                    <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
-                </div>
-
-                <div class="col-md-6">
-                    <label htmlFor="firstName" class="form-label">
-                        Mobile
-                    </label>
-                    <input type="text" class="form-control" name="Organization" id="Organization" required></input>
-                </div>
-
-                <div class="col-md-6 ">
-                    <label htmlFor="emailinfo" class="form-label">
-                        E-mail
-                    </label>
-                    <input type="email" class="form-control" id="emailinfo" name="Customer_Email" required></input>
-                </div>
-
-                <div class="col-md-6">
-                    <label htmlFor="firstName" class="form-label">
-                        Location
-                    </label>
-                    <input type="text" class="form-control" name="Organization" id="Organization" required></input>
-                </div>
-
-
-                <label htmlFor="firstName" class="form-label ">
-                    Interested Vehicle:
-                </label>
-                <!-- <select name="Tag" class="form-select" aria-label="Default select example">
-                        <option selected>select Vehicle</option>
-                        <option value="Facebook">Forester</option>
-                        <option value="twitter">Subaru XV</option>
-                        <option value="Instagram">Impreza</option>
-                    </select> -->
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Forester">
-                    <label class="form-check-label" for="Forester">
-                        Forester
-                    </label>
-                </div>
-
-
-                <div class="form-check">
-
-                    <input class="form-check-input" type="checkbox" value="" id="Subaru XV">
-                    <label class="form-check-label" for="Subaru XV">
-                        Subaru XV
-                    </label>
-
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Impreza">
-                    <label class="form-check-label" for="Impreza">
-                        Impreza
-                    </label>
-                </div>
-
-
-                <div class="row  justify-content-center align-items-center g-2">
-                    <div class="col-auto my-5">
-                        <button class="btn btn-primary" type="submit" name="submit">
-                            Create Lead
-                            <a href="../index.php"></a>
-                        </button>
-                    </div>
-                </div>
-
-            </form>
-
+        <!-- Form contents -->
+        <div class="bg-white rounded-3 p-4">
+            <div>
+                <h5 class="text-black mb-3">Log In</h5>
+                <form>
+                    <input type="text" class="form-control mb-2" placeholder="Email">
+                    <input type="password" class="form-control mb-3" placeholder="Password">
+                    <button type="submit" class="btn btn-darkblue btn-sm">Log In</button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -125,15 +57,34 @@
 
 
 
+    <div class="LogInPage_body" style="display:none">
+        <img src="../Assets/jpg/subaru_login_bg.jpg" alt="" class="LogInPage_imgContainer">
 
 
 
+        <!-- Login heading -->
+        <div class="LogInPage_FormContainer">
+            <div class="FormContainerItems">
+                <h4 class="text-white">REL MOTORS LIMITED</h4>
+            </div>
 
+            <!-- Form contents -->
+            <div class="LogInPage_container">
+                <div class="LogInPage_FormContainerItems">
+                    <form>
+                        <h6 class="display-6 font-weight-bold text-black mb-3">Log In</h6>
 
+                        <input type="text" class="LogInPage_input" placeholder="Username">
+                        <input type="password" class="LogInPage_input" placeholder="Password">
+                        <input type="submit" class="LogInPage_input" value="Submit">
+                    </form>
+                </div>
 
+            </div>
 
+        </div>
 
-
+    </div>
 </body>
 
 </html>

@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Popper js -->
@@ -15,12 +16,8 @@
     <!-- bundle min -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
-
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/style2.css">
     <title>Subaru CRM</title>
-
-
 </head>
 
 
@@ -57,45 +54,65 @@
                         </a>
                     </li>
 
-                    <button class="btn btn-light shadow  mx-5 mt-1 " style="height:40px;font-size:small" type=" button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <!-- <button class="btn btn-light shadow btn-sm  " type=" button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Create Lead
-                    </button>
+                    </button> -->
                 </ul>
                 <ul class="navbar nav ">
-
-
-
+                    <a href=""><button class="btn btn-light shadow btn-sm me-5 text-darkblue">Create Lead</button></a>
                 </ul>
 
-
                 <ul class="navbar nav ml-auto">
-
                     <a class="nav-link" href="#"><img src="../Assets//png//avatar.png" width="50" height="50" /></a>
-
                 </ul>
             </div>
         </div>
     </nav>
 
 
-    <div class="d-flex justify-content-end">
+
+    <div class="m-2 fs-1 text-darkblue ps-2 pe-2 sidebar-open">
+        <i class="fa-solid fa-bars text-center"></i>
+    </div>
+
+    <div class="bg-white p-3 sidebar border bg-light.bg-gradient" id="sidebar">
+        <div class="text-end mb-1" id="sidebar-close">
+            <i class="fa-solid fa-square-xmark text-darkblue fs-2"></i>
+        </div>
+        <div class="text-center">
+            <a href="">
+                <img src="../Assets/png/subaru_Logo.png" alt="" height="70">
+            </a>
+        </div>
+        <hr>
+        <div class="text-center">
+            <a href=""><button class="btn btn-darkblue shadow btn-sm">Create Lead</button></a>
+        </div>
+        <hr>
         <div class="d-flex flex-column">
-            <p class="m-0 text-dark">Irfanul kalam Chowdhury</p>
-            <p class="m-0 text-dark">Executive, Sales</p>
+            <a href="" class="text-darkblue font-weight-normal m-2" style="text-decoration: none;">Menu 1</a>
+            <a href="" class="text-darkblue font-weight-normal m-2" style="text-decoration: none;">Menu 1</a>
+            <a href="" class="text-darkblue font-weight-normal m-2" style="text-decoration: none;">Menu 1</a>
         </div>
     </div>
 
 
+    <div class="me-2" style="text-align: end;">
+        <p class="m-0 text-dark"><small>Irfanul kalam Chowdhury</small></p>
+        <p class="mb-2 text-dark"><small>Executive, Sales</small></p>
     </div>
 
 
+    </div>
 
-
-
-
-
-
-
+    <script>
+        $('.sidebar-open').on('click', function() {
+            document.getElementById('sidebar').style.display = "block";
+        });
+        $('#sidebar-close').on('click', function() {
+            document.getElementById('sidebar').style.display = "none";
+        });
+    </script>
 </body>
 
 </html>
