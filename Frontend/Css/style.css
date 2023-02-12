@@ -52,6 +52,7 @@ nav {
   height:100vh;
   width:80%;
   display: none;
+  background: #000;
 }
 
 @media only screen and (max-width: 764px) {

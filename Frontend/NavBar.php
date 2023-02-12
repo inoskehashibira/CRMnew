@@ -75,7 +75,7 @@
         <i class="fa-solid fa-bars text-center"></i>
     </div>
 
-    <div class="bg-white p-3 sidebar border bg-light.bg-gradient" id="sidebar">
+    <div class="bg-white p-3 sidebar border " id="sidebar">
         <div class="text-end mb-1" id="sidebar-close">
             <i class="fa-solid fa-square-xmark text-darkblue fs-2"></i>
         </div>
