@@ -23,6 +23,7 @@
 
 <body>
 
+    <!-- ------------------nav bar dextop view------------- -->
 
     <nav class=" navbar navbar-expand-lg navbar-light bg-info  custom-navbar">
         <div class="container-fluid">
@@ -59,7 +60,7 @@
                     </button> -->
                 </ul>
                 <ul class="navbar nav ">
-                    <a href=""><button class="btn btn-light shadow btn-sm me-5 text-darkblue">Create Lead</button></a>
+                    <a href="LeadCreation.php"><button class="btn btn-light shadow btn-sm me-5 text-darkblue">Create Lead</button></a>
                 </ul>
 
                 <ul class="navbar nav ml-auto">
@@ -75,6 +76,9 @@
         <i class="fa-solid fa-bars text-center"></i>
     </div>
 
+
+    <!-- ------------------Sidebar------------- -->
+
     <div class="bg-light border p-3 sidebar" id="sidebar">
         <div class="text-end mb-1" id="sidebar-close">
             <i class="fa-solid fa-square-xmark text-darkblue fs-2"></i>
@@ -86,7 +90,7 @@
         </div>
         <hr>
         <div class="text-center">
-            <a href=""><button class="btn btn-darkblue shadow btn-sm">Create Lead</button></a>
+            <a href="LeadCreation.php"><button class="btn btn-darkblue shadow btn-sm">Create Lead</button></a>
         </div>
         <hr>
         <div class="d-flex flex-column">
@@ -98,6 +102,7 @@
         </div>
     </div>
 
+    <!-- ------------------Text Headings------------- -->
 
     <div class="me-2" style="text-align: end;">
         <p class="m-0 text-dark"><small>Irfanul kalam Chowdhury</small></p>

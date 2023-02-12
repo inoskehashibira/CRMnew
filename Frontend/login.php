@@ -37,7 +37,7 @@
 
     <div class="loginpage-form-container">
         <div>
-            <h4 class="text-white">REL MOTORS LIMITED</h4>
+            <h4 class="text-white">Subaru Bangladesh</h4>
         </div>
 
         <!-- Form contents -->
@@ -65,7 +65,7 @@
         <!-- Login heading -->
         <div class="LogInPage_FormContainer">
             <div class="FormContainerItems">
-                <h4 class="text-white">REL MOTORS LIMITED</h4>
+                <h4 class="text-white">Subaru Bangladesh</h4>
             </div>
 
             <!-- Form contents -->
