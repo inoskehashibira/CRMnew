@@ -75,7 +75,7 @@
         <i class="fa-solid fa-bars text-center"></i>
     </div>
 
-    <div class="bg-white p-3 sidebar" id="sidebar">
+    <div class="bg-light border p-3 sidebar" id="sidebar">
         <div class="text-end mb-1" id="sidebar-close">
             <i class="fa-solid fa-square-xmark text-darkblue fs-2"></i>
         </div>
@@ -90,9 +90,11 @@
         </div>
         <hr>
         <div class="d-flex flex-column">
-            <a href="" class="text-darkblue font-weight-normal m-2" style="text-decoration: none;">Menu 1</a>
-            <a href="" class="text-darkblue font-weight-normal m-2" style="text-decoration: none;">Menu 1</a>
-            <a href="" class="text-darkblue font-weight-normal m-2" style="text-decoration: none;">Menu 1</a>
+            <a href="" class="text-darkblue font-weight-normal m-2" style="text-decoration: none;">Sales Pipeline</a>
+            <a href="" class="text-darkblue font-weight-normal m-2" style="text-decoration: none;">service Pipeline</a>
+            <a href="" class="text-darkblue font-weight-normal m-2" style="text-decoration: none;">Report</a>
+            <a href="" class="text-darkblue font-weight-normal m-2" style="text-decoration: none;">Ownership Management</a>
+
         </div>
     </div>
 
