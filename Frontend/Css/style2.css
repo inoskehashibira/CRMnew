@@ -1,0 +1,120 @@
+::selection {
+  color: #FFFFFF;
+  background: #3E5968;
+}
+body{
+  font-family: comfortaa;
+}
+.text-darkblue{
+ color: #3F4A60;; 
+}
+.btn-darkblue{
+  background-color: #3F4A60;
+  color: #FFFFFF;
+  filter: drop-shadow(0 3px 0.2rem #3F4A60);
+}
+.btn-darkblue:hover{
+  background-color: #FFFFFF;
+  color: #3F4A60;
+  font-weight: 500;
+  filter: drop-shadow(0 3px 0.4rem #3F4A60);
+}
+input{
+  padding: 0.2rem 0.3rem !important;
+}
+
+
+
+
+
+
+/* Navbar Start  */
+nav {
+  margin: 0;
+  padding: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.custom-navbar {
+  height: 50px;
+}
+
+.sidebar-open{
+  position:fixed; 
+  top:0;
+  display: none;
+}
+
+.sidebar{
+  position: fixed;
+  top:0;
+  height:100vh;
+  width:80%;
+  display: none;
+}
+
+@media only screen and (max-width: 764px) {
+  .custom-navbar {
+    height: auto;
+    display: none;
+  }
+  .sidebar-open{
+    display: block;
+  }
+}
+/* Navbar End  */
+
+
+/* Sales Pipeline Page  Start*/
+.sales-stage-item{
+  /* flex: 1 1 auto; */
+  padding-right:1%;
+}
+@media only screen and (max-width: 764px) {
+  .sales-stages > .d-flex{
+    flex-direction: column;
+  }
+}
+/* Sales Pipeline Page  End*/
+
+
+/* Login Page Start  */
+.logInPage-img {
+  width: 100%;
+  height: 100vh;
+  position:fixed;
+}
+.logInPage-imgoverlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(67,78,88, 0.7);
+  position:fixed;
+}
+.loginpage-form-container{
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  position: absolute; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 764px) {
+.logInPage-img {
+  width: auto !important;
+}
+}
+/* Login Page End  */
+
+
+/* @media (max-width: 764px) {
+  .container {
+    width: 90%;
+  }
+} */
+
+
+
