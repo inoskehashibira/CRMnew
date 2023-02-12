@@ -1,5 +1,30 @@
+::selection {
+  color: #FFFFFF;
+  background: #3E5968;
+}
+body{
+  font-family: comfortaa;
+}
+.text-darkblue{
+ color: #3F4A60;; 
+}
+.btn-darkblue{
+  background-color: #3F4A60;
+  color: #FFFFFF;
+  filter: drop-shadow(0 3px 0.2rem #3F4A60);
+}
+.btn-darkblue:hover{
+  background-color: #FFFFFF;
+  color: #3F4A60;
+  font-weight: 500;
+  filter: drop-shadow(0 3px 0.4rem #3F4A60);
+}
+input{
+  padding: 0.2rem 0.3rem !important;
+}
 
 
+/* Navbar Start  */
 nav {
   margin: 0;
   padding: 0;
@@ -11,11 +36,30 @@ nav {
   height: 50px;
 }
 
-@media only screen and (max-width: 600px) {
+.sidebar-open{
+  position:fixed; 
+  top:0;
+  display: none;
+}
+
+.sidebar{
+  position: fixed;
+  top:0;
+  height:100vh;
+  width:80%;
+  display: none;
+}
+
+@media only screen and (max-width: 764px) {
   .custom-navbar {
     height: auto;
+    display: none;
+  }
+  .sidebar-open{
+    display: block;
   }
 }
+/* Navbar End  */
 
 .LogInPage_body {
   background-size: cover;
@@ -97,4 +141,8 @@ nav {
   width: 100%;
   padding: 15px;
   text-align: center;
+}
+
+.bg_form_color{
+  color: #f2f2f2;
 }

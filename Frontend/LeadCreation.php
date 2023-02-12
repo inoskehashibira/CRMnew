@@ -37,7 +37,7 @@
     ?>
 
     <!-- Lead generation form contents -->
-    <div class="col-md-6  bg-light rounded shadow p-2 mx-auto">
+    <div class="col-md-6   rounded shadow p-2 mx-auto" >
         <h1 class="text-center">Lead Creation Form</h1>
         <!--------------------Form container-------------------->
         <div class="container mt-5">
