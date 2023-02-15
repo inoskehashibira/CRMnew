@@ -12,6 +12,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
+
+    <style>
+        .modal-lg {
+            max-width: 50rem;
+        }
+    </style>
+
+
     <title>Hello, world!</title>
 </head>
 
@@ -27,90 +35,225 @@
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered modal-lg ">
                 <div class="modal-content ">
-                    <div class="modal-header border">
+                    <div class="modal-header ">
                         <h5 class="modal-title" id="exampleModalLabel">
-                            <h5 class="modal-title text-center">New Lead Infomation</h5>
+                            <div class="modal-title text-center">Deal Form</div>
                         </h5>
-                        <!--  -->
-
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
 
+                        <!-- Buttons -->
+                        <div class="row mb-2 ">
+                            <div class="col ">
+                                <button type="button" class="btn btn-primary">
+                                    Transfer
+                                </button>
+                            </div>
+                            <div class="col d-flex justify-content-end">
+                                <button type="button" class="btn btn-primary">
+                                    Details Log
+                                </button>
+                            </div>
 
-                        <table class="table">
-                            <!-- <thead>
-                                <tr>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                            </thead> -->
-                            <tbody>
-                                <!-- Add 9 rows to the table -->
-                                <tr>
-                                    <th scope="row"></th>
-                                    <td>Name </td>
-                                    <td>Irfan</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"></th>
-                                    <td>Phone </td>
-                                    <td>017XXXXXXXXX</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"></th>
-                                    <td>Email </td>
-                                    <td>Irfanulkalam@azneo.com</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"></th>
-                                    <td>Address </td>
-                                    <td>5. jublee road, chittagongyjweyjwyjwj ruewrtuy wryw wrywry wryqet5rywery46urhrghrwghwqyq3 q35yqe5yqyr5y qery qeryq4eyw45tyw</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"></th>
-                                    <td>Interested </td>
-                                    <td>Subaru XV</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"></th>
-                                    <td>Referenced By </td>
-                                    <td>Sanaullah Chy</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"></th>
-                                    <td>Location </td>
-                                    <td>Chittagong</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"></th>
-                                    <td>Created By </td>
-                                    <td>Irfanul Kalam chy</td>
-                                </tr>
-                                <!-- Repeat 8 more times -->
-                            </tbody>
-                        </table>
-                        <div class="d-flex  mt-2 flex-column align-items-center">
-
-
-                            <h6 class="">Assign TO </h6>
-
-                            <select class="form-select mt-2 " style="width:50%;" name="category" onchange="document.getElementById('category-form').submit();">
-                                <option value="new" <?php if (isset($_POST["category"]) && $_POST["category"] == "new") echo "selected"; ?>>Person 1</option>
-                                <option value="intermediate" <?php if (isset($_POST["category"]) && $_POST["category"] == "intermediate") echo "selected"; ?>>Person 2</option>
-                                <option value="qualified" <?php if (isset($_POST["category"]) && $_POST["category"] == "qualified") echo "selected"; ?>>Person 3</option>
-                                <option value="delivered" <?php if (isset($_POST["category"]) && $_POST["category"] == "delivered") echo "selected"; ?>>Person 4</option>
-
-
-
-                            </select>
-
-                            <button type="button" class="btn btn-primary mt-2" style="width:fit-content;">Assigned</button>
                         </div>
 
+                        <!-- Forms -->
+                        <div class="row  ">
+                            <!-- Form 1 -->
+                            <div class="col-sm border">
+                                <div class="text-center">
+                                    <h5> Deal Information Form</h5>
+                                </div>
+                                <div class="row ">
+                                    <!-- Form 1 col 1 -->
+                                    <div class="col-sm">
+                                        <label class="form-check-label">
+                                            Inventory Status
+                                        </label>
+                                        <div class=" d-flex align-items-center">
+                                            <div class="form-check">
+
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label">
+                                                    Option 1
+                                                </label>
+
+                                            </div>
+                                            <div class="form-check mx-2">
+
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label">
+                                                    Option 1
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <label htmlFor="firstName" class="form-label ">
+                                                Interested Vehicle:
+                                            </label>
+
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Forester">
+                                                <label class="form-check-label" for="Forester">
+                                                    Forester
+                                                </label>
+                                            </div>
+
+
+                                            <div class="form-check">
+
+                                                <input class="form-check-input" type="checkbox" value="" id="Subaru XV">
+                                                <label class="form-check-label" for="Subaru XV">
+                                                    Subaru XV
+                                                </label>
+
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Impreza">
+                                                <label class="form-check-label" for="Impreza">
+                                                    Impreza
+                                                </label>
+                                            </div>
+                                            <div class="col-8 ">
+                                                <label for="exampleFormControlTextarea1" class="form-label"></span></label>
+
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Model Year</option>
+                                                    <option value="1">option 1</option>
+                                                    <option value="2">option 2</option>
+                                                    <option value="3">option 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-8 ">
+                                                <label for="exampleFormControlTextarea1" class="form-label"></label>
+
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Color</option>
+                                                    <option value="1">option 1</option>
+                                                    <option value="2">option 2</option>
+                                                    <option value="3">option 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-8">
+                                                <label htmlFor="firstName" class="form-label">
+                                                    Price per unit
+                                                </label>
+
+                                                <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
+                                            </div>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+                                    </div>
+                                    <!-- Form 1 col 2-->
+                                    <div class="col-sm">
+                                        <div class="col">
+                                            <label htmlFor="firstName" class="form-label">
+                                                Quantity
+                                            </label>
+
+                                            <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
+                                        </div>
+                                        <div class="col">
+                                            <label htmlFor="firstName" class="form-label">
+                                                Sub-Total Price
+                                            </label>
+
+                                            <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
+                                        </div>
+                                        <div class="col">
+                                            <label htmlFor="firstName" class="form-label">
+                                                Discount Amount
+                                            </label>
+
+                                            <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
+                                        </div>
+                                        <div class="col">
+                                            <label htmlFor="firstName" class="form-label">
+                                                Total Invoice Price
+                                            </label>
+
+                                            <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
+                                        </div>
+                                    </div>
+                                    <!-- Form 1 col 3-->
+                                    <!-- <div class="col">
+
+                                    </div> -->
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary mt-2 " style="width: 30%;">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+                            <!-- Form 2 -->
+                            <div class="col   border ">
+                                <div class="text-center">
+                                    <h5> Next Schedule activity</h5>
+                                </div>
+                                <div class=" d-flex justify-content-center">
+
+                                    <div class="row  w-50">
+                                        <!-- Form 2 col 1 -->
+                                        <div class="col-sm d-flex flex-column">
+                                            <label htmlFor="firstName" class="form-label">
+                                                DateTime
+                                            </label>
+
+                                            <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
+                                            <label htmlFor="firstName" class="form-label">
+                                                Notify Before
+                                            </label>
+
+                                            <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
+                                            <label htmlFor="firstName" class="form-label">
+                                                Remarks
+                                            </label>
+
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <div class="text-center">
+                                                <button type="button" class="btn btn-primary mt-2 " style="width: 50%;">
+                                                    Submit
+                                                </button>
+                                            </div>
+
+
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row m-2 ">
+                            <div class="col ">
+                                <button type="button" class="btn btn-danger">
+                                    Lost
+                                </button>
+                            </div>
+
+
+                        </div>
                     </div>
 
 
