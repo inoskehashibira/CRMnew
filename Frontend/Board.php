@@ -6,12 +6,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- This jquery CDN is required for Modals -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 
     <!-- <link rel="stylesheet" href="Css/style.css"> -->
 
     <title>Subaru CRM</title>
 
+    <script>
+        $(document).ready(function() {
+            $("#myBtn").click(function() {
+                $.ajax({
+                    url: "Modals/dealFormModal.php",
+                    cache: false,
+                    success: function(html) {
+                        $("#modalContainer").html(html);
+                        $("#dealFormModal").modal('show');
+                    }
+                });
+            });
+        });
+    </script>
 
+    <style>
+        a {
+            text-decoration: none !important;
+        }
+    </style>
 
 </head>
 
@@ -25,6 +49,14 @@
 
 
     ?>
+
+
+
+
+
+
+
+
     <!-- Pipeline container starts here -->
     <div class="container-fluid mt-3">
 
@@ -117,7 +149,13 @@
 
                         <div class="row">
                             <div class="col-9">
-                                <h5 class="card-title">Customer_Name</h5>
+                                <h5 class="card-title">
+                                    <a href="#" id="myBtn" class="link-dark">
+                                        Customer_Name
+                                    </a>
+
+
+                                </h5>
                             </div>
                             <div class="col-3">
 
@@ -147,6 +185,16 @@
                         <a href="frontend/lead_life_cycle.php?leadID=" class="card-link">Lead Details</a>
                     </div>
                 </div>
+
+
+                <!-- <button id="myBtn">Open Modal</button> -->
+
+
+
+
+                <!-- Add a div to hold the modal -->
+                <div id="modalContainer"></div>
+
 
 
             </div>
@@ -371,12 +419,16 @@
 
             </div>
 
+
+            <!----------------------------New Lead Modal block---------------- -->
+
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content ">
                         <div class="modal-header border">
                             <h5 class="modal-title" id="exampleModalLabel">
-                                <h5 class="modal-title text-center">New Lead Infomation</h5>
+                                <h5 class=" text-center">New Lead Infomation</h5>
+                                <div></div>
                             </h5>
                             <!--  -->
 
@@ -394,7 +446,6 @@
                                 </tr>
                             </thead> -->
                                 <tbody>
-                                    <!-- Add 9 rows to the table -->
                                     <tr>
                                         <th scope="row"></th>
                                         <td>Name </td>
@@ -465,8 +516,11 @@
             </div>
 
 
+
+
         </div>
     </div>
+
 
 
 
