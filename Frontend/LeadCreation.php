@@ -42,7 +42,7 @@
         <!--------------------Form container-------------------->
         <div class="container mt-5">
 
-            <form action="../Backend/Created_Lead.php" method="post" class="row g-3">
+            <form action="" method="post" class="row g-3">
 
 
                 <!-------------------- Mobile input field-------------------->
