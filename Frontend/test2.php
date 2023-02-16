@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Popper js -->
@@ -15,10 +17,28 @@
 
     <style>
         .modal-lg {
-            max-width: 50rem;
+            max-width: 70rem;
         }
     </style>
 
+    <script>
+        $("#myButton").click(function() {
+
+            // Send an AJAX request to retrieve the contents of modal.php
+            $.ajax({
+                url: "Modals/testModal.php",
+                success: function(data) {
+
+                    // Create a new div element and set its HTML to the response data
+                    var modalDiv = $("<div>").html(data);
+
+                    // Use the modal() function to show the modal
+                    modalDiv.modal("show");
+                }
+            });
+
+        });
+    </script>
 
     <title>Hello, world!</title>
 </head>
@@ -32,9 +52,11 @@
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Modal
         </button>
-
+        <button type="button" id="myButton" class="btn btn-primary" >
+            Other File
+        </button>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class=" modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg ">
                 <div class="modal-content ">
                     <div class="modal-header ">
@@ -67,13 +89,13 @@
                                 <div class="text-center">
                                     <h5> Deal Information Form</h5>
                                 </div>
-                                <div class="row ">
+                                <div class="row border">
                                     <!-- Form 1 col 1 -->
-                                    <div class="col-sm">
+                                    <div class="col-sm border">
                                         <label class="form-check-label">
                                             Inventory Status
                                         </label>
-                                        <div class=" d-flex align-items-center">
+                                        <div class=" d-flex flex-column ">
                                             <div class="form-check">
 
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -82,7 +104,7 @@
                                                 </label>
 
                                             </div>
-                                            <div class="form-check mx-2">
+                                            <div class="form-check ">
 
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                                 <label class="form-check-label">
@@ -120,7 +142,7 @@
                                                     Impreza
                                                 </label>
                                             </div>
-                                            <div class="col-8 ">
+                                            <div class="col-sm ">
                                                 <label for="exampleFormControlTextarea1" class="form-label"></span></label>
 
                                                 <select class="form-select" aria-label="Default select example">
@@ -130,7 +152,7 @@
                                                     <option value="3">option 3</option>
                                                 </select>
                                             </div>
-                                            <div class="col-8 ">
+                                            <div class="col-sm ">
                                                 <label for="exampleFormControlTextarea1" class="form-label"></label>
 
                                                 <select class="form-select" aria-label="Default select example">
@@ -140,7 +162,7 @@
                                                     <option value="3">option 3</option>
                                                 </select>
                                             </div>
-                                            <div class="col-8">
+                                            <div class="col-sm">
                                                 <label htmlFor="firstName" class="form-label">
                                                     Price per unit
                                                 </label>
@@ -160,7 +182,7 @@
 
                                     </div>
                                     <!-- Form 1 col 2-->
-                                    <div class="col-sm">
+                                    <div class="col-sm border">
                                         <div class="col">
                                             <label htmlFor="firstName" class="form-label">
                                                 Quantity
@@ -203,43 +225,41 @@
 
                             </div>
                             <!-- Form 2 -->
-                            <div class="col   border ">
+                            <div class="col-sm  border ">
                                 <div class="text-center">
                                     <h5> Next Schedule activity</h5>
                                 </div>
-                                <div class=" d-flex justify-content-center">
 
-                                    <div class="row  w-50">
-                                        <!-- Form 2 col 1 -->
-                                        <div class="col-sm d-flex flex-column">
-                                            <label htmlFor="firstName" class="form-label">
-                                                DateTime
-                                            </label>
+                                <div class="row ">
+                                    <!-- Form 2 col 1 -->
+                                    <div class="col-sm ">
+                                        <label htmlFor="firstName" class="form-label">
+                                            DateTime
+                                        </label>
 
-                                            <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
-                                            <label htmlFor="firstName" class="form-label">
-                                                Notify Before
-                                            </label>
+                                        <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
+                                        <label htmlFor="firstName" class="form-label">
+                                            Notify Before
+                                        </label>
 
-                                            <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
-                                            <label htmlFor="firstName" class="form-label">
-                                                Remarks
-                                            </label>
+                                        <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
+                                        <label htmlFor="firstName" class="form-label">
+                                            Remarks
+                                        </label>
 
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-primary mt-2 " style="width: 50%;">
-                                                    Submit
-                                                </button>
-                                            </div>
-
-
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        <div class="text-center">
+                                            <button type="button" class="btn btn-primary mt-2 " style="width: 50%;">
+                                                save next schedule
+                                            </button>
                                         </div>
 
 
-
-
                                     </div>
+
+
+
+
                                 </div>
 
                             </div>
@@ -260,14 +280,14 @@
 
                 </div>
             </div>
-        </div>
+    </div>
 
 
 
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
