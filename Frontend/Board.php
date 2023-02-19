@@ -1,3 +1,8 @@
+<?php
+$approvalStatus = 0;
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,30 +11,46 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+
+
     <!-- This jquery CDN is required for Modals -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 
-    <!-- <link rel="stylesheet" href="Css/style.css"> -->
+    <!-- <link rel="stylesheet" href="Css/style2.css"> -->
 
     <title>Subaru CRM</title>
     <!-- Ajax call to Deal form modal -->
     <script>
-        $(document).ready(function() {
-            $("#myBtn").click(function() {
-                $.ajax({
-                    url: "Modals/dealFormModal.php",
-                    cache: false,
-                    success: function(html) {
-                        $("#modalContainer").html(html);
-                        $("#dealFormModal").modal('show');
-                    }
-                });
+        function changeVariable(columnName, x) {
+            var myObject = {
+                deal: "dealFormModal",
+                deal1: "value2",
+                key3: "value3"
+            };
+            if (x % 2 != 0) {
+                var temp = "#" + "dealFormModal";
+            } else {
+                var temp = "#" + "dealFormApprovalModal";
+            }
+            console.log(x);
+            $.ajax({
+                url: "Modals/dealFormModal.php",
+                cache: false,
+                success: function(html) {
+                    $("#modalContainer").html(html);
+                    $(temp).modal('show');
+                }
             });
-        });
+        }
     </script>
+
+
+
     <!-- Ajax call to new lead details form modal -->
 
     <script>
@@ -43,6 +64,10 @@
                         $("#newLeadModal").modal('show');
                     }
                 });
+
+                var id = $('#newLeadModal').find('.modal-content').attr('ShowTab');
+                console.log(id);
+
             });
         });
     </script>
@@ -50,6 +75,10 @@
     <style>
         a {
             text-decoration: none !important;
+        }
+
+        body {
+            font-family: 'Agency FB';
         }
     </style>
 
@@ -74,7 +103,7 @@
 
 
     <!-- Pipeline container starts here -->
-    <div class="container-fluid mt-3">
+    <div class="container-fluid mt-3 ">
 
         <!-- <div class="d-block d-sm-none">
             <div class="dropdown">
@@ -175,8 +204,11 @@
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark">
+                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable(1)">
                                         Customer_Name
+                                        <?php
+                                        $approvalStatus = 1;
+                                        ?>
                                     </a>
 
 
@@ -210,7 +242,96 @@
                         <a href="" class="card-link">Lead Details</a>
                     </div>
                 </div>
+                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;">
 
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">
+                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable(2)">
+                                        Customer_Name
+                                        <?php
+                                        $approvalStatus = 2;
+                                        ?>
+                                    </a>
+
+
+                                </h5>
+                            </div>
+                            <div class=" col-3">
+
+                                <div class="dropdown">
+                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
+                        <p class="card-text">
+                            Customer_Email
+                        </p>
+                        <a href="" class="card-link">Lead Details</a>
+                    </div>
+                </div>
+                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;">
+
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">
+                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable(3)">
+                                        Customer_Name
+                                        <?php
+                                        $approvalStatus = 3;
+                                        ?>
+                                    </a>
+
+
+                                </h5>
+                            </div>
+                            <div class="col-3">
+
+                                <div class="dropdown">
+                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
+                        <p class="card-text">
+                            Customer_Email
+                        </p>
+                        <a href="" class="card-link">Lead Details</a>
+                    </div>
+                </div>
 
                 <!-- <button id="myBtn">Open Modal</button> -->
 

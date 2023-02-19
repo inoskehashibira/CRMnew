@@ -36,7 +36,7 @@
 
 
 
-    <div class=" modal fade" id="dealFormModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class=" modal fade" id="quotationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg ">
             <div class="modal-content ">
                 <div class="modal-header ">
@@ -236,51 +236,7 @@
 
                         </div>
                         <!-- Form 2 -->
-                        <div class="col-md-3 ms-lg-5  shadow border ">
-                            <div class="text-center">
-                                <h5> Next Schedule activity</h5>
-                            </div>
 
-                            <div class="row ">
-                                <!-- Form 2 col 1 -->
-                                <div class="col-sm ">
-                                    <label htmlFor="firstName" class="form-label">
-                                        DateTime
-                                    </label>
-
-                                    <input type="text" class="form-control" name="  " id="  " required></input>
-
-                                    <div class="col-sm ">
-                                        <label for="exampleFormControlTextarea1" class="form-label"></label>
-
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Notify Before</option>
-                                            <option value="1">10 mins</option>
-                                            <option value="2">20 mins</option>
-                                            <option value="3">30 mins</option>
-                                        </select>
-                                    </div>
-
-                                    <label htmlFor="firstName" class="form-label">
-                                        Remarks
-                                    </label>
-
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    <div class="text-center">
-                                        <button type="button" class="btn btn-primary mt-2 ">
-                                            save next schedule
-                                        </button>
-                                    </div>
-
-
-                                </div>
-
-
-
-
-                            </div>
-
-                        </div>
                     </div>
 
                     <div class="row m-2 ">

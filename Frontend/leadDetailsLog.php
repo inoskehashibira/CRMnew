@@ -111,19 +111,16 @@
 
         </div>
 
-        <div class="container-fluid mt-3 mx-2">
-            <div class="card text-start shadow">
-                <div class="card-body">
-                    <h4 class="card-title text-center">Lead Activity</h4>
+        <div class="container mt-3  border d-flex flex-column justify-content-center">
+                  
                     <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
+                                <th scope="col">A</th>
+                                <th scope="col">B</th>
+                                <th scope="col">C</th>
+                                <th scope="col">D</th>
 
                             </tr>
                         </thead>
@@ -134,7 +131,7 @@
                                 <td>Otto</td>
                                 <td>@mdo</td>
                                 <td>Otto</td>
-                                <td>@mdo</td>
+
 
                             </tr>
                             <tr>
@@ -143,7 +140,6 @@
                                 <td>Otto</td>
                                 <td>@mdo</td>
                                 <td>Otto</td>
-                                <td>@mdo</td>
 
                             </tr>
                             <tr>
@@ -152,68 +148,13 @@
                                 <td>Otto</td>
                                 <td>@mdo</td>
                                 <td>Otto</td>
-                                <td>@mdo</td>
 
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
 
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-
-                            </tr>
                         </tbody>
                     </table>
 
-                </div>
-            </div>
+                
+            
         </div>
 
     </div>
