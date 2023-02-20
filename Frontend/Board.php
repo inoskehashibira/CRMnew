@@ -26,26 +26,74 @@ $approvalStatus = 0;
     <title>Subaru CRM</title>
     <!-- Ajax call to Deal form modal -->
     <script>
-        function changeVariable(columnName, x) {
-            var myObject = {
-                deal: "dealFormModal",
-                deal1: "value2",
+        function changeVariable(columnName, modalID, data) {
+            var modalLocation = {
+                new: "newLeadModal.php",
+                deal: "dealFormModal.php",
                 key3: "value3"
             };
-            if (x % 2 != 0) {
-                var temp = "#" + "dealFormModal";
+
+            // modalID = "newLeadModal";
+            // modalID = "#" + modalID;
+
+            if (data['approvalStatus']) {
+                var modalID = "#" + "dealFormApprovalModal";
             } else {
-                var temp = "#" + "dealFormApprovalModal";
+                var modalID = "#" + "dealFormModal";
             }
-            console.log(x);
+
+            var modalUrl = "Modals/" + modalLocation[columnName];
+
+            console.log(data['approvalStatus']);
+
             $.ajax({
-                url: "Modals/dealFormModal.php",
+                url: modalUrl,
                 cache: false,
                 success: function(html) {
                     $("#modalContainer").html(html);
-                    $(temp).modal('show');
+                    $(modalID).modal('show');
                 }
             });
+        }
+
+
+
+
+        // function changeVariable2(columnName, x) {
+        //     var myObject = {
+        //         deal: "dealFormModal",
+        //         deal1: "value2",
+        //         key3: "value3"
+        //     };
+
+        //     console.log(x);
+        //     $.ajax({
+        //         url: "Modals/dealFormModal.php",
+        //         cache: false,
+        //         success: function(html) {
+        //             $("#modalContainer").html(html);
+        //             $(temp).modal('show');
+        //         }
+        //     });
+        // }
+
+        function modalIdBuilder(data) {
+            var modalID = null;
+
+            if (data.hasOwnProperty('approvalStatus')) {
+                if (data['approvalStatus']) {
+                    modalID = "#" + "dealFormApprovalModal";
+                } else {
+                    modalID = "#" + "dealFormModal";
+                }
+
+            } else if (data === null){
+
+            }
+
+
+
+
         }
     </script>
 
@@ -53,7 +101,7 @@ $approvalStatus = 0;
 
     <!-- Ajax call to new lead details form modal -->
 
-    <script>
+    <!-- <script>
         $(document).ready(function() {
             $("#newLeadModalTrigger").click(function() {
                 $.ajax({
@@ -70,7 +118,7 @@ $approvalStatus = 0;
 
             });
         });
-    </script>
+    </script> -->
 
     <style>
         a {
@@ -105,20 +153,8 @@ $approvalStatus = 0;
     <!-- Pipeline container starts here -->
     <div class="container-fluid mt-3 ">
 
-        <!-- <div class="d-block d-sm-none">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Lead Category
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">New</a>
-                    <a class="dropdown-item" href="#">Intermeidate</a>
-                    <a class="dropdown-item" href="#">Qualified</a>
-                    <a class="dropdown-item" href="#">Delivered</a>
-                    <a class="dropdown-item" href="#">lost</a>
-                </div>
-            </div>
-        </div> -->
+        <!---------------------------- DropDown for Mobile view ---------------- -->
+
         <div class="col mb-3 d-block d-sm-none">
             <form method="post" action="" id="category-form">
                 <select class="form-select" name="category" onchange="document.getElementById('category-form').submit();">
@@ -150,7 +186,7 @@ $approvalStatus = 0;
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a id="newLeadModalTrigger"> Customer_Name
+                                    <a id="newLeadModalTrigger" onclick="changeVariable('new', 'newLeadModal')"> Customer_Name
                                     </a>
 
 
@@ -204,7 +240,7 @@ $approvalStatus = 0;
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable(1)">
+                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable('deal', 'dealFormModal',{'approvalStatus':true} )">
                                         Customer_Name
                                         <?php
                                         $approvalStatus = 1;
@@ -249,7 +285,7 @@ $approvalStatus = 0;
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable(2)">
+                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable('deal', 'dealFormModal',{'approvalStatus':false} )">
                                         Customer_Name
                                         <?php
                                         $approvalStatus = 2;
@@ -294,7 +330,7 @@ $approvalStatus = 0;
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable(3)">
+                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable('deal', 'dealFormModal',{'approvalStatus':true} )">
                                         Customer_Name
                                         <?php
                                         $approvalStatus = 3;
