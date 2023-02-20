@@ -25,8 +25,6 @@ $approvalStatus = 0;
     <title>Subaru CRM</title>
     <!-- Ajax call to Deal form modal -->
     <script>
-
-
         function changeVariable(data) {
             var mObj = modalIdBuilder(data);
             var modalUrl = mObj.mUrl;
@@ -57,7 +55,6 @@ $approvalStatus = 0;
                 }
             });
         }
-
     </script>
 
 
@@ -324,7 +321,7 @@ $approvalStatus = 0;
 
                         <div class="row">
                             <div class="col-9">
-                                <h5 class="card-title"> <a href="#" id="myBtn" class="link-dark" onclick="changeVariable({'col':'quotation'} )">
+                                <h5 class="card-title"> <a href="#" id="myBtn" class="link-dark" onclick="changeVariable({'col':'quotation','validity':true} )">
                                         Customer_Name
 
                                     </a></h5>
@@ -357,7 +354,44 @@ $approvalStatus = 0;
                         <a href="" class="card-link">Lead Details</a>
                     </div>
                 </div>
+                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
+                    <div class="card-body">
 
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title"> <a href="#" id="myBtn" class="link-dark" onclick="changeVariable({'col':'quotation','validity':false} )">
+                                        Customer_Name
+
+                                    </a></h5>
+                            </div>
+                            <div class="col-3">
+
+                                <div class="dropdown">
+                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
+                        <p class="card-text">
+                            Customer_Email
+                        </p>
+                        <a href="" class="card-link">Lead Details</a>
+                    </div>
+                </div>
                 <!-- Add a div to hold the modal -->
                 <div id="modalContainer"></div>
 

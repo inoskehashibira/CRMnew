@@ -1,4 +1,4 @@
-  function modalIdBuilder(data) {
+function modalIdBuilder(data) {
   //modal result object
   var result = {
     mID: null,
@@ -16,6 +16,7 @@
     dealFormModal1: "dealFormModal",
     dealFormModal2: "dealFormApprovalModal",
     quotation: "quotationModal",
+    quotation2: "quotationModalWithValidity",
   };
 
   // creating Modal URL
@@ -27,6 +28,13 @@
       result.mID = "#" + modalIds.dealFormModal1;
     } else {
       result.mID = "#" + modalIds.dealFormModal2;
+    }
+     } 
+    else if (data.hasOwnProperty("validity")) {
+    if (data["validity"]) {
+      result.mID = "#" + modalIds.quotation2;
+    } else {
+      result.mID = "#" + modalIds.quotation;
     }
   } else {
     result.mID = "#" + modalIds[data["col"]];

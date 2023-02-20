@@ -350,9 +350,9 @@
 
                             <div class="text-center mt-2 ">
                                 <div class="container  d-flex flex-column justify-content-center " style="width: 30%;">
-                                    <h5> Offer validity days
+                                    <h5> Offer validity days: 15 days
                                     </h5>
-                                    <input type="number" class="form-control " name="  " id="  " required></input>
+
 
                                 </div>
 
