@@ -18,6 +18,11 @@ $approvalStatus = 0;
     <!-- This jquery CDN is required for Modals -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="../Frontend/scripts.js">
+        // import {
+        //     printer
+        // } from '../Frontend/scripts.js';
+    </script>
 
 
 
@@ -26,29 +31,32 @@ $approvalStatus = 0;
     <title>Subaru CRM</title>
     <!-- Ajax call to Deal form modal -->
     <script>
-        function changeVariable(columnName, modalID, data) {
-            var modalLocation = {
-                new: "newLeadModal.php",
-                deal: "dealFormModal.php",
-                key3: "value3"
+
+
+        function changeVariable(data) {
+            var mObj = modalIdBuilder(data);
+            var modalUrl = mObj.mUrl;
+            var modalID = mObj.mID;
+
+            console.log(mObj)
+            // var myObject ="someting";
+
+
+            var myObject = {
+                id: 1,
+                name: "someting"
             };
-
-            // modalID = "newLeadModal";
-            // modalID = "#" + modalID;
-
-            if (data['approvalStatus']) {
-                var modalID = "#" + "dealFormApprovalModal";
-            } else {
-                var modalID = "#" + "dealFormModal";
-            }
-
-            var modalUrl = "Modals/" + modalLocation[columnName];
-
-            console.log(data['approvalStatus']);
 
             $.ajax({
                 url: modalUrl,
+
                 cache: false,
+
+                type: 'POST',
+                data: {
+                    myObject: JSON.stringify(myObject)
+                },
+
                 success: function(html) {
                     $("#modalContainer").html(html);
                     $(modalID).modal('show');
@@ -58,67 +66,48 @@ $approvalStatus = 0;
 
 
 
+        // function modalIdBuilder(data) {
+        //     //modal result object
+        //     var result = {
+        //         mID: null,
+        //         mUrl: null
+        //     };
+        //     //predefined modal locations
+        //     var modalLocations = {
+        //         new: "newLeadModal.php",
+        //         deal: "dealFormModal.php",
+        //         quotation: "quotationModal.php"
 
-        // function changeVariable2(columnName, x) {
-        //     var myObject = {
-        //         deal: "dealFormModal",
-        //         deal1: "value2",
-        //         key3: "value3"
+        //     };
+        //     //predefined modal ids
+        //     var modalIds = {
+        //         new: "newLeadModal",
+        //         dealFormModal1: "dealFormModal",
+        //         dealFormModal2: "dealFormApprovalModal",
+        //         quotation: "quotationModal"
+
         //     };
 
-        //     console.log(x);
-        //     $.ajax({
-        //         url: "Modals/dealFormModal.php",
-        //         cache: false,
-        //         success: function(html) {
-        //             $("#modalContainer").html(html);
-        //             $(temp).modal('show');
+        //     // creating Modal URL
+        //     result.mUrl = "Modals/" + modalLocations[data['col']];
+
+        //     //creating modal ID based on conditions
+        //     if (data.hasOwnProperty('approvalStatus')) {
+        //         if (data['approvalStatus']) {
+        //             result.mID = "#" + modalIds.dealFormModal1;
+        //         } else {
+        //             result.mID = "#" + modalIds.dealFormModal2;
         //         }
-        //     });
+
+        //     } else {
+        //         result.mID = "#" + modalIds[data['col']];
+        //     }
+
+        //     return result;
+
         // }
-
-        function modalIdBuilder(data) {
-            var modalID = null;
-
-            if (data.hasOwnProperty('approvalStatus')) {
-                if (data['approvalStatus']) {
-                    modalID = "#" + "dealFormApprovalModal";
-                } else {
-                    modalID = "#" + "dealFormModal";
-                }
-
-            } else if (data === null){
-
-            }
-
-
-
-
-        }
     </script>
 
-
-
-    <!-- Ajax call to new lead details form modal -->
-
-    <!-- <script>
-        $(document).ready(function() {
-            $("#newLeadModalTrigger").click(function() {
-                $.ajax({
-                    url: "Modals/newLeadModal.php",
-                    cache: false,
-                    success: function(html) {
-                        $("#modalContainer2").html(html);
-                        $("#newLeadModal").modal('show');
-                    }
-                });
-
-                var id = $('#newLeadModal').find('.modal-content').attr('ShowTab');
-                console.log(id);
-
-            });
-        });
-    </script> -->
 
     <style>
         a {
@@ -186,7 +175,7 @@ $approvalStatus = 0;
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a id="newLeadModalTrigger" onclick="changeVariable('new', 'newLeadModal')"> Customer_Name
+                                    <a id="newLeadModalTrigger" onclick="changeVariable({'col':'new'} )"> Customer_Name
                                     </a>
 
 
@@ -232,19 +221,15 @@ $approvalStatus = 0;
             <div class="col-sm">
                 <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3 ">Deal</h5>
 
-
-
                 <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;">
                     <div class="card-body">
 
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable('deal', 'dealFormModal',{'approvalStatus':true} )">
+                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable({'approvalStatus':true,'col':'deal'} )">
                                         Customer_Name
-                                        <?php
-                                        $approvalStatus = 1;
-                                        ?>
+
                                     </a>
 
 
@@ -285,11 +270,9 @@ $approvalStatus = 0;
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable('deal', 'dealFormModal',{'approvalStatus':false} )">
+                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable({'approvalStatus':false,'col':'deal'} )">
                                         Customer_Name
-                                        <?php
-                                        $approvalStatus = 2;
-                                        ?>
+
                                     </a>
 
 
@@ -330,11 +313,9 @@ $approvalStatus = 0;
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable('deal', 'dealFormModal',{'approvalStatus':true} )">
+                                    <a href="#" id="myBtn" class="link-dark" onclick="changeVariable({'approvalStatus':true,'col':'deal'} )">
                                         Customer_Name
-                                        <?php
-                                        $approvalStatus = 3;
-                                        ?>
+
                                     </a>
 
 
@@ -369,7 +350,7 @@ $approvalStatus = 0;
                     </div>
                 </div>
 
-                <!-- <button id="myBtn">Open Modal</button> -->
+
 
 
 
@@ -391,7 +372,10 @@ $approvalStatus = 0;
 
                         <div class="row">
                             <div class="col-9">
-                                <h5 class="card-title">Customer_Name</h5>
+                                <h5 class="card-title"> <a href="#" id="myBtn" class="link-dark" onclick="changeVariable({'col':'quotation'} )">
+                                        Customer_Name
+
+                                    </a></h5>
                             </div>
                             <div class="col-3">
 
@@ -421,6 +405,9 @@ $approvalStatus = 0;
                         <a href="" class="card-link">Lead Details</a>
                     </div>
                 </div>
+
+                <!-- Add a div to hold the modal -->
+                <div id="modalContainer"></div>
 
 
             </div>

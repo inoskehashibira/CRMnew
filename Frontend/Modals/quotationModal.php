@@ -15,9 +15,7 @@
     <!-- bundle min -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
-        .modal-lg {
-            max-width: 70rem;
-        }
+        .modal-lg {}
 
         td {
             width: 200px;
@@ -36,6 +34,7 @@
 
 
 
+
     <div class=" modal fade" id="quotationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg ">
             <div class="modal-content ">
@@ -49,225 +48,6 @@
 
                     <!-- Buttons -->
                     <div class="row mb-2 ">
-                        <div class="col ">
-                            <button type="button" class="btn btn-primary">
-                                Transfer
-                            </button>
-                        </div>
-                        <div class="col d-flex justify-content-end">
-                            <button type="button" class="btn btn-primary">
-                                Details Log
-                            </button>
-                        </div>
-
-                    </div>
-
-                    <!-- Forms -->
-                    <div class="row  ">
-                        <!-- Form 1 -->
-                        <div class="col-md-8 ms-lg-3  shadow ">
-                            <div class="text-center">
-                                <h5> Deal Information Form</h5>
-                            </div>
-                            <div class="row ">
-                                <!-- Form 1 col 1 -->
-                                <div class="col-sm ">
-                                    <label class="form-check-label">
-                                        Inventory Status
-                                    </label>
-                                    <div class=" d-flex flex-column ">
-                                        <div class="form-check">
-
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label">
-                                                Available
-                                            </label>
-
-                                        </div>
-                                        <div class="form-check ">
-
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label">
-                                                Not Available
-                                            </label>
-
-                                        </div>
-                                    </div>
-                                    <div class="col">
-
-                                        <div class="">
-                                            <label htmlFor="firstName" class="form-label ">
-                                                Interested Vehicle:
-                                            </label>
-
-                                            <div class="form-check ">
-
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label">
-                                                    subaru Forester 20-s
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check ">
-
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label">
-                                                    subaru Forester 20-s
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check ">
-
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label">
-                                                    subaru XV 16i-s
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check ">
-
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label">
-                                                    subaru XV 16i
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check ">
-
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label">
-                                                    subaru Impreza 16i-s
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check ">
-
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label">
-                                                    subaru Forester 16i
-
-                                                </label>
-
-                                            </div>
-
-                                        </div>
-
-
-                                        <div class="col-sm ">
-                                            <label for="exampleFormControlTextarea1" class="form-label"></span></label>
-
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Model Year</option>
-                                                <option value="1">option 1</option>
-                                                <option value="2">30 mins</option>
-                                                <option value="3">30 mins</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm ">
-                                            <label for="exampleFormControlTextarea1" class="form-label"></label>
-
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Color</option>
-                                                <option value="1">option 1</option>
-                                                <option value="2">option 2</option>
-                                                <option value="3">option 3</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm">
-                                            <label htmlFor="firstName" class="form-label mb-2">
-                                                Price per unit
-                                            </label>
-
-                                            <input type="text" class="form-control" name="  " id="  " required></input>
-                                        </div>
-
-
-                                    </div>
-
-
-
-
-
-
-
-
-                                </div>
-                                <!-- Form 1 col 2-->
-                                <div class="col-sm border-start">
-                                    <div class="col">
-                                        <label htmlFor="firstName" class="form-label">
-                                            Quantity
-                                        </label>
-
-                                        <input type="text" class="form-control" name="  " id="  " required></input>
-                                    </div>
-                                    <div class="col">
-                                        <label htmlFor="firstName" class="form-label">
-                                            Sub-Total Price
-                                        </label>
-
-                                        <input type="text" class="form-control" name="  " id="  " required></input>
-                                    </div>
-                                    <div class="col">
-                                        <label htmlFor="firstName" class="form-label">
-                                            Discount Amount
-                                        </label>
-
-                                        <input type="text" class="form-control" name="  " id="  " required></input>
-                                    </div>
-                                    <div class="col">
-                                        <label htmlFor="firstName" class="form-label">
-                                            Total Invoice Price
-                                        </label>
-
-                                        <input type="text" class="form-control" name="  " id="  " required></input>
-                                    </div>
-                                </div>
-                                <!-- Form 1 col 3-->
-                                <!-- <div class="col">
-
-                                    </div> -->
-                            </div>
-                            <div class="text-center">
-                                <button type="button" class="btn btn-primary m-2 " style="width: 30%;">
-                                    Submit
-                                </button>
-                            </div>
-
-                        </div>
-                        <!-- Form 2 -->
-
-                    </div>
-
-                    <div class="row m-2 ">
-                        <div class="col ">
-                            <button type="button" class="btn btn-danger">
-                                Lost
-                            </button>
-                        </div>
-
-
-                    </div>
-                </div>
-
-
-
-            </div>
-        </div>
-    </div>
-    <div class=" modal fade" id="dealFormApprovalModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg ">
-            <div class="modal-content ">
-                <div class="modal-header ">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                        <div class="modal-title text-center">Deal Form</div>
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-
-                    <!-- Buttons -->
-                    <div class="row mb-2 ">
 
                         <div class="col d-flex justify-content-end">
                             <button type="button" class="btn btn-primary">
@@ -280,9 +60,10 @@
                     <!-- Forms -->
                     <div class="row  ">
                         <!-- Form 1 -->
-                        <div class="col-md-8 ms-lg-3  shadow ">
+                        <div class="col   shadow ">
 
-                            <div class="row ">
+
+                            <div class="row   ">
 
                                 <!-- Form 1 col 1 -->
                                 <div class="col-sm ">
@@ -396,7 +177,15 @@
                                 </div>
 
                             </div>
-                            <div class="text-center">
+
+                            <div class="text-center mt-2 ">
+                                <div class="container  d-flex flex-column justify-content-center " style="width: 30%;">
+                                    <h5> Offer validity days
+                                    </h5>
+                                    <input type="number" class="form-control " name="  " id="  " required></input>
+
+                                </div>
+
                                 <button type="button" class="btn btn-primary m-2 " style="width: 30%;">
                                     Approved
                                 </button>
@@ -404,34 +193,7 @@
 
                         </div>
                         <!-- Form 2 -->
-                        <div class="col-md-3 ms-lg-5  shadow border ">
 
-
-                            <div class=" row ">
-                                <!-- Form 2 col 1 -->
-                                <div class="col-sm ">
-
-
-                                    <label htmlFor="firstName" class="form-label">
-                                        Remarks
-                                    </label>
-
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                                    <div class="text-center">
-                                        <button type="button" class="btn btn-danger mt-2 ">
-                                            Rejected
-                                        </button>
-                                    </div>
-
-
-                                </div>
-
-
-
-
-                            </div>
-
-                        </div>
                     </div>
 
 
@@ -443,7 +205,175 @@
         </div>
     </div>
 
+    <div class=" modal fade" id="quotationModalWithValidity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <div class="modal-title text-center">Deal Form</div>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
+                    <!-- Buttons -->
+                    <div class="row mb-2 ">
+
+                        <div class="col d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary">
+                                Details Log
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- Forms -->
+                    <div class="row  ">
+                        <!-- Form 1 -->
+                        <div class="col   shadow ">
+
+
+                            <div class="row   ">
+
+                                <!-- Form 1 col 1 -->
+                                <div class="col-sm ">
+                                    <div class="text-center">
+                                        <h5> Lead Information </h5>
+                                    </div>
+                                    <table class="table-responsive ">
+
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Name </td>
+                                                <td>Irfan</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Phone </td>
+                                                <td>017XXXXXXXXX</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Email </td>
+                                                <td>Irfanulkalam@azneo.com</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Address </td>
+                                                <td>5. jublee road, chittagongyjweyjwyjwj ruewrtuy wryw wrywry wryqet5rywery46urhrghrwghwqyq3 q35yqe5yqyr5y qery qeryq4eyw45tyw</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Interested </td>
+                                                <td>Subaru XV</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Referenced By </td>
+                                                <td>Sanaullah Chy</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Location </td>
+                                                <td>Chittagong</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Created By </td>
+                                                <td>Irfanul Kalam chy</td>
+                                            </tr>
+                                            <!-- Repeat 8 more times -->
+                                        </tbody>
+                                    </table>
+
+
+                                </div>
+                                <!-- Form 1 col 2-->
+                                <div class="col-sm border-start">
+                                    <div class="text-center">
+                                        <h5> Deal Information</h5>
+                                    </div>
+                                    <table class="table-responsive">
+
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Inventory Status </td>
+                                                <td>Irfan</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Deal Vehicle </td>
+                                                <td>017XXXXXXXXX</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Model Year </td>
+                                                <td>Irfanulkalam@azneo.com</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Colored </td>
+                                                <td>5. jublee road</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Piece Per Unit </td>
+                                                <td>Subaru XV</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Quantity </td>
+                                                <td>Sanaullah Chy</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Sub total price </td>
+                                                <td>Chittagong</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Discount Amount </td>
+                                                <td>Irfanul Kalam chy</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Total Invoice Price </td>
+                                                <td>Irfanul Kalam chy</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                            <div class="text-center mt-2 ">
+                                <div class="container  d-flex flex-column justify-content-center " style="width: 30%;">
+                                    <h5> Offer validity days
+                                    </h5>
+                                    <input type="number" class="form-control " name="  " id="  " required></input>
+
+                                </div>
+
+                                <button type="button" class="btn btn-primary m-2 " style="width: 30%;">
+                                    Approved
+                                </button>
+                            </div>
+
+                        </div>
+                        <!-- Form 2 -->
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
 
 </body>
 

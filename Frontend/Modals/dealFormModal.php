@@ -1,3 +1,9 @@
+<?php
+$myObject = $_POST['myObject'];
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +34,13 @@
         }
     </style>
     <title>Subaru CRM</title>
+
+    <script>
+        function printer() {
+            var obj = '<?php echo $myObject; ?>';
+            console.log(obj);
+        }
+    </script>
 </head>
 
 
@@ -50,7 +63,7 @@
                     <!-- Buttons -->
                     <div class="row mb-2 ">
                         <div class="col ">
-                            <button type="button" class="btn btn-primary">
+                            <button type="button" class="btn btn-primary" onclick="printer()">
                                 Transfer
                             </button>
                         </div>
