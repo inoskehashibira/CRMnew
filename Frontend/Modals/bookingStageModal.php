@@ -22,7 +22,7 @@ $myObject = $_POST['myObject'];
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
         .modal-lg {
-            max-width: 70rem;
+            max-width: 50rem;
         }
 
         td {
@@ -54,7 +54,7 @@ $myObject = $_POST['myObject'];
             <div class="modal-content ">
                 <div class="modal-header ">
                     <h5 class="modal-title" id="exampleModalLabel">
-                        <div class="modal-title text-center">Deal Form</div>
+                        <div class="modal-title text-center">Booking Form</div>
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -62,11 +62,7 @@ $myObject = $_POST['myObject'];
 
                     <!-- Buttons -->
                     <div class="row mb-2 ">
-                        <div class="col ">
-                            <button type="button" class="btn btn-primary" onclick="printer()">
-                                Transfer
-                            </button>
-                        </div>
+
                         <div class="col d-flex justify-content-end">
                             <button type="button" class="btn btn-primary">
                                 Details Log
@@ -78,109 +74,28 @@ $myObject = $_POST['myObject'];
                     <!-- Forms -->
                     <div class="row  ">
                         <!-- Form 1 -->
-                        <div class="col-md-8 ms-lg-3  shadow ">
+                        <div class="col-md-8 ms-lg-2  shadow ">
                             <div class="text-center">
-                                <h5> Deal Information Form</h5>
+                                <h5> Booking Transaction</h5>
                             </div>
                             <div class="row ">
                                 <!-- Form 1 col 1 -->
                                 <div class="col-sm ">
-                                    <label class="form-check-label">
-                                        Inventory Status
-                                    </label>
-                                    <div class=" d-flex flex-column ">
-                                        <div class="form-check">
-
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label">
-                                                Available
-                                            </label>
-
-                                        </div>
-                                        <div class="form-check ">
-
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label">
-                                                Not Available
-                                            </label>
-
-                                        </div>
-                                    </div>
                                     <div class="col">
 
-                                        <div class="">
-                                            <label htmlFor="firstName" class="form-label ">
-                                                Interested Vehicle:
+                                        <div class="col-sm">
+                                            <label htmlFor="firstName" class="form-label mb-2">
+                                                Deposit No
                                             </label>
 
-                                            <div class="form-check ">
-
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label">
-                                                    subaru Forester 20-s
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check ">
-
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label">
-                                                    subaru Forester 20-s
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check ">
-
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label">
-                                                    subaru XV 16i-s
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check ">
-
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label">
-                                                    subaru XV 16i
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check ">
-
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label">
-                                                    subaru Impreza 16i-s
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check ">
-
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label">
-                                                    subaru Forester 16i
-
-                                                </label>
-
-                                            </div>
-
+                                            <input type="text" class="form-control" name="  " id="  " required></input>
                                         </div>
 
-
-                                        <div class="col-sm ">
-                                            <label for="exampleFormControlTextarea1" class="form-label"></span></label>
-
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Model Year</option>
-                                                <option value="1">option 1</option>
-                                                <option value="2">30 mins</option>
-                                                <option value="3">30 mins</option>
-                                            </select>
-                                        </div>
                                         <div class="col-sm ">
                                             <label for="exampleFormControlTextarea1" class="form-label"></label>
 
                                             <select class="form-select" aria-label="Default select example">
-                                                <option selected>Color</option>
+                                                <option selected>Payment Type</option>
                                                 <option value="1">option 1</option>
                                                 <option value="2">option 2</option>
                                                 <option value="3">option 3</option>
@@ -188,7 +103,7 @@ $myObject = $_POST['myObject'];
                                         </div>
                                         <div class="col-sm">
                                             <label htmlFor="firstName" class="form-label mb-2">
-                                                Price per unit
+                                                Amount
                                             </label>
 
                                             <input type="text" class="form-control" name="  " id="  " required></input>
@@ -209,32 +124,26 @@ $myObject = $_POST['myObject'];
                                 <div class="col-sm border-start">
                                     <div class="col">
                                         <label htmlFor="firstName" class="form-label">
-                                            Quantity
+                                            Instrument No
                                         </label>
 
                                         <input type="text" class="form-control" name="  " id="  " required></input>
                                     </div>
                                     <div class="col">
                                         <label htmlFor="firstName" class="form-label">
-                                            Sub-Total Price
+                                            Deposit To
                                         </label>
 
                                         <input type="text" class="form-control" name="  " id="  " required></input>
                                     </div>
                                     <div class="col">
                                         <label htmlFor="firstName" class="form-label">
-                                            Discount Amount
+                                            Attachment
                                         </label>
 
                                         <input type="text" class="form-control" name="  " id="  " required></input>
                                     </div>
-                                    <div class="col">
-                                        <label htmlFor="firstName" class="form-label">
-                                            Total Invoice Price
-                                        </label>
 
-                                        <input type="text" class="form-control" name="  " id="  " required></input>
-                                    </div>
                                 </div>
                                 <!-- Form 1 col 3-->
                                 <!-- <div class="col">
@@ -249,39 +158,46 @@ $myObject = $_POST['myObject'];
 
                         </div>
                         <!-- Form 2 -->
-                        <div class="col-md-3 ms-lg-5  shadow border ">
-                            <div class="text-center">
-                                <h5> Next Schedule activity</h5>
-                            </div>
 
-                            <div class="row ">
+
+                        <div class="col-md-3 ms-lg-5    ">
+
+                            <div class="row mt-3 ">
+                                <!-- Form 2 col 1 -->
+                                <div class="col-sm border shadow  ">
+                                    <label class="form-label ">
+                                        <b>VIN Number:</b> JFSK7DKEL20300
+                                    </label>
+
+                                    <label class="form-label ">
+                                        <b>Engine Number:</b> YJ16688
+                                    </label>
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="row border shadow mt-3">
                                 <!-- Form 2 col 1 -->
                                 <div class="col-sm ">
                                     <label htmlFor="firstName" class="form-label">
-                                        DateTime
+                                        VIN Number
+                                    </label>
+
+                                    <input type="text" class="form-control" name="  " id="  " required></input>
+                                    <label htmlFor="firstName" class="form-label">
+                                        Engine Number
                                     </label>
 
                                     <input type="text" class="form-control" name="  " id="  " required></input>
 
-                                    <div class="col-sm ">
-                                        <label for="exampleFormControlTextarea1" class="form-label"></label>
-
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Notify Before</option>
-                                            <option value="1">10 mins</option>
-                                            <option value="2">20 mins</option>
-                                            <option value="3">30 mins</option>
-                                        </select>
-                                    </div>
-
-                                    <label htmlFor="firstName" class="form-label">
-                                        Remarks
-                                    </label>
-
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                     <div class="text-center">
-                                        <button type="button" class="btn btn-primary mt-2 ">
-                                            save next schedule
+                                        <button type="button" class="btn btn-primary mt-2 mb-2">
+                                            save
                                         </button>
                                     </div>
 
@@ -294,6 +210,7 @@ $myObject = $_POST['myObject'];
                             </div>
 
                         </div>
+
                     </div>
 
                     <div class="row m-2 ">
