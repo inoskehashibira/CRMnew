@@ -1,4 +1,6 @@
 function modalIdBuilder(data) {
+  console.log(data);
+
   //modal result object
   var result = {
     mID: null,
@@ -9,14 +11,17 @@ function modalIdBuilder(data) {
     new: "newLeadModal.php",
     deal: "dealFormModal.php",
     quotation: "quotationModal.php",
+    booking: "bookingStageModal.php"
   };
   //predefined modal ids
   var modalIds = {
     new: "newLeadModal",
-    dealFormModal1: "dealFormModal",
-    dealFormModal2: "dealFormApprovalModal",
-    quotation: "quotationModal",
-    quotation2: "quotationModalWithValidity",
+    dealFormModal: "dealFormModal",
+    dealFormApprovalModal: "dealFormApprovalModal",
+    quotationModal: "quotationModal",
+    quotationModalWithValidity: "quotationModalWithValidity",
+    quotationCustomerFeedback: "quotationCustomerFeedback",
+    bookingStageFormModal: "bookingStageFormModal",
   };
 
   // creating Modal URL
@@ -25,16 +30,27 @@ function modalIdBuilder(data) {
   //creating modal ID based on conditions
   if (data.hasOwnProperty("approvalStatus")) {
     if (data["approvalStatus"]) {
-      result.mID = "#" + modalIds.dealFormModal1;
+      result.mID = "#" + modalIds.dealFormModal;
     } else {
-      result.mID = "#" + modalIds.dealFormModal2;
+      result.mID = "#" + modalIds.dealFormApprovalModal;
     }
-     } 
-    else if (data.hasOwnProperty("validity")) {
+  } 
+  else if (data.hasOwnProperty("validity")) {
+    console.log("call from seek");
+
     if (data["validity"]) {
-      result.mID = "#" + modalIds.quotation2;
+      result.mID = "#" + modalIds.quotationModalWithValidity;
     } else {
-      result.mID = "#" + modalIds.quotation;
+      result.mID = "#" + modalIds.quotationModal;
+    }
+  } 
+  else if (data.hasOwnProperty("seekFeedback")) {
+    if (data["seekFeedback"]) {
+      result.mID = "#" + modalIds.quotationCustomerFeedback;
+    }
+  } else if (data.hasOwnProperty("bookStatus")) {
+    if (data["bookStatus"]) {
+      result.mID = "#" + modalIds.bookingStageFormModal;
     }
   } else {
     result.mID = "#" + modalIds[data["col"]];

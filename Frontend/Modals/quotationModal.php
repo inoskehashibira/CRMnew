@@ -374,7 +374,63 @@
             </div>
         </div>
     </div>
+    <div class=" modal fade" id="quotationCustomerFeedback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <div class="modal-title text-center">Quotation Customer Feedback</div>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
+                    <!-- Buttons -->
+                    <div class="row mb-2 ">
+
+                        <div class="col d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary">
+                                Details Log
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- Forms -->
+                    <div class="row mx-5">
+                        <div class="container d-flex flex-column justify-content-center">
+                            <h3 class="text-center">Quotation Customer Feedback</h3>
+                            <textarea class="form-control mx-auto" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-5 mx-3 ">
+                        <div class="col ">
+                            <button type="button" class="btn btn-danger">
+                                Lost
+                            </button>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <button type="button" class="btn btn-primary">
+                                Accepted
+                            </button>
+                        </div>
+                        <div class="col d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary">
+                                Rejected
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
