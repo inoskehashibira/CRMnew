@@ -22,6 +22,7 @@ function modalIdBuilder(data) {
     quotationModalWithValidity: "quotationModalWithValidity",
     quotationCustomerFeedback: "quotationCustomerFeedback",
     bookingStageFormModal: "bookingStageFormModal",
+    bookingTransactionFormModal: "bookingTransactionFormModal",
   };
 
   // creating Modal URL
@@ -52,13 +53,18 @@ function modalIdBuilder(data) {
     if (data["bookStatus"]) {
       result.mID = "#" + modalIds.bookingStageFormModal;
     }
-  } else {
-    result.mID = "#" + modalIds[data["col"]];
   }
+    else if (data.hasOwnProperty("transactionList")) {
+      if (data["transactionList"]) {
+        result.mID = "#" + modalIds.bookingTransactionFormModal;
+      }
+    } else {
+      result.mID = "#" + modalIds[data["col"]];
+    }
 
   return result;
-}
 
+}
 function printer(data) {
   console.log(data);
 }

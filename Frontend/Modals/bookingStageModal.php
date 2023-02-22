@@ -15,11 +15,12 @@ $myObject = $_POST['myObject'];
     <!-- Bootstrap CSS -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" /> -->
     <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Popper js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- bundle min -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <style>
         .modal-lg {
             max-width: 50rem;
@@ -102,7 +103,7 @@ $myObject = $_POST['myObject'];
                                             </select>
                                         </div>
                                         <div class="col-sm">
-                                            <label htmlFor="firstName" class="form-label mb-2">
+                                            <label htmlFor="firstName" class="form-label mb-2 mt-2">
                                                 Amount
                                             </label>
 
@@ -230,7 +231,93 @@ $myObject = $_POST['myObject'];
         </div>
     </div>
 
+    <div class=" modal fade" id="bookingTransactionFormModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <div class="modal-title text-center">Booking Form</div>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
+                    <!-- Buttons -->
+                    <div class="row mb-2 ">
+
+                        <div class="col d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary">
+                                Details Log
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- Forms -->
+                    <div class="row  ">
+                        <div class="container ">
+                            <table class="table-responsive table-bordered text-center">
+                                <thead class="table-light">
+                                    <tr>
+
+                                        <th scope="col">Serial</th>
+                                        <th scope="col">Deposit Date</th>
+                                        <th scope="col">Payment Type</th>
+                                        <th scope="col">Taka</th>
+                                        <th scope="col">Instrument No</th>
+                                        <th scope="col">Deposited to</th>
+                                        <th scope="col">Attachment</th>
+                                        <th scope="col">Verify Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>01-Jan-2023</td>
+                                        <td>Cheque</td>
+                                        <td>300,000</td>
+                                        <td>UBL 2003456</td>
+                                        <td>Jamuna Bank A/C# 200010010</td>
+                                        <td>Attachment</td>
+                                        <td>Verified</td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>01-Jan-2023</td>
+                                        <td>Cash</td>
+                                        <td>300,000</td>
+                                        <td>UBL 2003456</td>
+                                        <td>Jamuna Bank A/C# 200010010</td>
+                                        <td>Attachment</td>
+                                        <td><span class="badge bg-info text-white">Verified</span> </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+
+                    <div class="row m-2 ">
+                        <div class="col d-flex justify-content-center">
+                            <button type="button" class="btn btn-primary">
+                                Approve & Ready to Deliver
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
 
 
 </body>
