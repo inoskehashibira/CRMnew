@@ -22,7 +22,11 @@ function modalIdBuilder(data) {
     quotationModalWithValidity: "quotationModalWithValidity",
     quotationCustomerFeedback: "quotationCustomerFeedback",
     bookingStageFormModal: "bookingStageFormModal",
-    bookingTransactionFormModal: "bookingTransactionFormModal",
+    bookingTransactionModalForAccountsManager:
+      "bookingTransactionModalForAccountsManager",
+    bookingTransactionModalForAccountsExecutive:
+      "bookingTransactionModalForAccountsExecutive",
+
   };
 
   // creating Modal URL
@@ -49,15 +53,18 @@ function modalIdBuilder(data) {
     if (data["seekFeedback"]) {
       result.mID = "#" + modalIds.quotationCustomerFeedback;
     }
-  } else if (data.hasOwnProperty("bookStatus")) {
-    if (data["bookStatus"]) {
-      result.mID = "#" + modalIds.bookingStageFormModal;
-    }
-  }
-    else if (data.hasOwnProperty("transactionList")) {
-      if (data["transactionList"]) {
-        result.mID = "#" + modalIds.bookingTransactionFormModal;
+  } 
+    else if (data.hasOwnProperty("Role")) {
+      if (data["Role"] == "Acc_Manager") {
+        result.mID = "#" + modalIds.bookingTransactionModalForAccountsManager;
+      } else if (data["Role"] == "Acc_Executive") {
+        result.mID = "#" + modalIds.bookingTransactionModalForAccountsExecutive;
       }
+      else{
+        result.mID = "#" + modalIds.bookingStageFormModal;
+      }
+      
+
     } else {
       result.mID = "#" + modalIds[data["col"]];
     }

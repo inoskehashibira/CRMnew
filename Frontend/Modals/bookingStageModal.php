@@ -231,7 +231,7 @@ $myObject = $_POST['myObject'];
         </div>
     </div>
 
-    <div class=" modal fade" id="bookingTransactionFormModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class=" modal fade" id="bookingTransactionModalForAccountsManager" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg ">
             <div class="modal-content ">
                 <div class="modal-header ">
@@ -280,7 +280,7 @@ $myObject = $_POST['myObject'];
                                         <td>UBL 2003456</td>
                                         <td>Jamuna Bank A/C# 200010010</td>
                                         <td>Attachment</td>
-                                        <td>Verified</td>
+                                        <td><span class="badge bg-info text-white">Verified</span> </td>
 
                                     </tr>
 
@@ -294,6 +294,83 @@ $myObject = $_POST['myObject'];
                                         <td>Attachment</td>
                                         <td><span class="badge bg-info text-white">Verified</span> </td>
                                     </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class=" modal fade" id="bookingTransactionModalForAccountsExecutive" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <div class="modal-title text-center">Booking Form</div>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Buttons -->
+                    <div class="row mb-2 ">
+
+                        <div class="col d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary">
+                                Details Log
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- Forms -->
+                    <div class="row  ">
+                        <div class="container ">
+                            <table class="table-responsive table-bordered text-center">
+                                <thead class="table-light">
+                                    <tr>
+
+                                        <th scope="col">Serial</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Vehicle</th>
+                                        <th scope="col">Color</th>
+                                        <th scope="col">MY</th>
+                                        <th scope="col">VIN</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Deposited</th>
+                                        <th scope="col">Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+
+
+
+
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Sahab Uddin</td>
+                                        <td>SUBARU FORESTER 2.0i-S</td>
+                                        <td>Crystal Black Silica</td>
+                                        <td>2022</td>
+                                        <td>JFSK7DKEL20300</td>
+                                        <td>69,00,000</td>
+                                        <td>29,00,000</td>
+                                        <td>40,00,000</td>
+
+
+                                    </tr>
+
+
 
                                 </tbody>
                             </table>
@@ -318,7 +395,6 @@ $myObject = $_POST['myObject'];
             </div>
         </div>
     </div>
-
 
 </body>
 

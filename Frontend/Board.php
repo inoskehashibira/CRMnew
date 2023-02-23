@@ -447,7 +447,7 @@ $approvalStatus = 0;
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'bookStatus':true,'col':'booking'} )">
+                                    <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'Role':'salesExecutive','col':'booking'} )">
                                         Customer_Name
 
                                     </a>
@@ -490,8 +490,50 @@ $approvalStatus = 0;
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'transactionList':true,'col':'booking'} )">
-                                        Transaction list
+                                    <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'Role':'Acc_Manager','col':'booking'} )">
+                                        Transaction list Manager
+
+                                    </a>
+
+
+                                </h5>
+                            </div>
+                            <div class="col-3">
+
+                                <div class="dropdown">
+                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
+                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
+                        <p class="card-text">
+                            Customer_Email
+                        </p>
+                        <a href="" class="card-link">Lead Details</a>
+                    </div>
+                </div>
+                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">
+                                    <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'Role':'Acc_Executive','col':'booking'} )">
+                                        Transaction list Executive
 
                                     </a>
 
