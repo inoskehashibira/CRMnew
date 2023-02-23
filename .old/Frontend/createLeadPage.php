@@ -32,21 +32,21 @@
 
 
         <div class="col-md-6">
-          <label htmlFor="firstName" class="form-label">
+          <label  class="form-label">
             Customer Name
           </label>
           <input type="text" class="form-control" name="Customer_Name" id="Customer_Name" required></input>
         </div>
 
         <div class="col-md-6">
-          <label htmlFor="firstName" class="form-label">
+          <label  class="form-label">
             Organization
           </label>
           <input type="text" class="form-control" name="Organization" id="Organization" required></input>
         </div>
 
         <div class="col-md-6 ">
-          <label htmlFor="emailinfo" class="form-label">
+          <label  class="form-label">
             E-mail
           </label>
           <input type="email" class="form-control" id="emailinfo" name="Customer_Email" required></input>
@@ -54,20 +54,20 @@
 
 
         <div class="col-md-6 my-3">
-          <label htmlFor="firstName" class="form-label">
+          <label  class="form-label">
             Possibility :
           </label>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="possibility" id="inlineRadio1" value="High">
-            <label class="form-check-label" for="inlineRadio1">High</label>
+            <label class="form-check-label" >High</label>
           </div>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="possibility" id="inlineRadio2" value="Medium">
-            <label class="form-check-label" for="inlineRadio2">Medium</label>
+            <label class="form-check-label" >Medium</label>
           </div>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="possibility" id="inlineRadio3" value="Low">
-            <label class="form-check-label" for="inlineRadio3">Low </label>
+            <label class="form-check-label" >Low </label>
           </div>
         </div>
 
@@ -82,7 +82,7 @@
 
 
 
-            <label htmlFor="firstName" class="form-label my-3">
+            <label  class="form-label my-3">
               Tag :
             </label>
             <select name="Tag" class="form-select" aria-label="Default select example">
@@ -92,7 +92,7 @@
               <option value="Instagram">Instagram</option>
             </select>
 
-            <label htmlFor="firstName" class="form-label my-3">
+            <label  class="form-label my-3">
               schedule Activity :
             </label>
             <select name="Schedule_time" class="form-select" aria-label="Default select example">

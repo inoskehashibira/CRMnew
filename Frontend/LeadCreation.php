@@ -48,7 +48,7 @@
                 <!-------------------- Mobile input field-------------------->
 
                 <div class="col-md-4">
-                    <label htmlFor="firstName" class="form-label">
+                    <label  class="form-label">
                         Mobile<span class="text-danger mr-2">*</span>
                     </label>
 
@@ -57,7 +57,7 @@
                 <!--------------------Full name input field-------------------->
 
                 <div class="col-md-4">
-                    <label htmlFor="firstName" class="form-label">
+                    <label  class="form-label">
                         Full Name<span class="text-danger mr-2">*</span>
                     </label>
                     <input type="text" class="form-control" name="Organization" id="Organization" required></input>
@@ -65,7 +65,7 @@
                 <!--------------------Email input field-------------------->
 
                 <div class="col-md-4 ">
-                    <label htmlFor="emailinfo" class="form-label">
+                    <label  class="form-label">
                         E-mail<span class="text-danger mr-2">*</span>
                     </label>
                     <input type="email" class="form-control" id="emailinfo" name="Customer_Email" required></input>
@@ -73,13 +73,13 @@
                 <!--------------------Location input field-------------------->
 
                 <div class="col-md-4">
-                    <label for="exampleFormControlTextarea1" class="form-label">Location</label>
+                    <label  class="form-label">Location</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <!--------------------Lead source input field-------------------->
 
                 <div class="col-md-4 ">
-                    <label for="exampleFormControlTextarea1" class="form-label">Lead Source<span class="text-danger mr-2">*</span></label>
+                    <label  class="form-label">Lead Source<span class="text-danger mr-2">*</span></label>
 
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Select Lead Source</option>
@@ -91,7 +91,7 @@
                 <!--------------------Lead location input field-------------------->
 
                 <div class="col-md-4 ">
-                    <label for="exampleFormControlTextarea1" class="form-label">Lead Location<span class="text-danger mr-2">*</span></label>
+                    <label  class="form-label">Lead Location<span class="text-danger mr-2">*</span></label>
 
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Select Lead Location</option>
@@ -103,7 +103,7 @@
                 <!--------------------Referenced by input field-------------------->
 
                 <div class="col-md-4">
-                    <label htmlFor="firstName" class="form-label">
+                    <label  class="form-label">
                         Referenced By<span class="text-danger mr-2">*</span>
                     </label>
                     <input type="text" class="form-control" name="Organization" id="Organization" required></input>
@@ -112,14 +112,14 @@
 
 
                 <div class="col-md-4 mx-5">
-                    <label htmlFor="firstName" class="form-label ">
+                    <label  class="form-label ">
                         Interested Vehicle:
                     </label>
 
 
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="Forester">
-                        <label class="form-check-label" for="Forester">
+                        <label class="form-check-label" >
                             Forester
                         </label>
                     </div>
@@ -128,7 +128,7 @@
                     <div class="form-check">
 
                         <input class="form-check-input" type="checkbox" value="" id="Subaru XV">
-                        <label class="form-check-label" for="Subaru XV">
+                        <label class="form-check-label" >
                             Subaru XV
                         </label>
 
@@ -136,7 +136,7 @@
 
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="Impreza">
-                        <label class="form-check-label" for="Impreza">
+                        <label class="form-check-label" >
                             Impreza
                         </label>
                     </div>

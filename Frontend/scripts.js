@@ -55,12 +55,11 @@ function modalIdBuilder(data) {
     }
   } 
     else if (data.hasOwnProperty("Role")) {
-      if (data["Role"] == "Acc_Manager") {
+      if (data["Role"] == "Acc_Executive") {
         result.mID = "#" + modalIds.bookingTransactionModalForAccountsManager;
-      } else if (data["Role"] == "Acc_Executive") {
+      } else if (data["Role"] == "Acc_Manager") {
         result.mID = "#" + modalIds.bookingTransactionModalForAccountsExecutive;
-      }
-      else{
+      } else {
         result.mID = "#" + modalIds.bookingStageFormModal;
       }
       

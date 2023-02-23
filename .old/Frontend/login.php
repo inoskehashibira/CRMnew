@@ -37,11 +37,11 @@
 
                 <form action="../Backend/authentication.php" method="post">
                     <div class="form-group ">
-                        <label for="email">Username</label>
+                        <label >Username</label>
                         <input name="username" type="username" class="form-control" aria-describedby="emailHelp">
                     </div>
                     <div class="form-group ">
-                        <label for="password">Password</label>
+                        <label>Password</label>
                         <input type="password" name="password" class="form-control">
                     </div>
                     <div class="ml-3">
