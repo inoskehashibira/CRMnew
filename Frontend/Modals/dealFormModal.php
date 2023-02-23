@@ -107,7 +107,7 @@ $myObject = $_POST['myObject'];
                                     <div class="col">
 
                                         <div class="">
-                                            <label htmlFor="firstName" class="form-label ">
+                                            <label  class="form-label ">
                                                 Interested Vehicle:
                                             </label>
 
@@ -165,7 +165,7 @@ $myObject = $_POST['myObject'];
 
 
                                         <div class="col-sm ">
-                                            <label for="exampleFormControlTextarea1" class="form-label"></span></label>
+                                            <label  class="form-label"></span></label>
 
                                             <select class="form-select" aria-label="Default select example">
                                                 <option selected>Model Year</option>
@@ -175,7 +175,7 @@ $myObject = $_POST['myObject'];
                                             </select>
                                         </div>
                                         <div class="col-sm ">
-                                            <label for="exampleFormControlTextarea1" class="form-label"></label>
+                                            <label  class="form-label"></label>
 
                                             <select class="form-select" aria-label="Default select example">
                                                 <option selected>Color</option>
@@ -185,7 +185,7 @@ $myObject = $_POST['myObject'];
                                             </select>
                                         </div>
                                         <div class="col-sm">
-                                            <label htmlFor="firstName" class="form-label mb-2">
+                                            <label  class="form-label mb-2">
                                                 Price per unit
                                             </label>
 
@@ -206,28 +206,28 @@ $myObject = $_POST['myObject'];
                                 <!-- Form 1 col 2-->
                                 <div class="col-sm border-start">
                                     <div class="col">
-                                        <label htmlFor="firstName" class="form-label">
+                                        <label  class="form-label">
                                             Quantity
                                         </label>
 
                                         <input type="text" class="form-control" name="  " id="  " required></input>
                                     </div>
                                     <div class="col">
-                                        <label htmlFor="firstName" class="form-label">
+                                        <label  class="form-label">
                                             Sub-Total Price
                                         </label>
 
                                         <input type="text" class="form-control" name="  " id="  " required></input>
                                     </div>
                                     <div class="col">
-                                        <label htmlFor="firstName" class="form-label">
+                                        <label  class="form-label">
                                             Discount Amount
                                         </label>
 
                                         <input type="text" class="form-control" name="  " id="  " required></input>
                                     </div>
                                     <div class="col">
-                                        <label htmlFor="firstName" class="form-label">
+                                        <label  class="form-label">
                                             Total Invoice Price
                                         </label>
 
@@ -255,14 +255,14 @@ $myObject = $_POST['myObject'];
                             <div class="row ">
                                 <!-- Form 2 col 1 -->
                                 <div class="col-sm ">
-                                    <label htmlFor="firstName" class="form-label">
+                                    <label  class="form-label">
                                         DateTime
                                     </label>
 
                                     <input type="text" class="form-control" name="  " id="  " required></input>
 
                                     <div class="col-sm ">
-                                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                                        <label  class="form-label"></label>
 
                                         <select class="form-select" aria-label="Default select example">
                                             <option selected>Notify Before</option>
@@ -272,7 +272,7 @@ $myObject = $_POST['myObject'];
                                         </select>
                                     </div>
 
-                                    <label htmlFor="firstName" class="form-label">
+                                    <label  class="form-label">
                                         Remarks
                                     </label>
 
@@ -467,7 +467,7 @@ $myObject = $_POST['myObject'];
                                 <div class="col-sm ">
 
 
-                                    <label htmlFor="firstName" class="form-label">
+                                    <label  class="form-label">
                                         Remarks
                                     </label>
 
