@@ -580,7 +580,12 @@ $approvalStatus = 0;
 
                         <div class="row">
                             <div class="col-9">
-                                <h5 class="card-title">Customer_Name</h5>
+                                <h5 class="card-title">
+                                    <h5 class="card-title"> <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'col':'itemReady','readyToDeliver':true} )">
+                                            FeedBack
+
+                                        </a></h5>
+                                </h5>
                             </div>
                             <div class="col-3">
 

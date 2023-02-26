@@ -11,7 +11,8 @@ function modalIdBuilder(data) {
     new: "newLeadModal.php",
     deal: "dealFormModal.php",
     quotation: "quotationModal.php",
-    booking: "bookingStageModal.php"
+    booking: "bookingStageModal.php",
+    itemReady: "itemReadyStageModal.php",
   };
   //predefined modal ids
   var modalIds = {
@@ -26,7 +27,7 @@ function modalIdBuilder(data) {
       "bookingTransactionModalForAccountsManager",
     bookingTransactionModalForAccountsExecutive:
       "bookingTransactionModalForAccountsExecutive",
-
+    itemStageDeliveryInfo: "itemStageDeliveryInfo",
   };
 
   // creating Modal URL
@@ -39,37 +40,33 @@ function modalIdBuilder(data) {
     } else {
       result.mID = "#" + modalIds.dealFormApprovalModal;
     }
-  } 
-  else if (data.hasOwnProperty("validity")) {
-    console.log("call from seek");
-
+  } else if (data.hasOwnProperty("validity")) {
     if (data["validity"]) {
       result.mID = "#" + modalIds.quotationModalWithValidity;
     } else {
       result.mID = "#" + modalIds.quotationModal;
     }
-  } 
-  else if (data.hasOwnProperty("seekFeedback")) {
+  } else if (data.hasOwnProperty("seekFeedback")) {
     if (data["seekFeedback"]) {
       result.mID = "#" + modalIds.quotationCustomerFeedback;
     }
-  } 
-    else if (data.hasOwnProperty("Role")) {
-      if (data["Role"] == "Acc_Executive") {
-        result.mID = "#" + modalIds.bookingTransactionModalForAccountsManager;
-      } else if (data["Role"] == "Acc_Manager") {
-        result.mID = "#" + modalIds.bookingTransactionModalForAccountsExecutive;
-      } else {
-        result.mID = "#" + modalIds.bookingStageFormModal;
-      }
-      
-
+  } else if (data.hasOwnProperty("Role")) {
+    if (data["Role"] == "Acc_Executive") {
+      result.mID = "#" + modalIds.bookingTransactionModalForAccountsManager;
+    } else if (data["Role"] == "Acc_Manager") {
+      result.mID = "#" + modalIds.bookingTransactionModalForAccountsExecutive;
     } else {
-      result.mID = "#" + modalIds[data["col"]];
+      result.mID = "#" + modalIds.bookingStageFormModal;
     }
+  } else if (data.hasOwnProperty("readyToDeliver")) {
+    if (data["readyToDeliver"]) {
+      result.mID = "#" + modalIds.itemStageDeliveryInfo;
+    }
+  } else {
+    result.mID = "#" + modalIds[data["col"]];
+  }
 
   return result;
-
 }
 function printer(data) {
   console.log(data);
