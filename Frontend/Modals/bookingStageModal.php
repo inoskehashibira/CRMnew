@@ -82,7 +82,7 @@ $myObject = $_POST['myObject'];
                                     <div class="col">
 
                                         <div class="col-sm">
-                                            <label  class="form-label mb-2">
+                                            <label class="form-label mb-2">
                                                 Deposit No
                                             </label>
 
@@ -90,7 +90,7 @@ $myObject = $_POST['myObject'];
                                         </div>
 
                                         <div class="col-sm ">
-                                            <label  class="form-label"></label>
+                                            <label class="form-label"></label>
 
                                             <select class="form-select" aria-label="Default select example">
                                                 <option selected>Payment Type</option>
@@ -100,7 +100,7 @@ $myObject = $_POST['myObject'];
                                             </select>
                                         </div>
                                         <div class="col-sm">
-                                            <label  class="form-label mb-2 mt-2">
+                                            <label class="form-label mb-2 mt-2">
                                                 Amount
                                             </label>
 
@@ -121,21 +121,21 @@ $myObject = $_POST['myObject'];
                                 <!-- Form 1 col 2-->
                                 <div class="col-sm border-start">
                                     <div class="col">
-                                        <label  class="form-label">
+                                        <label class="form-label">
                                             Instrument No
                                         </label>
 
                                         <input type="text" class="form-control" name="  " id="  " required></input>
                                     </div>
                                     <div class="col">
-                                        <label  class="form-label">
+                                        <label class="form-label">
                                             Deposit To
                                         </label>
 
                                         <input type="text" class="form-control" name="  " id="  " required></input>
                                     </div>
                                     <div class="col">
-                                        <label  class="form-label">
+                                        <label class="form-label">
                                             Attachment
                                         </label>
 
@@ -182,12 +182,12 @@ $myObject = $_POST['myObject'];
                             <div class="row border shadow mt-3">
                                 <!-- Form 2 col 1 -->
                                 <div class="col-sm ">
-                                    <label  class="form-label">
+                                    <label class="form-label">
                                         VIN Number
                                     </label>
 
                                     <input type="text" class="form-control" name="  " id="  " required></input>
-                                    <label  class="form-label">
+                                    <label class="form-label">
                                         Engine Number
                                     </label>
 
@@ -252,7 +252,7 @@ $myObject = $_POST['myObject'];
 
                     <!-- Forms -->
                     <div class="row  ">
-                        <div class="container ">
+                        <div class="container " style=" overflow: auto;">
                             <table class="table-responsive table-bordered text-center">
                                 <thead class="table-light">
                                     <tr>
@@ -297,6 +297,8 @@ $myObject = $_POST['myObject'];
                         </div>
 
 
+
+
                     </div>
 
 
@@ -331,7 +333,7 @@ $myObject = $_POST['myObject'];
 
                     <!-- Forms -->
                     <div class="row  ">
-                        <div class="container ">
+                        <div class="container " style=" overflow: auto;">
                             <table class="table-responsive table-bordered text-center">
                                 <thead class="table-light">
                                     <tr>
