@@ -113,8 +113,62 @@ $approvalStatus = 0;
         <div class="row ">
             <!----------------------------Lead Column---------------- -->
 
-
             <div class="col-sm">
+
+                <h5 class=" rounded  p-2 bg-secondary text-white text-center mb-3 ">Lead</h5>
+
+                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 7 rem;" onclick="modalManager({'col':'new'} )">
+
+                    <div class="card-body">
+
+
+
+                        <div class="row">
+
+                            <div class="col-10">
+
+                                <h6 class="card-title">
+
+                                    <a id="newLeadModalTrigger"> Customer_Name
+
+                                    </a>
+
+                                </h6>
+
+                            </div>
+
+
+
+                            <div class="col-2">
+
+                                <button id="newLeadModalTrigger" onclick="modalManager({'col':'new'} )" class="btn btn-sm btn-darkblue  pt-1 pb-1 ps-2 pe-2" style="font-size: 0.6rem;"><i class="fas fa-eye"></i></button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <small class="card-text mb-1"><b>Phone:</b> 01718339135</small><br>
+
+                        <small class="card-text mb-1"><b>Email:</b> msifat5@gmail.com</small><br>
+
+                        <small class="card-text mb-1"><b>Intersted In:</b> Subaru Forester, Subaru XV</small><br>
+
+                        <small class="card-text mb-1"><b>Location:</b> </small><br>
+
+                        <small class="card-text mb-1"><b>Created By:</b> </small>
+
+                        <!-- <a href="" class="card-link">Lead Details</a> -->
+
+                    </div>
+
+                </div>
+
+                <div id="modalContainer2"></div>
+
+            </div>
+            <!-- <div class="col-sm">
                 <h5 class=" rounded  p-2 bg-secondary text-white text-center mb-3 ">Lead</h5>
 
 
@@ -134,7 +188,6 @@ $approvalStatus = 0;
 
                                 <div class="dropdown">
                                     <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
                                         <span class="caret"></span>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dLabel">
@@ -162,21 +215,21 @@ $approvalStatus = 0;
 
 
 
-            </div>
+            </div> -->
 
 
 
             <!----------------------------Deal Column---------------- -->
-            <div class="col-sm">
+            <div class="col-sm" class="link-dark">
                 <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3 ">Deal</h5>
 
-                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;">
+                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;" onclick="modalManager({'approvalStatus':true,'col':'deal'} )">
                     <div class="card-body">
 
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'approvalStatus':true,'col':'deal'} )">
+                                    <a href="#" id="myBtn" class="link-dark">
                                         Customer_Name
 
                                     </a>
@@ -184,25 +237,7 @@ $approvalStatus = 0;
 
                                 </h5>
                             </div>
-                            <div class="col-3">
 
-                                <div class="dropdown">
-                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
-
-                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
-                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
-                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
-                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
-                                    </ul>
-                                </div>
-
-
-
-                            </div>
                         </div>
 
                         <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
@@ -212,14 +247,16 @@ $approvalStatus = 0;
                         <a href="" class="card-link">Lead Details</a>
                     </div>
                 </div>
-                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;">
+
+
+                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;" onclick="modalManager({'approvalStatus':false,'col':'deal'} )">
 
                     <div class="card-body">
 
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'approvalStatus':false,'col':'deal'} )">
+                                    <a href="#" id="myBtn" class="link-dark">
                                         Customer_Name
 
                                     </a>
@@ -255,14 +292,14 @@ $approvalStatus = 0;
                         <a href="" class="card-link">Lead Details</a>
                     </div>
                 </div>
-                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;">
+                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;" onclick="modalManager({'approvalStatus':true,'col':'deal'} )">
 
                     <div class="card-body">
 
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'approvalStatus':true,'col':'deal'} )">
+                                    <a href="#" id="myBtn" class="link-dark">
                                         Customer_Name
 
                                     </a>
@@ -316,12 +353,12 @@ $approvalStatus = 0;
 
 
 
-                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
+                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;" onclick="modalManager({'col':'quotation','validity':true} )">
                     <div class="card-body">
 
                         <div class="row">
                             <div class="col-9">
-                                <h5 class="card-title"> <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'col':'quotation','validity':true} )">
+                                <h5 class="card-title"> <a href="#" id="myBtn" class="link-dark">
                                         Customer_Name
 
                                     </a></h5>
@@ -354,12 +391,12 @@ $approvalStatus = 0;
                         <a href="" class="card-link">Lead Details</a>
                     </div>
                 </div>
-                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
+                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;" onclick="modalManager({'col':'quotation','validity':false} )">
                     <div class="card-body">
 
                         <div class="row">
                             <div class="col-9">
-                                <h5 class="card-title"> <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'col':'quotation','validity':false} )">
+                                <h5 class="card-title"> <a href="#" id="myBtn" class="link-dark">
                                         Customer_Name
 
                                     </a></h5>
@@ -392,12 +429,12 @@ $approvalStatus = 0;
                         <a href="" class="card-link">Lead Details</a>
                     </div>
                 </div>
-                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
+                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;" onclick="modalManager({'col':'quotation','seekFeedback':true} )">
                     <div class="card-body">
 
                         <div class="row">
                             <div class="col-9">
-                                <h5 class="card-title"> <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'col':'quotation','seekFeedback':true} )">
+                                <h5 class="card-title"> <a href="#" id="myBtn" class="link-dark">
                                         FeedBack
 
                                     </a></h5>
@@ -440,13 +477,13 @@ $approvalStatus = 0;
                 <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3  ">Booking</h5>
 
 
-                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;">
+                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;" onclick="modalManager({'Role':'salesExecutive','col':'booking'} )">
                     <div class="card-body">
 
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'Role':'salesExecutive','col':'booking'} )">
+                                    <a href="#" id="myBtn" class="link-dark">
                                         Customer_Name
 
                                     </a>
@@ -483,13 +520,13 @@ $approvalStatus = 0;
                     </div>
                 </div>
 
-                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;">
+                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;" onclick="modalManager({'Role':'Acc_Manager','col':'booking'} )">
                     <div class="card-body">
 
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'Role':'Acc_Manager','col':'booking'} )">
+                                    <a href="#" id="myBtn" class="link-dark">
                                         Transaction list Manager
 
                                     </a>
@@ -525,13 +562,13 @@ $approvalStatus = 0;
                         <a href="" class="card-link">Lead Details</a>
                     </div>
                 </div>
-                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;">
+                <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;" onclick="modalManager({'Role':'Acc_Executive','col':'booking'} )">
                     <div class="card-body">
 
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'Role':'Acc_Executive','col':'booking'} )">
+                                    <a href="#" id="myBtn" class="link-dark">
                                         Transaction list Executive
 
                                     </a>
@@ -575,13 +612,13 @@ $approvalStatus = 0;
 
 
 
-                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;">
+                <div class="shadow p-1 mb-5 bg-white rounded" style="width: 10 rem;" onclick="modalManager({'col':'itemReady','readyToDeliver':true} )">
                     <div class="card-body">
 
                         <div class="row">
                             <div class="col-9">
                                 <h5 class="card-title">
-                                    <h5 class="card-title"> <a href="#" id="myBtn" class="link-dark" onclick="modalManager({'col':'itemReady','readyToDeliver':true} )">
+                                    <h5 class="card-title"> <a href="#" id="myBtn" class="link-dark">
                                             FeedBack
 
                                         </a></h5>
