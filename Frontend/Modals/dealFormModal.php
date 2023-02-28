@@ -30,6 +30,19 @@ $myObject = $_POST['myObject'];
             /* border: 1px solid black; */
 
         }
+
+        .custom-shadow {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+                0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+
+        }
+
+        @media (max-width: 768px) {
+            .custom-shadow {
+                box-shadow: none;
+            }
+        }
     </style>
     <title>Subaru CRM</title>
 
@@ -76,7 +89,7 @@ $myObject = $_POST['myObject'];
                     <!-- Forms -->
                     <div class="row  ">
                         <!-- Form 1 -->
-                        <div class="col-md-8 ms-lg-3  shadow ">
+                        <div class="col-md-8 ms-lg-3   custom-shadow ">
                             <div class="text-center">
                                 <h5> Deal Information Form</h5>
                             </div>
@@ -107,7 +120,7 @@ $myObject = $_POST['myObject'];
                                     <div class="col">
 
                                         <div class="">
-                                            <label  class="form-label ">
+                                            <label class="form-label ">
                                                 Interested Vehicle:
                                             </label>
 
@@ -165,7 +178,7 @@ $myObject = $_POST['myObject'];
 
 
                                         <div class="col-sm ">
-                                            <label  class="form-label"></span></label>
+                                            <label class="form-label"></span></label>
 
                                             <select class="form-select" aria-label="Default select example">
                                                 <option selected>Model Year</option>
@@ -175,7 +188,7 @@ $myObject = $_POST['myObject'];
                                             </select>
                                         </div>
                                         <div class="col-sm ">
-                                            <label  class="form-label"></label>
+                                            <label class="form-label"></label>
 
                                             <select class="form-select" aria-label="Default select example">
                                                 <option selected>Color</option>
@@ -185,7 +198,7 @@ $myObject = $_POST['myObject'];
                                             </select>
                                         </div>
                                         <div class="col-sm">
-                                            <label  class="form-label mb-2">
+                                            <label class="form-label mb-2">
                                                 Price per unit
                                             </label>
 
@@ -206,28 +219,28 @@ $myObject = $_POST['myObject'];
                                 <!-- Form 1 col 2-->
                                 <div class="col-sm border-start">
                                     <div class="col">
-                                        <label  class="form-label">
+                                        <label class="form-label">
                                             Quantity
                                         </label>
 
                                         <input type="text" class="form-control" name="  " id="  " required></input>
                                     </div>
                                     <div class="col">
-                                        <label  class="form-label">
+                                        <label class="form-label">
                                             Sub-Total Price
                                         </label>
 
                                         <input type="text" class="form-control" name="  " id="  " required></input>
                                     </div>
                                     <div class="col">
-                                        <label  class="form-label">
+                                        <label class="form-label">
                                             Discount Amount
                                         </label>
 
                                         <input type="text" class="form-control" name="  " id="  " required></input>
                                     </div>
                                     <div class="col">
-                                        <label  class="form-label">
+                                        <label class="form-label">
                                             Total Invoice Price
                                         </label>
 
@@ -247,7 +260,7 @@ $myObject = $_POST['myObject'];
 
                         </div>
                         <!-- Form 2 -->
-                        <div class="col-md-3 ms-lg-5  shadow border ">
+                        <div class="col-md-3 ms-lg-5   custom-shadow border ">
                             <div class="text-center">
                                 <h5> Next Schedule activity</h5>
                             </div>
@@ -255,14 +268,14 @@ $myObject = $_POST['myObject'];
                             <div class="row ">
                                 <!-- Form 2 col 1 -->
                                 <div class="col-sm ">
-                                    <label  class="form-label">
+                                    <label class="form-label">
                                         DateTime
                                     </label>
 
                                     <input type="text" class="form-control" name="  " id="  " required></input>
 
                                     <div class="col-sm ">
-                                        <label  class="form-label"></label>
+                                        <label class="form-label"></label>
 
                                         <select class="form-select" aria-label="Default select example">
                                             <option selected>Notify Before</option>
@@ -272,7 +285,7 @@ $myObject = $_POST['myObject'];
                                         </select>
                                     </div>
 
-                                    <label  class="form-label">
+                                    <label class="form-label">
                                         Remarks
                                     </label>
 
@@ -335,7 +348,7 @@ $myObject = $_POST['myObject'];
                     <!-- Forms -->
                     <div class="row  ">
                         <!-- Form 1 -->
-                        <div class="col-md-8 ms-lg-3  shadow ">
+                        <div class="col-md-8 ms-lg-3    custom-shadow">
 
                             <div class="row ">
 
@@ -459,7 +472,7 @@ $myObject = $_POST['myObject'];
 
                         </div>
                         <!-- Form 2 -->
-                        <div class="col-md-3 ms-lg-5  shadow border ">
+                        <div class="col-md-3 ms-lg-5   custom-shadow border ">
 
 
                             <div class=" row ">
@@ -467,7 +480,7 @@ $myObject = $_POST['myObject'];
                                 <div class="col-sm ">
 
 
-                                    <label  class="form-label">
+                                    <label class="form-label">
                                         Remarks
                                     </label>
 

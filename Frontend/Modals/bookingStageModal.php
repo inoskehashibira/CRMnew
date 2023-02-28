@@ -30,6 +30,19 @@ $myObject = $_POST['myObject'];
             /* border: 1px solid black; */
 
         }
+
+        .custom-shadow {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+                0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+
+        }
+
+        @media (max-width: 768px) {
+            .custom-shadow {
+                box-shadow: none;
+            }
+        }
     </style>
     <title>Subaru CRM</title>
 
@@ -72,7 +85,7 @@ $myObject = $_POST['myObject'];
                     <!-- Forms -->
                     <div class="row  ">
                         <!-- Form 1 -->
-                        <div class="col-md-8 ms-lg-2  shadow ">
+                        <div class="col-md-8 ms-lg-2  custom-shadow ">
                             <div class="text-center">
                                 <h5> Booking Transaction</h5>
                             </div>
@@ -162,7 +175,7 @@ $myObject = $_POST['myObject'];
 
                             <div class="row mt-3 ">
                                 <!-- Form 2 col 1 -->
-                                <div class="col-sm border shadow  ">
+                                <div class="col-sm border custom-shadow  ">
                                     <label class="form-label ">
                                         <b>VIN Number:</b> JFSK7DKEL20300
                                     </label>
@@ -179,7 +192,7 @@ $myObject = $_POST['myObject'];
 
 
                             </div>
-                            <div class="row border shadow mt-3">
+                            <div class="row border custom-shadow mt-3">
                                 <!-- Form 2 col 1 -->
                                 <div class="col-sm ">
                                     <label class="form-label">

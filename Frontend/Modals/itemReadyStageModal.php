@@ -38,7 +38,7 @@
             <div class="modal-content ">
                 <div class="modal-header ">
                     <h5 class="modal-title" id="exampleModalLabel">
-                        <div class="modal-title text-center">Deal Form</div>
+                        <div class="modal-title text-center">Deal  Form</div>
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -58,7 +58,7 @@
                     <!-- Forms -->
                     <div class="row  ">
                         <!-- Form 1 -->
-                        <div class="col   shadow ">
+                        <div class="col    ">
 
 
                             <div class="row   ">
@@ -66,7 +66,7 @@
                                 <!-- Form 1 col 1 -->
                                 <div class="col-sm ">
                                     <div class="text-center">
-                                        <h5> Lead Information </h5>
+                                        <h5> Lead  Information </h5>
                                     </div>
                                     <table class="table-responsive ">
 
@@ -221,38 +221,111 @@
                                             <h5> Provided With Vehicle</h5>
                                         </div>
 
-                                        <div class="form-check ">
+                                        <div class="row ">
+                                            <div class="col">
 
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label">
-                                                Car Key
-                                            </label>
+                                                <div class="form-check ">
 
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label">
+                                                        Delivery Challan
+                                                    </label>
+
+                                                </div>
+                                                <div class="form-check ">
+
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label">
+                                                        Commercial Invoice
+                                                    </label>
+
+                                                </div>
+                                                <div class="form-check ">
+
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label">
+                                                        Money Receipt
+                                                    </label>
+
+                                                </div>
+                                                <div class="form-check ">
+
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label">
+                                                        BRTA Documents
+                                                    </label>
+
+                                                </div>
+                                                <div class="form-check ">
+
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label">
+                                                        Owner's Manual
+                                                    </label>
+
+                                                </div>
+                                                <div class="form-check ">
+
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label">
+                                                        Floor Matt
+                                                    </label>
+
+                                                </div>
+                                            </div>
+                                            <div class="col">
+
+                                                <div class="form-check ">
+
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label">
+                                                        Service Book
+                                                    </label>
+
+                                                </div>
+                                                <div class="form-check ">
+
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label">
+                                                        Two SUBARU Key Rings
+                                                    </label>
+
+                                                </div>
+                                                <div class="form-check ">
+
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label">
+                                                        Two Keys
+                                                    </label>
+
+                                                </div>
+                                                <div class="form-check ">
+
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label">
+                                                        Spare Tire
+                                                    </label>
+
+                                                </div>
+                                                <div class="form-check ">
+
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label">
+                                                        Jack, L key Screw Driver
+                                                    </label>
+
+                                                </div>
+                                                <div class="form-check ">
+
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label">
+                                                        Free Service & Warranty Policy
+                                                    </label>
+
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-check ">
 
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label">
-                                                Floor Mat
-                                            </label>
-
-                                        </div>
-                                        <div class="form-check ">
-
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label">
-                                                Registration Paper
-                                            </label>
-
-                                        </div>
-                                        <div class="form-check ">
-
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label">
-                                                Others
-                                            </label>
-
-                                        </div>
 
 
                                     </div>

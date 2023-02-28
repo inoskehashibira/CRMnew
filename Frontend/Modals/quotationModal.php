@@ -22,6 +22,8 @@
             /* border: 1px solid black; */
 
         }
+
+
     </style>
     <title>Subaru CRM</title>
 </head>
@@ -58,7 +60,7 @@
                     <!-- Forms -->
                     <div class="row  ">
                         <!-- Form 1 -->
-                        <div class="col   shadow ">
+                        <div class="col    ">
 
 
                             <div class="row   ">
@@ -228,7 +230,7 @@
                     <!-- Forms -->
                     <div class="row  ">
                         <!-- Form 1 -->
-                        <div class="col   shadow ">
+                        <div class="col    ">
 
 
                             <div class="row   ">
