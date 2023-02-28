@@ -226,7 +226,7 @@
 
                                                 <div class="form-check ">
 
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                     <label class="form-check-label">
                                                         Delivery Challan
                                                     </label>
@@ -234,7 +234,7 @@
                                                 </div>
                                                 <div class="form-check ">
 
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                     <label class="form-check-label">
                                                         Commercial Invoice
                                                     </label>
@@ -242,7 +242,7 @@
                                                 </div>
                                                 <div class="form-check ">
 
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                     <label class="form-check-label">
                                                         Money Receipt
                                                     </label>
@@ -250,7 +250,7 @@
                                                 </div>
                                                 <div class="form-check ">
 
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                     <label class="form-check-label">
                                                         BRTA Documents
                                                     </label>
@@ -258,7 +258,7 @@
                                                 </div>
                                                 <div class="form-check ">
 
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                     <label class="form-check-label">
                                                         Owner's Manual
                                                     </label>
@@ -266,7 +266,7 @@
                                                 </div>
                                                 <div class="form-check ">
 
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                     <label class="form-check-label">
                                                         Floor Matt
                                                     </label>
@@ -277,7 +277,7 @@
 
                                                 <div class="form-check ">
 
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                     <label class="form-check-label">
                                                         Service Book
                                                     </label>
@@ -285,7 +285,7 @@
                                                 </div>
                                                 <div class="form-check ">
 
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                     <label class="form-check-label">
                                                         Two SUBARU Key Rings
                                                     </label>
@@ -293,7 +293,7 @@
                                                 </div>
                                                 <div class="form-check ">
 
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                     <label class="form-check-label">
                                                         Two Keys
                                                     </label>
@@ -301,7 +301,7 @@
                                                 </div>
                                                 <div class="form-check ">
 
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                     <label class="form-check-label">
                                                         Spare Tire
                                                     </label>
@@ -309,7 +309,7 @@
                                                 </div>
                                                 <div class="form-check ">
 
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                     <label class="form-check-label">
                                                         Jack, L key Screw Driver
                                                     </label>
@@ -317,7 +317,7 @@
                                                 </div>
                                                 <div class="form-check ">
 
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                     <label class="form-check-label">
                                                         Free Service & Warranty Policy
                                                     </label>

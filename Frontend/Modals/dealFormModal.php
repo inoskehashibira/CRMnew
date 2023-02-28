@@ -126,7 +126,7 @@ $myObject = $_POST['myObject'];
 
                                             <div class="form-check ">
 
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                 <label class="form-check-label">
                                                     subaru Forester 20-s
                                                 </label>
@@ -134,7 +134,7 @@ $myObject = $_POST['myObject'];
                                             </div>
                                             <div class="form-check ">
 
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                 <label class="form-check-label">
                                                     subaru Forester 20-s
                                                 </label>
@@ -142,7 +142,7 @@ $myObject = $_POST['myObject'];
                                             </div>
                                             <div class="form-check ">
 
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                 <label class="form-check-label">
                                                     subaru XV 16i-s
                                                 </label>
@@ -150,7 +150,7 @@ $myObject = $_POST['myObject'];
                                             </div>
                                             <div class="form-check ">
 
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                 <label class="form-check-label">
                                                     subaru XV 16i
                                                 </label>
@@ -158,7 +158,7 @@ $myObject = $_POST['myObject'];
                                             </div>
                                             <div class="form-check ">
 
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                 <label class="form-check-label">
                                                     subaru Impreza 16i-s
                                                 </label>
@@ -166,7 +166,7 @@ $myObject = $_POST['myObject'];
                                             </div>
                                             <div class="form-check ">
 
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                                 <label class="form-check-label">
                                                     subaru Forester 16i
 
