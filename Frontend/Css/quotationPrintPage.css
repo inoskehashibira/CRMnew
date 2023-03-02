@@ -1,0 +1,229 @@
+* {
+   margin: 0 20px;
+  padding: 0;
+  text-indent: 0;
+}
+
+h2 {
+  color: black;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+.s1 {
+  color: black;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 6.5pt;
+  vertical-align: 3pt;
+}
+
+.s2 {
+  color: black;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 11pt;
+}
+
+h1 {
+  color: black;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 11pt;
+}
+
+a {
+  color: #1154cc;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 10pt;
+}
+
+p {
+  color: black;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 10pt;
+  margin: 0pt;
+}
+
+.s4 {
+  color: black;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+.s5 {
+  color: black;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+.s6 {
+  color: #212121;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+.s7 {
+  color: black;
+  font-family: Calibri, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+li {
+  display: block;
+}
+
+#l1 {
+  padding-left: 0pt;
+}
+
+#l1 > li > *:first-child:before {
+  content: "▪ ";
+  color: black;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+table,
+tbody {
+  vertical-align: top;
+  overflow: visible;
+}
+.td1 {
+  width: 149pt;
+  border-top-style: solid;
+  border-top-width: 1pt;
+  border-left-style: solid;
+  border-left-width: 1pt;
+  border-bottom-style: solid;
+  border-bottom-width: 1pt;
+  border-right-style: solid;
+  border-right-width: 1pt;
+}
+.td2 {
+  width: 342pt;
+  border-top-style: solid;
+  border-top-width: 1pt;
+  border-left-style: solid;
+  border-left-width: 1pt;
+  border-bottom-style: solid;
+  border-bottom-width: 1pt;
+  border-right-style: solid;
+  border-right-width: 1pt;
+}
+.gap {
+  text-indent: 0pt;
+  text-align: left;
+}
+.headings {
+  padding-left: 5pt;
+  text-indent: 0pt;
+  text-align: left;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.container2 {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 100px;
+}
+
+.startText {
+  display: inline-block;
+  width: 40px;
+}
+.boldText {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.verticalGap {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.table-row {
+  border: 1px solid black;
+}
+.border-cell {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: left;
+}
+
+.table1RowCol1{
+  width: 300px;
+  border-top-style: solid;
+  border-top-width:  1.4pt;
+  border-left-style: solid;
+  border-left-width: 1.4pt;
+  border-bottom-style: solid;
+  border-bottom-width: 1.4pt;
+  border-right-style: solid;
+  border-right-width: 1.4pt;
+
+}
+.table1RowCol2{
+  width: 600px;
+  border-top-style: solid;
+  border-top-width:  1.4pt;
+  border-left-style: solid;
+  border-left-width: 1.4pt;
+  border-bottom-style: solid;
+  border-bottom-width: 1.4pt;
+  border-right-style: solid;
+  border-right-width: 1.4pt;
+
+}
+.colText{
+  margin-left: 10px;
+}
+.tableRow{
+  line-height: 20px;
+  height: 20px;
+
+}
+
+
+
