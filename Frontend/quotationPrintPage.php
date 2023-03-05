@@ -11,13 +11,33 @@
 </head>
 
 <body>
-    <p class="gap"><br /></p>
-    <p class="gap"><br /></p>
+
+
+    <div class="navContainer">
+        <img style="border: 2px solid rgb(49, 81, 161); padding:0;margin:0;" src="../Assets/png/subaru_Logo.png" alt="" height="100">
+        <div class="navItemsContainer">
+            <p style="margin-left: 5px;font-weight: bold;font-size: 14px;">
+                SUBARU BANGLADESH
+            </p>
+
+            <p style="margin-left: 5px;">
+                REL Motors Limited
+            </p>
+            <p style="margin-left: 5px;">
+                5 Jubilee Road, Chattogram.
+            </p>
+            <p style="margin-left: 5px;">
+                Email: info@subaru-bd.com
+            </p>
+            <p style="margin-left: 5px;">
+                www.subaru-bd.com
+            </p>
+        </div>
+    </div>
 
 
     <div class="container1">
         <h2>Ref: REL/QUT/2021/01001 </h2>
-        <div class="spacer"></div>
         <h2>Date: 23rd January, 2022</h2>
     </div>
 
@@ -128,16 +148,30 @@
         </tr>
     </table>
 
+    <div class="navContainer">
+        <img style="border: 2px solid rgb(49, 81, 161); padding:0;margin:0;" src="../Assets/png/subaru_Logo.png" alt="" height="100">
+        <div class="navItemsContainer">
+            <p style="margin-left: 5px;font-weight: bold;font-size: 14px;">
+                SUBARU BANGLADESH
+            </p>
+
+            <p style="margin-left: 5px;">
+                REL Motors Limited
+            </p>
+            <p style="margin-left: 5px;">
+                5 Jubilee Road, Chattogram.
+            </p>
+            <p style="margin-left: 5px;">
+                Email: info@subaru-bd.com
+            </p>
+            <p style="margin-left: 5px;">
+                www.subaru-bd.com
+            </p>
+        </div>
+    </div>
 
 
-
-
-
-
-
-
-
-    <table cellspacing="0">
+    <table cellspacing="0" style="margin-top: 20px;">
         <tr class="tableRow">
             <td class="table1RowCol1">
                 <p class="colText">
@@ -147,176 +181,167 @@
             <td class="table1RowCol2">
                 <ul id="l1">
                     <li>
-                        <p class="s5">
+                        <p class="">
                             Automatic Air-Conditioning System with Anti-dust Filter
                         </p>
                     </li>
                     <li>
-                        <p class="s5">
+                        <p class="">
                             Fabric Seat Package with Seat Safety belts
                         </p>
                     </li>
                     <li>
-                        <p class="s5">
+                        <p class="">
                             Halogen Head Lamp
                         </p>
                     </li>
                     <li>
-                        <p class="s5">
+                        <p class="">
                             All Power windows
                         </p>
                     </li>
                     <li data-list-text="">
-                        <p class="s5">
+                        <p class="">
                             Advanced Safety Package – Global Platform
                         </p>
                     </li>
                     <li>
-                        <p class="s5">
+                        <p class="">
                             USB and Auxiliary Audio input Jacks and Bluetooth system
                         </p>
                     </li>
                     <li>
-                        <p class="s5">
+                        <p class="">
                             Aluminum Alloy Wheel – Tire size: 225/60 R17, 17x7” J
                         </p>
                     </li>
                 </ul>
             </td>
         </tr>
-        <tr>
-            <td class="td1">
-                <p class="s5" style="
-              padding-top: 8pt;
-              padding-left: 6pt;
-              text-indent: 0pt;
-              text-align: left;
-            ">
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">
                     Price/Unit
                 </p>
             </td>
-            <td class="td2">
-                <p class="s4">
-                    BDT 36,00,000.00
-                    <span class="s5">(BDT Thirty Six Lac ) Only, Unit Price (without BRTA Registration
-                        Fee &amp; TDS).</span>
+            <td class="table1RowCol2">
+                <p class="colText">
+                    <span class="boldText">BDT 36,00,000.00</span> (BDT Thirty Six Lac ) Only, Unit Price (without BRTA Registration
+                    Fee TDS).
                 </p>
             </td>
         </tr>
-        <tr style="height: 81pt">
-            <td class="td1">
-                <p class="gap"><br /></p>
-                <p class="s5" style="padding-left: 6pt; text-indent: 0pt; text-align: left">
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">
                     Payment Terms
                 </p>
             </td>
-            <td class="td2">
-                <p class="s5">
+            <td class="table1RowCol2">
+                <p class="colText">
                     Payment to be made to “REL Motors Limited” by A/C Payee Cheque or
                     Pay Order. The minimum amount for booking is One Lac taka. BDT Ten
                     Thousand will be deducted on cancellation of the order within
                     Fifteen days. BDT One Lac will be deducted from the booking amount
-                    if the order does not close within one
-                </p>
-                <p class="s5" class="headings">
-                    month.
+                    if the order does not close within one month.
                 </p>
             </td>
         </tr>
-        <tr style="height: 26pt">
-            <td class="td1">
-                <p class="s5">
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">
                     Delivery Terms
                 </p>
             </td>
-            <td class="td2">
-                <p class="s5">
+            <td class="table1RowCol2">
+                <p class="colText">
                     Delivery within 3 days from receiving Work Order and 100%
-                </p>
-                <p class="s5">
+
                     payment. Delivery place – Dhaka or Chattogram only
                 </p>
             </td>
         </tr>
-        <tr style="height: 14pt">
-            <td class="td1">
-                <p class="s5">
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">
                     After Sales Service
                 </p>
             </td>
-            <td class="td2">
-                <p class="s5" class="headings">
+            <td class="table1RowCol2">
+                <p class="colText">
                     3 free services after every 6,000 km +/-
                 </p>
             </td>
         </tr>
-        <tr style="height: 14pt">
-            <td class="td1">
-                <p class="s5">
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">
                     Spare Parts
                 </p>
             </td>
-            <td class="td2">
-                <p class="s5" class="headings">
+            <td class="table1RowCol2">
+                <p class="colText">
                     All spare parts will be provided from stock as &amp; when required
                 </p>
             </td>
         </tr>
-        <tr style="height: 14pt">
-            <td class="td1">
-                <p class="s5">
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">
                     Offer Validity
                 </p>
             </td>
-            <td class="td2">
-                <p class="s5" class="headings">
+            <td class="table1RowCol2">
+                <p class="colText">
                     15 days from the date of the quotation
                 </p>
             </td>
         </tr>
-        <tr style="height: 81pt">
-            <td class="td1">
-                <p class="gap"><br /></p>
-                <p class="s5" style="padding-left: 6pt; text-indent: 0pt; text-align: left">
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">
                     Warranty
                 </p>
             </td>
-            <td class="td2">
-                <p class="s5">
+            <td class="table1RowCol2">
+                <p class="colText">
                     1 year or 20,000 km whichever comes first, under the terms and
                     conditions defined by the Manufacturer.
-                    <b>CNG/LPG Conversion or any other form of modification to the
+                    <span class="boldText">CNG/LPG Conversion or any other form of modification to the
                         vehicle without prior written consent from “REL Motors Limited”
-                        will void the warranty. </b>If any parts are used in the car without the
+                        will void the warranty.</span> If any parts are used in the car without the consent of REL Motors then all warranty will be void.
+
                 </p>
-                <p class="s5">
-                    consent of REL Motors then all warranty will be void.
-                </p>
+
+
             </td>
         </tr>
     </table>
 
 
 
+    <div class="container3">
+        <p style="margin-top: 20px;">
+            We expect you will find our offer most competitive and hope to have your
+            valued order in our favor.
+        </p>
+        <p style="margin-top: 20px;">
+            NB: For more information, please contact the undersigned.
+        </p>
+        <p style="margin-top: 20px;">
+            AYM Fazlul Hoque <br>
+            <span class="boldText">Head of Finance
+            </span>
+            <br>
+            REL Motors Limited
+        </p>
 
-    <p class="gap"><br /></p>
-    <p>
-        We expect you will find our offer most competitive and hope to have your
-        valued order in our favor.
-    </p>
-    <p class="gap"><br /></p>
-    <p class="headings">
-        NB: For more information, please contact the undersigned.
-    </p>
-    <p class="gap"><br /></p>
-    <p>
-        AYM Fazlul Hoque <b>Head of Finance </b>REL Motors Limited
-    </p>
-    <p class="gap"><br /></p>
-    <p></p>
-    <p >
-        2 <b>| </b><span style="color: #808080">Page</span>
-    </p>
+        <!-- <p>
+            2 <b>| </b><span style="color: #808080">Page</span>
+        </p>  -->
+
+    </div>
+
 </body>
 
 </html>
