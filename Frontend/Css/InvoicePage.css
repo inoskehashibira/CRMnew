@@ -95,13 +95,13 @@ table,th,td{
   flex-direction: column;
 
 
-  margin-top: 5rem;
+  /* margin-top: 2rem; */
   padding: 0;
   /* border: 1px solid; */
 }
 .containerHeaderElements {
   display: flex;
-  justify-content:end;
+  justify-content:center;
   padding: 0;
  
 }
@@ -117,20 +117,14 @@ table,th,td{
   font-size: 16px;
   line-height: 1.5;
 }
-.startText {
-  display: inline-block;
-  width: 40px;
-}
+
 .boldText {
   font-weight: bold;
   margin: 0;
   padding: 0;
   font-size: 14px;
 }
-.verticalGap {
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
+
 .table-row {
   border: 1px solid black;
 }
@@ -140,30 +134,8 @@ table,th,td{
   text-align: left;
 }
 
-.table1RowCol1{
-  width: 300px;
-  border-top-style: solid;
-  border-top-width:  1.4pt;
-  border-left-style: solid;
-  border-left-width: 1.4pt;
-  border-bottom-style: solid;
-  border-bottom-width: 1.4pt;
-  border-right-style: solid;
-  border-right-width: 1.4pt;
 
-}
-.table1RowCol2{
-  width: 600px;
-  border-top-style: solid;
-  border-top-width:  1.4pt;
-  border-left-style: solid;
-  border-left-width: 1.4pt;
-  border-bottom-style: solid;
-  border-bottom-width: 1.4pt;
-  border-right-style: solid;
-  border-right-width: 1.4pt;
 
-}
 .colText{
   margin-left: 10px;
 }

@@ -41,13 +41,15 @@
             </tr>
         </table>
     </div>
+    <div style="display:flex;justify-content:end;padding: 0;margin-top: 5rem;">
+        Date : 01/02/2022
 
+    </div>
     <div class="containerHeader">
         <h1>COMMERCIAL INVOICE</h1>
     </div>
     <div class="containerHeaderElements">
         <p style="font-size: 12pt;">Office Copy </p>
-        <p style="margin-left: 100px;font-size: 12pt;">Date : 01/02/2022</p>
 
     </div>
 
@@ -63,7 +65,7 @@
     </div>
 
     <div class="containerHeader">
-        <table class="tableCell" cellspacing="0">
+        <table class="tableCell" style="margin-top: 2rem;" cellspacing="0">
             <tr style="width: auto;">
 
                 <td class="tableCell" style="">
@@ -212,7 +214,7 @@
 
     </div>
 
-    <div class="container5" >
+    <div class="container5">
         <p>Seller's Signature</p>
         <p>Buyers's Signature</p>
     </div>
