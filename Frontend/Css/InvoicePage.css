@@ -1,0 +1,182 @@
+* {
+   margin: 0 20px;
+  padding: 0;
+  text-indent: 0;
+}
+
+h2 {
+  color: black;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+
+
+h1 {
+  color: black;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16pt;
+}
+
+a {
+  color: #1154cc;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 10pt;
+}
+
+p {
+  color: black;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 10pt;
+  margin: 0pt;
+}
+
+
+
+
+
+.page1{
+   margin: 0;
+  padding: 0;
+  border: 1px solid;
+}
+
+table,th,td{
+  /* border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px; */
+  /* margin-top: 20px; */
+}
+
+.tableCell{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  
+}
+
+
+
+
+
+.container1 {
+  display: flex;
+  justify-content:end;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid; */
+}
+
+.container5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+    margin-top: 10rem;
+
+}
+.containerHeader {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+
+
+  margin-top: 5rem;
+  padding: 0;
+  /* border: 1px solid; */
+}
+.containerHeaderElements {
+  display: flex;
+  justify-content:end;
+  padding: 0;
+ 
+}
+.container2 {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+
+.container3 {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.startText {
+  display: inline-block;
+  width: 40px;
+}
+.boldText {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.verticalGap {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.table-row {
+  border: 1px solid black;
+}
+.border-cell {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: left;
+}
+
+.table1RowCol1{
+  width: 300px;
+  border-top-style: solid;
+  border-top-width:  1.4pt;
+  border-left-style: solid;
+  border-left-width: 1.4pt;
+  border-bottom-style: solid;
+  border-bottom-width: 1.4pt;
+  border-right-style: solid;
+  border-right-width: 1.4pt;
+
+}
+.table1RowCol2{
+  width: 600px;
+  border-top-style: solid;
+  border-top-width:  1.4pt;
+  border-left-style: solid;
+  border-left-width: 1.4pt;
+  border-bottom-style: solid;
+  border-bottom-width: 1.4pt;
+  border-right-style: solid;
+  border-right-width: 1.4pt;
+
+}
+.colText{
+  margin-left: 10px;
+}
+.tableRow{
+  line-height: 20px;
+  height: 20px;
+
+}
+
+  
+
+.footerContainer {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  margin-top: 15px;
+}
