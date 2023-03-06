@@ -12,142 +12,147 @@
 
 <body>
 
-    
-        <div class="navContainer ">
-            <img style="padding:0;margin:0;" src="../Assets/png/subaru_Logo.png" alt="" height="100">
-            <div class="navItemsContainer">
-                <p style="margin-left: 5px;font-weight: bold;font-size: 14px;">
-                    SUBARU BANGLADESH
-                </p>
 
-                <p style="margin-left: 5px;">
-                    REL Motors Limited
-                </p>
-                <p style="margin-left: 5px;">
-                    5 Jubilee Road, Chattogram.
-                </p>
-                <p style="margin-left: 5px;">
-                    Email: info@subaru-bd.com
-                </p>
-                <p style="margin-left: 5px;">
-                    www.subaru-bd.com
-                </p>
-            </div>
+    <div class="navContainer ">
+        <img style="padding:0;margin:0;" src="../Assets/png/subaru_Logo.png" alt="" height="100">
+        <div class="navItemsContainer">
+            <p style="margin-left: 5px;font-weight: bold;font-size: 14px;">
+                SUBARU BANGLADESH
+            </p>
+
+            <p style="margin-left: 5px;">
+                REL Motors Limited
+            </p>
+            <p style="margin-left: 5px;">
+                5 Jubilee Road, Chattogram.
+            </p>
+            <p style="margin-left: 5px;">
+                Email: info@subaru-bd.com
+            </p>
+            <p style="margin-left: 5px;">
+                www.subaru-bd.com
+            </p>
         </div>
+    </div>
 
 
-        <div class="container1">
-            <h2>Ref: REL/QUT/2021/01001 </h2>
-            <h2>Date: 23rd January, 2022</h2>
-        </div>
+    <div class="container1">
+        <h2>Ref: REL/QUT/2021/01001 </h2>
+        <h2>Date: 23rd January, 2022</h2>
+    </div>
 
-        <div class="container2">
-            <p style=" border: 1px solid black;"> To</p>
-            <p class="boldText">NUOVO Renewable Energy Limited,</p>
-            <p> Pedrollo Plaza, 5 Jubilee Road,</p>
-            <p> Chattogram - 4000.</p>
-            <p><span class="boldText">Attn : Mr Nader Khan,</span><br>
-                <span style="margin-left: 3rem;"> Honorable Chairman.</span>
-            </p>
-            <p><span class="boldText">Phone :</span> 031-621531-5</p>
-            <p><span class="boldText">Email :</span> naderkhan@pedrollo.com.bd</p>
+    <div class="container2">
+        <p > To</p>
+        <p class="boldText">NUOVO Renewable Energy Limited,</p>
+        <p> Pedrollo Plaza, 5 Jubilee Road,</p>
+        <p> Chattogram - 4000.</p>
+        <p><span class="boldText">Attn : Mr Nader Khan,</span><br>
+            <span style="margin-left: 3rem;"> Honorable Chairman.</span>
+        </p>
+        <p><span class="boldText">Phone :</span> 031-621531-5</p>
+        <p><span class="boldText">Email :</span> naderkhan@pedrollo.com.bd</p>
 
-            <p style="margin-top: 60px;">
-                Subject :<span class="boldText"><u>Price Quotation for Japan Origin Subaru XV 1.6-i</u></span>
-            </p>
-            <p class="verticalGap">Dear Sir,</p>
-            <p>
-                We express our gratitude for showing your interest in our 2019 Brand New
-                Subaru Vehicles. As you are well aware that Subaru Corporation is a car
-                manufacturing division of a huge Japanese transportation conglomerate
-                called Fuji Heavy Industries.
-            </p>
-            <p style="margin-top: 20px;">
-                As sole Agent/distributor of Subaru in Bangladesh, REL Motors Limited is
-                pleased to offer you the price quotation of the following vehicle for your
-                kind consideration.
-            </p>
-
-
-        </div>
+        <p style="margin-top: 60px;">
+            Subject :<span class="boldText"><u>Price Quotation for Japan Origin Subaru XV 1.6-i</u></span>
+        </p>
+        <p class="verticalGap">Dear Sir,</p>
+        <p>
+            We express our gratitude for showing your interest in our 2019 Brand New
+            Subaru Vehicles. As you are well aware that Subaru Corporation is a car
+            manufacturing division of a huge Japanese transportation conglomerate
+            called Fuji Heavy Industries.
+        </p>
+        <p style="margin-top: 20px;">
+            As sole Agent/distributor of Subaru in Bangladesh, REL Motors Limited is
+            pleased to offer you the price quotation of the following vehicle for your
+            kind consideration.
+        </p>
 
 
-        <table cellspacing="0" style="margin-top: 20px;">
-            <tr class="tableRow">
-                <td class="table1RowCol1">
-                    <p class="colText">Model</p>
-                </td>
-                <td class="table1RowCol2">
-                    <p class="colText">Subaru XV 1.6i (Basic)</p>
-                </td>
-            </tr>
-            <tr class="tableRow">
-                <td class="table1RowCol1">
-                    <p class="colText">Manufacturer</p>
-                </td>
-                <td class="table1RowCol2">
-                    <p class="colText">Subaru Corporation</p>
-                </td>
-            </tr>
-            <tr class="tableRow">
-                <td class="table1RowCol1">
-                    <p class="colText">Engine Specification</p>
-                </td>
-                <td class="table1RowCol2">
-                    <p class="colText">1.6L, 4-cylinders BOXER Technology, DOHC 16-Valve, Petrol</p>
-                    <p class="colText">Engine, Engine Immobiliser.</p>
-                </td>
-            </tr>
-            <tr class="tableRow">
-                <td class="table1RowCol1">
-                    <p class="colText">Year of Manufacture</p>
-                </td>
-                <td class="table1RowCol2">
-                    <p class="colText">2019, Brand New</p>
-                </td>
-            </tr>
-            <tr class="tableRow">
-                <td class="table1RowCol1">
-                    <p class="colText">Country of Origin</p>
-                </td>
-                <td class="table1RowCol2">
-                    <p class="colText">Japan</p>
-                </td>
-            </tr>
-            <tr class="tableRow">
-                <td class="table1RowCol1">
-                    <p class="colText">Country of Manufacture</p>
-                </td>
-                <td class="table1RowCol2">
-                    <p class="colText">Japan</p>
-                </td>
-            </tr>
-            <tr class="tableRow">
-                <td class="table1RowCol1">
-                    <p class="colText">Maximum Output</p>
-                </td>
-                <td class="table1RowCol2">
-                    <p class="colText">114 PS (84 kW) or 112 HP / 6200 rpm</p>
-                </td>
-            </tr>
-            <tr class="tableRow">
-                <td class="table1RowCol1">
-                    <p class="colText">Maximum Torque</p>
-                </td>
-                <td class="table1RowCol2">
-                    <p class="colText">150 Nm (15.3 kgfm) /3600 rpm</p>
-                </td>
-            </tr>
-            <tr class="tableRow">
-                <td class="table1RowCol1">
-                    <p class="colText">Displacement</p>
-                </td>
-                <td class="table1RowCol2">
-                    <p class="colText">1600 cc</p>
-                </td>
-            </tr>
-        </table>
-    
+    </div>
+
+
+    <table cellspacing="0" style="margin-top: 20px;">
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">Model</p>
+            </td>
+            <td class="table1RowCol2">
+                <p class="colText">Subaru XV 1.6i (Basic)</p>
+            </td>
+        </tr>
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">Manufacturer</p>
+            </td>
+            <td class="table1RowCol2">
+                <p class="colText">Subaru Corporation</p>
+            </td>
+        </tr>
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">Engine Specification</p>
+            </td>
+            <td class="table1RowCol2">
+                <p class="colText">1.6L, 4-cylinders BOXER Technology, DOHC 16-Valve, Petrol</p>
+                <p class="colText">Engine, Engine Immobiliser.</p>
+            </td>
+        </tr>
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">Year of Manufacture</p>
+            </td>
+            <td class="table1RowCol2">
+                <p class="colText">2019, Brand New</p>
+            </td>
+        </tr>
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">Country of Origin</p>
+            </td>
+            <td class="table1RowCol2">
+                <p class="colText">Japan</p>
+            </td>
+        </tr>
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">Country of Manufacture</p>
+            </td>
+            <td class="table1RowCol2">
+                <p class="colText">Japan</p>
+            </td>
+        </tr>
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">Maximum Output</p>
+            </td>
+            <td class="table1RowCol2">
+                <p class="colText">114 PS (84 kW) or 112 HP / 6200 rpm</p>
+            </td>
+        </tr>
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">Maximum Torque</p>
+            </td>
+            <td class="table1RowCol2">
+                <p class="colText">150 Nm (15.3 kgfm) /3600 rpm</p>
+            </td>
+        </tr>
+        <tr class="tableRow">
+            <td class="table1RowCol1">
+                <p class="colText">Displacement</p>
+            </td>
+            <td class="table1RowCol2">
+                <p class="colText">1600 cc</p>
+            </td>
+        </tr>
+    </table>
+
+
+    <div class="footerContainer">
+        SUBARU SHOWROOM: S. W. (C) 3, Bir Uttam A.K. Khandakar Road, South Avenue, Gulshan 1, Dhaka-1212. www.subaru-bd.com
+    </div>
+
 
 
 
@@ -343,6 +348,10 @@
             2 <b>| </b><span style="color: #808080">Page</span>
         </p>  -->
 
+    </div>
+
+    <div class="footerContainer">
+        SUBARU SHOWROOM: S. W. (C) 3, Bir Uttam A.K. Khandakar Road, South Avenue, Gulshan 1, Dhaka-1212. www.subaru-bd.com
     </div>
 
 </body>
