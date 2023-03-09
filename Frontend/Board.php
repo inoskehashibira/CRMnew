@@ -236,8 +236,6 @@ $approvalStatus = 0;
                         <a href="" class="card-link">Lead Details</a>
                     </div>
                 </div>
-
-
                 <div class="shadow p-1 mb-5 bg-white rounded mb-3 " style="width: 10 rem;" onclick="modalManager({'approvalStatus':false,'col':'deal'} )">
 
                     <div class="card-body">
@@ -324,11 +322,6 @@ $approvalStatus = 0;
                         <a href="" class="card-link">Lead Details</a>
                     </div>
                 </div>
-
-
-
-
-
 
                 <!-- Add a div to hold the modal -->
                 <div id="modalContainer"></div>
