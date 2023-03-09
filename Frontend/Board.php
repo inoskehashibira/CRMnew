@@ -164,58 +164,47 @@ $approvalStatus = 0;
                     </div>
 
                 </div>
-
-                <div id="modalContainer2"></div>
-
-            </div>
-            <!-- <div class="col-sm">
-                <h5 class=" rounded  p-2 bg-secondary text-white text-center mb-3 ">Lead</h5>
-
-
                 <div class="shadow p-1 mb-5 bg-white rounded" style="width: 7 rem;">
+
                     <div class="card-body">
-
                         <div class="row">
-                            <div class="col-9">
-                                <h5 class="card-title">
-                                    <a id="newLeadModalTrigger" onclick="modalManager({'col':'new'} )"> Customer_Name
+
+                            <div class="col-10">
+
+                                <h6 class="card-title">
+
+                                    <a id="newLeadModalTrigger"> Customer_Name
+
                                     </a>
 
-
-                                </h5>
-                            </div>
-                            <div class="col-3">
-
-                                <div class="dropdown">
-                                    <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
-
-                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=intermediate">Intermediate</a></li>
-                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=delivered">Delivered</a></li>
-                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=qualified">Qualified</a></li>
-                                        <li><a class="dropdown-item" href="Backend/strage_transition.php?leadID=&Transition_Stage=lost">lost</a></li>
-                                    </ul>
-                                </div>
-
-
+                                </h6>
 
                             </div>
                         </div>
 
-                        <h6 class="card-subtitle mb-2 text-muted">Organization_Name</h6>
-                        <p class="card-text">
-                            Customer_Email
-                        </p>
-                        <a href="" class="card-link">Lead Details</a>
+                        <small class="card-text mb-1"><b>Phone:</b> 01718339135</small><br>
+
+
+                        <small class="card-text mb-1"><b>Intersted In:</b> Subaru Forester, Subaru XV</small><br>
+
+                        <small class="card-text mb-1"><b>Location:</b> </small><br>
+
+                        <small class="card-text mb-1"><b>Created By:</b> Irfanul Kalam Chy</small>
+
+                        <!-- <a href="" class="card-link">Lead Details</a> -->
+                        <div>
+                            <button id="newLeadModalTrigger" onclick="modalManager({'col':'new'} )" class="btn btn-sm btn-darkblue  pt-1 pb-1 ps-2 pe-2" style="font-size: 0.6rem;">Assign</button>
+
+                        </div>
                     </div>
+
                 </div>
+
                 <div id="modalContainer2"></div>
 
+            </div>
 
 
-            </div> -->
 
 
 
