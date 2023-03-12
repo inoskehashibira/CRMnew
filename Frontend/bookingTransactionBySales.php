@@ -227,7 +227,7 @@
                 <h5> Booking Summary </h5>
             </div>
 
-
+            <!-- Booking Summary -->
             <table class="table-responsive table-bordered text-center mt-2 ">
                 <thead class="table-light">
                     <tr>
@@ -268,10 +268,11 @@
                 </tbody>
             </table>
 
+
             <div class="text-center mt-3">
                 <h5> Booking Transaction List</h5>
             </div>
-
+            <!-- Booking Transaction List -->
             <table class="table-responsive table-bordered text-center">
                 <thead class="table-light">
                     <tr>
