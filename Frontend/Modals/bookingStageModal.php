@@ -81,7 +81,6 @@ $myObject = $_POST['myObject'];
                         </div>
 
                     </div>
-
                     <!-- Forms -->
                     <div class="row  ">
                         <!-- Form 1 -->
