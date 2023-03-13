@@ -29,7 +29,6 @@
 
     ?>
 
-    <!-- Lead generation form contents -->
     <div class="col-md-6   rounded shadow p-2 mx-auto">
         <!--------------------Form container-------------------->
         <div class="container mt-5">
@@ -38,10 +37,12 @@
 
 
 
-                <!--------------------Lead source input field-------------------->
+                <!--------------------Lost Reason input field-------------------->
 
                 <div class="col   ">
-                    <label  class="form-label">Lost Reason</label>
+                    <label class="form-label">Lost Reason</label>
+
+                    <!--------------------Select Lead Source input field-------------------->
 
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Select Lead Source</option>
@@ -49,7 +50,10 @@
                         <option value="2">option 2</option>
                         <option value="3">option 3</option>
                     </select>
-                    <label  class="form-label mt-3">Lost Description</label>
+
+                    <!--------------------Lost Description input field-------------------->
+
+                    <label class="form-label mt-3">Lost Description</label>
 
                     <textarea class="form-control " id="exampleFormControlTextarea1" cols="5" rows="5"></textarea>
 
@@ -60,7 +64,7 @@
 
 
 
-                <!--------------------Lead generation button -------------------->
+                <!--------------------Lost button -------------------->
                 <div class="row  justify-content-center align-items-center g-2">
                     <div class="col-auto my-5">
                         <button class="btn btn-danger" type="submit" name="submit">

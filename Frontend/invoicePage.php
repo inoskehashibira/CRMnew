@@ -9,6 +9,8 @@
 
 
 </head>
+<!--------------------Container 1,2,3,5 are the containers to hold elements according to their positions-------------------->
+<!--------------------This whole page was designed targetting A4 size paper-------------------->
 
 <body>
 
@@ -41,16 +43,19 @@
             </tr>
         </table>
     </div>
+
+
     <div style="display:flex;justify-content:end;padding: 0;margin-top: 5rem;">
         Date : 01/02/2022
 
     </div>
+
     <div class="containerHeader">
         <h1>COMMERCIAL INVOICE</h1>
     </div>
+
     <div class="containerHeaderElements">
         <p style="font-size: 12pt;">Office Copy </p>
-
     </div>
 
 
@@ -188,18 +193,6 @@
             </tr>
         </table>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

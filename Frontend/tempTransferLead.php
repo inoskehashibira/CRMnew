@@ -38,10 +38,10 @@
 
 
 
-                <!--------------------Lead source input field-------------------->
+                <!--------------------Temp transfer list-------------------->
 
                 <div class="col   ">
-                    <label  class="form-label">Transfer To</label>
+                    <label class="form-label">Transfer To</label>
 
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Select Sales Person</option>
@@ -49,7 +49,9 @@
                         <option value="2">option 2</option>
                         <option value="3">option 3</option>
                     </select>
-                    <label  class="form-label mt-3">Deal Description</label>
+                    <!--------------------Temp transfer Deal Description-------------------->
+
+                    <label class="form-label mt-3">Deal Description</label>
 
                     <textarea class="form-control " id="exampleFormControlTextarea1" cols="5" rows="5"></textarea>
 
@@ -60,7 +62,7 @@
 
 
 
-                <!--------------------Lead generation button -------------------->
+                <!--------------------Temp transfer Button-------------------->
                 <div class="row  justify-content-center align-items-center g-2">
                     <div class="col-auto my-5">
                         <button class="btn btn-danger" type="submit" name="submit">

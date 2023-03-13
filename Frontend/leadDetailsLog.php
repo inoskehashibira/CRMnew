@@ -27,6 +27,7 @@
     <div class="container-fluid mt-1">
         <div class="row   ">
 
+            <!-- Lead Information Table -->
 
             <div class="col-sm col-lg-5" align="center">
 
@@ -81,9 +82,7 @@
                 </div>
             </div>
 
-
-
-
+            <!-- Lead Assign section -->
 
             <div class="col-sm  col-lg-7 border d-flex justify-content-end">
                 <div class="d-flex flex-column  align-items-center border me-lg-5 mt-lg-5 bg-light" style="width: 30rem;">
@@ -111,50 +110,50 @@
 
         </div>
 
+
+        <!-- Lead life cycle table-->
+
         <div class="container mt-3  border d-flex flex-column justify-content-center">
-                  
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">A</th>
-                                <th scope="col">B</th>
-                                <th scope="col">C</th>
-                                <th scope="col">D</th>
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Otto</td>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">A</th>
+                        <th scope="col">B</th>
+                        <th scope="col">C</th>
+                        <th scope="col">D</th>
 
-
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Otto</td>
-
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Otto</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Otto</td>
 
 
-                        </tbody>
-                    </table>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Otto</td>
 
-                
-            
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Otto</td>
+
+
+                </tbody>
+            </table>
         </div>
 
     </div>

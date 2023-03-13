@@ -56,7 +56,7 @@
 
             <form action="" method="post" class="row g-4 d-flex justify-content-center align-items-center">
 
-                <!--------------------Vehicle input field-------------------->
+                <!--------------------Vehicle selection field-------------------->
 
                 <div class="col-md-2 ">
                     <label class="form-label">Vehicle</label>
@@ -108,7 +108,7 @@
                 </div>
 
 
-                <!--------------------Quantity by input field-------------------->
+                <!--------------------Filter Button-------------------->
 
                 <div class="col-2  d-flex align-items-end ">
                     <button class="btn btn-primary mt-4" type="submit" name="submit">
@@ -121,6 +121,9 @@
 
 
             </form>
+
+            <!-------------------- Filter Result Table  -------------------->
+
 
             <div class="container-fluid mt-3 " style=" overflow: auto;">
                 <table class="table table-bordered text-center">

@@ -48,15 +48,16 @@
 
     ?>
 
-    <!-- Lead generation form contents -->
+
 
 
     <div class="container">
+        <!-- Heading -->
         <div class="text-center">
             <h3> Booking Transaction</h3>
         </div>
 
-        <!-- Buttons -->
+        <!-- heading Buttons -->
         <div class="row mb-2 ">
             <div class="col ">
                 <button type="button" class="btn btn-danger">
@@ -112,16 +113,10 @@
 
                         </div>
 
-
-
-
-
-
-
-
                     </div>
                     <!-- Form 1 col 2-->
                     <div class="col-sm border-start">
+                        <!-- Instrument No input -->
                         <div class="col">
                             <label class="form-label">
                                 Instrument No
@@ -129,13 +124,16 @@
 
                             <input type="text" class="form-control" name="  " id="  " required></input>
                         </div>
+                        <!-- Deposit To input -->
                         <div class="col">
+
                             <label class="form-label">
                                 Deposit To
                             </label>
 
                             <input type="text" class="form-control" name="  " id="  " required></input>
                         </div>
+                        <!-- Attachment input -->
                         <div class="col">
                             <label class="form-label">
                                 Attachment
@@ -145,11 +143,10 @@
                         </div>
 
                     </div>
-                    <!-- Form 1 col 3-->
-                    <!-- <div class="col">
 
-                                    </div> -->
                 </div>
+
+                <!-- submit button -->
                 <div class="text-center">
                     <button type="button" class="btn btn-primary m-2 " style="width: 30%;">
                         Submit
@@ -205,10 +202,6 @@
 
 
                     </div>
-
-
-
-
                 </div>
 
 
@@ -217,17 +210,18 @@
         </div>
 
         <div class="row m-2 ">
+            <!-- Lost button -->
+
             <div class="col ">
                 <button type="button" class="btn btn-danger">
                     Lost
                 </button>
             </div>
+            <!-- Booking Summary -->
 
             <div class="text-center">
                 <h5> Booking Summary </h5>
             </div>
-
-            <!-- Booking Summary -->
             <table class="table-responsive table-bordered text-center mt-2 ">
                 <thead class="table-light">
                     <tr>
@@ -269,10 +263,13 @@
             </table>
 
 
+
+
+            <!-- Booking Transaction List -->
+
             <div class="text-center mt-3">
                 <h5> Booking Transaction List</h5>
             </div>
-            <!-- Booking Transaction List -->
             <table class="table-responsive table-bordered text-center">
                 <thead class="table-light">
                     <tr>

@@ -22,10 +22,9 @@ $approvalStatus = 0;
             var modalUrl = mObj.mUrl;
             var modalID = mObj.mID;
 
-            console.log(mObj)
-            // var myObject ="someting";
+            console.log(mObj);
 
-
+            //this object was for testing purpose
             var myObject = {
                 id: 1,
                 name: "someting"
@@ -37,6 +36,7 @@ $approvalStatus = 0;
                 cache: false,
 
                 type: 'POST',
+                //sending the myObject data
                 data: {
                     myObject: JSON.stringify(myObject)
                 },
@@ -92,6 +92,9 @@ $approvalStatus = 0;
 
         </div>
 
+
+        <!----------------------------This is the column Container---------------- -->
+
         <div class="d-flex  flex-row">
             <!----------------------------Lead Column---------------- -->
 
@@ -121,7 +124,6 @@ $approvalStatus = 0;
 
                         <small class="card-text mb-1"><b>Created By:</b> Irfanul Kalam Chy</small>
 
-                        <!-- <a href="" class="card-link">Lead Details</a> -->
                         <div>
                             <button onclick="modalManager({'col':'new'} )" class="btn btn-sm btn-darkblue  pt-1 pb-1 ps-2 pe-2" style="font-size: 0.6rem;">Assign</button>
 
@@ -129,6 +131,7 @@ $approvalStatus = 0;
                     </div>
 
                 </div>
+                <!----------------------------This modal container is needed to load the modal every column needs a container---------------- -->
 
                 <div id="modalContainer2"></div>
 
@@ -169,7 +172,6 @@ $approvalStatus = 0;
                     </div>
 
                 </div>
-                <!-- onclick="modalManager({'approvalStatus':false,'col':'deal'} )" -->
                 <div class="shadow p-1 mb-5 bg-white rounded" style="width: 7 rem;">
 
                     <div class="card-body">
@@ -201,7 +203,6 @@ $approvalStatus = 0;
 
                 </div>
 
-                <!-- onclick="modalManager({'approvalStatus':true,'col':'deal'} )" -->
                 <div class="shadow p-1 mb-5 bg-white rounded" style="width: 7 rem;">
 
                     <div class="card-body">
@@ -249,8 +250,6 @@ $approvalStatus = 0;
                 <h5 class="rounded  p-2 bg-secondary text-white text-center mb-3 ">Quotation</h5>
 
 
-
-
                 <div class="shadow p-1 mb-5 bg-white rounded" style="width: 7 rem;">
 
                     <div class="card-body">
@@ -282,8 +281,6 @@ $approvalStatus = 0;
 
                 </div>
 
-
-
                 <div class="shadow p-1 mb-5 bg-white rounded" style="width: 7 rem;">
 
                     <div class="card-body">
@@ -314,7 +311,6 @@ $approvalStatus = 0;
                     </div>
 
                 </div>
-
 
                 <div class="shadow p-1 mb-5 bg-white rounded" style="width: 7 rem;">
 
@@ -590,17 +586,6 @@ $approvalStatus = 0;
 
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>

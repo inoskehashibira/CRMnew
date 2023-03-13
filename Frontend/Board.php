@@ -1,6 +1,7 @@
-<?php
-$approvalStatus = 0;
-?>
+
+
+
+// This file is renamed as SalesStages.....Goto That file
 
 
 <!DOCTYPE html>
